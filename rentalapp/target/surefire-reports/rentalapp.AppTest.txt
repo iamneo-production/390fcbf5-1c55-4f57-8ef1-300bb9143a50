@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: rentalapp.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.352 s <<< FAILURE! - in rentalapp.AppTest
+testValidateLogin(rentalapp.AppTest)  Time elapsed: 3.25 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary 
+Host info: host: 'dbfdbfabbeaffbbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.108.6'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+	at rentalapp.AppTest.testValidateLogin(AppTest.java:23)
+
