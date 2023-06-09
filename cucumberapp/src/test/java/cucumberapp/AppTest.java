@@ -12,16 +12,8 @@ import java.net.URL;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-  
- //AbstractDriverOptions ChromeDriver=null;
-    /**
-     * Rigorous Test :-)
-     */
 
     public static void main(String args[]) throws MalformedURLException
     {
