@@ -1,4 +1,4 @@
-package cartest;
+package com.example;
 
 /**
  * Hello world!
