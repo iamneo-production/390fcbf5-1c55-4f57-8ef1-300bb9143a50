@@ -1,1 +1,9 @@
-cucumberapp/AppTest.class
+testRunner/CreateBrandTest.class
+pageObject/DashBoardPage.class
+pageObject/ManageBrandPage.class
+stepDefinition/Stepdefinition.class
+testRunner/DashboardTest.class
+pageObject/CreateBrandPage.class
+testRunner/AdminLoginTest.class
+pageObject/AdminLoginPage.class
+testRunner/ManageBrandTest.class

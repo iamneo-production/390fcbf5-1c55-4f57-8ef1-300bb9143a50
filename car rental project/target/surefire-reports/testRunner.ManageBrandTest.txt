@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.ManageBrandTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.58 s - in testRunner.ManageBrandTest

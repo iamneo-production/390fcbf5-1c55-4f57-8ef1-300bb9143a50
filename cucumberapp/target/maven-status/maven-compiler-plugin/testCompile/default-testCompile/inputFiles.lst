@@ -1,1 +1,9 @@
-/home/coder/project/workspace/cucumberapp/src/test/java/cucumberapp/AppTest.java
+/home/coder/project/workspace/cucumberapp/src/test/java/testRunner/AdminLoginTest.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/DashBoardPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/testRunner/DashboardTest.java
+/home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/Stepdefinition.java
+/home/coder/project/workspace/cucumberapp/src/test/java/testRunner/CreateBrandTest.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/CreateBrandPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageBrandPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/testRunner/ManageBrandTest.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/AdminLoginPage.java
