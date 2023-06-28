@@ -1,1 +1,10 @@
-/home/coder/project/workspace/cartestapp/src/test/java/com/example/AppTest.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/ManageTestimonialsPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/sample1/SampleTest.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/RegisteredUsersPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/ContactUsPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/LoginPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/BaseTest/BaseClass.java
+/home/coder/project/workspace/cartestapp/src/test/java/TestRunner/Run.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/BookingsPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/ManageContactUsQueryPage.java
+/home/coder/project/workspace/cartestapp/src/test/java/PageObject/FAQPage.java
