@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="25" failures="0" name="StepDefinitions.TestRunner" time="301.945" errors="3" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/coder/project/workspace/cucumberapp"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/coder/project/workspace/cucumberapp"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.10.162+"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/coder"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="coder"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="feature to test the Manage pages page" name="Validate the Manage Page button is working or not - TC_ID_ManagePages_1" time="18.055"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate terms and conditions option in dropdown - TC_ID_ManagePage_2" time="15.819"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate privacy and policy option in dropdown - TC_ID_ManagePage_3" time="14.102"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate about us option in dropdown - TC_ID_ManagePage_4" time="13.915"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate FQAs option in dropdown  -TC_ID_ManagePage_5" time="15.62"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the search field in manage subscribers page -  TC_ID_Manage_subscribers_1" time="11.239"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_2" time="9.697"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_3" time="10.017"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  -  TC_ID_Manage_subscribers_4" time="10.21"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  - TC_ID_Manage_subscribers_5" time="9.589"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the search field in manage testimonial page -  TC_ID_Manage_1" time="10.403"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_2" time="9.574"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_3" time="10.453"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on okay in testimonial page - TC_ID_Manage_4" time="13.86">
+    <error message="unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6c6dd036b0a0d22646dcd15aeccd4587, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.dZ60QC}, goog:chromeOptions: {debuggerAddress: localhost:37025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6dd036b0a0d22646dcd15aeccd4587" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6c6dd036b0a0d22646dcd15aeccd4587, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.dZ60QC}, goog:chromeOptions: {debuggerAddress: localhost:37025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6dd036b0a0d22646dcd15aeccd4587
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.ManageTestimonialPage.checkactivemessagedisplay(ManageTestimonialPage.java:34)
+	at StepDefinitions.stepdefinitions.check_the_active_message_is_displayed_in_home_page(stepdefinitions.java:130)
+	at ✽.check the active message is displayed in home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/managetestimonials.feature:30)
+</error>
+    <system-out>
+Scenario: Validate the inactive option and then click on okay in testimonial page - TC_ID_Manage_4 &amp;#27;[90m# src/test/resources/Features/managetestimonials.feature:26&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://carrental.neohire.io/admin/&quot;&amp;#27;[0m                                       &amp;#27;[90m# StepDefinitions.stepdefinitions.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able see the admin|signin page&amp;#27;[0m                                                  &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_see_the_admin_signin_page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser should enter username as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;admin&quot;&amp;#27;[0m&amp;#27;[32m  and password ad &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Test@12345&quot;&amp;#27;[0m                          &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_enter_username_as_and_password_ad(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on login&amp;#27;[0m                                                                               &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_login()&amp;#27;[0m
+car rental portal is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to view car rental portal | admin panel&amp;#27;[0m                                    &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_view_car_rental_portal_admin_panel()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on Manage Testimonials&amp;#27;[0m                                                                 &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_manage_testimonials()&amp;#27;[0m
+Manage testimonial header is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to see the Manage Testimonials page&amp;#27;[0m                                        &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_see_the_manage_testimonials_page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mclick on Inactive&amp;#27;[0m                                                                           &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_inactive()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on Okay&amp;#27;[0m                                                                                &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_okay()&amp;#27;[0m
+success message is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able see the success message&amp;#27;[0m                                                    &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_see_the_success_message()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mcheck the active message is displayed in home page&amp;#27;[0m                                          &amp;#27;[90m# StepDefinitions.stepdefinitions.check_the_active_message_is_displayed_in_home_page()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6c6dd036b0a0d22646dcd15aeccd4587, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.dZ60QC}, goog:chromeOptions: {debuggerAddress: localhost:37025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6dd036b0a0d22646dcd15aeccd4587
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.ManageTestimonialPage.checkactivemessagedisplay(ManageTestimonialPage.java:34)
+	at StepDefinitions.stepdefinitions.check_the_active_message_is_displayed_in_home_page(stepdefinitions.java:130)
+	at ✽.check the active message is displayed in home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/managetestimonials.feature:30)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on cancel in testimonial page -  TC_ID_Manage_5" time="12.487"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on okay in testimonial page - TC_ID_Manage_6" time="15.932">
+    <error message="unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f16de7f7fa73a7fa4004c86eec27a4de, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.M9zWhi}, goog:chromeOptions: {debuggerAddress: localhost:39161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f16de7f7fa73a7fa4004c86eec27a4de" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f16de7f7fa73a7fa4004c86eec27a4de, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.M9zWhi}, goog:chromeOptions: {debuggerAddress: localhost:39161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f16de7f7fa73a7fa4004c86eec27a4de
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.ManageTestimonialPage.checkinactivenotdisplay(ManageTestimonialPage.java:47)
+	at StepDefinitions.stepdefinitions.check_the_inactive_message_is_not_displayed_in_home_page(stepdefinitions.java:152)
+	at ✽.check the inactive message is not displayed in home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/managetestimonials.feature:41)
+</error>
+    <system-out>
+Scenario: Validate the active option and then click on okay in testimonial page - TC_ID_Manage_6 &amp;#27;[90m# src/test/resources/Features/managetestimonials.feature:37&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://carrental.neohire.io/admin/&quot;&amp;#27;[0m                                     &amp;#27;[90m# StepDefinitions.stepdefinitions.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able see the admin|signin page&amp;#27;[0m                                                &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_see_the_admin_signin_page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser should enter username as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;admin&quot;&amp;#27;[0m&amp;#27;[32m  and password ad &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Test@12345&quot;&amp;#27;[0m                        &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_enter_username_as_and_password_ad(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on login&amp;#27;[0m                                                                             &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_login()&amp;#27;[0m
+car rental portal is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to view car rental portal | admin panel&amp;#27;[0m                                  &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_view_car_rental_portal_admin_panel()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on Manage Testimonials&amp;#27;[0m                                                               &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_manage_testimonials()&amp;#27;[0m
+Manage testimonial header is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to see the Manage Testimonials page&amp;#27;[0m                                      &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_see_the_manage_testimonials_page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mclick on active&amp;#27;[0m                                                                           &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_active()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on Okay&amp;#27;[0m                                                                              &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_okay()&amp;#27;[0m
+success message is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to see the success message of inactive&amp;#27;[0m                                   &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_see_the_success_message_of_inactive()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mcheck the inactive message is not displayed in home page&amp;#27;[0m                                  &amp;#27;[90m# StepDefinitions.stepdefinitions.check_the_inactive_message_is_not_displayed_in_home_page()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f16de7f7fa73a7fa4004c86eec27a4de, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.M9zWhi}, goog:chromeOptions: {debuggerAddress: localhost:39161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f16de7f7fa73a7fa4004c86eec27a4de
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.ManageTestimonialPage.checkinactivenotdisplay(ManageTestimonialPage.java:47)
+	at StepDefinitions.stepdefinitions.check_the_inactive_message_is_not_displayed_in_home_page(stepdefinitions.java:152)
+	at ✽.check the inactive message is not displayed in home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/managetestimonials.feature:41)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on cancel in testimonial page - TC_ID_Manage_7" time="13.68"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid Email id -TC_ID_Update_contact_1" time="9.81"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid contact - TC_ID_Update_contact_2 (Failed testcase)" time="10.5"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only email, contact -TC_ID_Update_contact_3" time="8.297"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, contact - TC_ID_Update_contact_4" time="10.091"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, emailid - TC_ID_Update_contact_5" time="10.084"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when all the fields are empty - TC_ID_Update_contact_6" time="10.214"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in home page -   TC_ID_Update_contact_7" time="12.621">
+    <error message="unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [053865065cd5d988d9d2ce02af92e2d6, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.OFcAwY}, goog:chromeOptions: {debuggerAddress: localhost:42341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 053865065cd5d988d9d2ce02af92e2d6" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [053865065cd5d988d9d2ce02af92e2d6, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.OFcAwY}, goog:chromeOptions: {debuggerAddress: localhost:42341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 053865065cd5d988d9d2ce02af92e2d6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.UpdateContactInfoPage.checkhomeupdateinfo(UpdateContactInfoPage.java:65)
+	at StepDefinitions.stepdefinitions.user_should_able_to_see_the_update_info_in_the_home_page(stepdefinitions.java:191)
+	at ✽.user should able to see the update info in the home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/updatecontactinfo.feature:52)
+</error>
+    <system-out>
+Scenario: Validate the admin can change the fields in Update Contact Info in home page -   TC_ID_Update_contact_7 &amp;#27;[90m# src/test/resources/Features/updatecontactinfo.feature:46&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://carrental.neohire.io/admin/&quot;&amp;#27;[0m                                                      &amp;#27;[90m# StepDefinitions.stepdefinitions.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able see the admin|signin page&amp;#27;[0m                                                                 &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_see_the_admin_signin_page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser should enter username as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;admin&quot;&amp;#27;[0m&amp;#27;[32m  and password ad &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Test@12345&quot;&amp;#27;[0m                                         &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_enter_username_as_and_password_ad(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on login&amp;#27;[0m                                                                                              &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_login()&amp;#27;[0m
+car rental portal is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to view car rental portal | admin panel&amp;#27;[0m                                                   &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_view_car_rental_portal_admin_panel()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclick on UpdateContactInfo&amp;#27;[0m                                                                                  &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_update_contact_info()&amp;#27;[0m
+UpdateContactInfo Page header is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able to see the Updatecontactinfo page&amp;#27;[0m                                                         &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_see_the_updatecontactinfo_page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser enter the address&amp;#27;[0m                                                                                     &amp;#27;[90m# StepDefinitions.stepdefinitions.user_enter_the_address()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enter the emailid&amp;#27;[0m                                                                                      &amp;#27;[90m# StepDefinitions.stepdefinitions.user_enter_the_emailid()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enter the phonenumber&amp;#27;[0m                                                                                  &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_enter_the_phonenumber()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick on update button&amp;#27;[0m                                                                                     &amp;#27;[90m# StepDefinitions.stepdefinitions.click_on_update_button()&amp;#27;[0m
+Element is dispalyed
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser should able see the success message on contactus&amp;#27;[0m                                                      &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_see_the_success_message_on_contactus()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31muser should able to see the update info in the home page&amp;#27;[0m                                                   &amp;#27;[90m# StepDefinitions.stepdefinitions.user_should_able_to_see_the_update_info_in_the_home_page()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [053865065cd5d988d9d2ce02af92e2d6, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.OFcAwY}, goog:chromeOptions: {debuggerAddress: localhost:42341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://10.56.40.7:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.40.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.40.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 053865065cd5d988d9d2ce02af92e2d6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:984)
+	at PageObject.UpdateContactInfoPage.checkhomeupdateinfo(UpdateContactInfoPage.java:65)
+	at StepDefinitions.stepdefinitions.user_should_able_to_see_the_update_info_in_the_home_page(stepdefinitions.java:191)
+	at ✽.user should able to see the update info in the home page(file:///home/coder/project/workspace/cucumberapp/src/test/resources/Features/updatecontactinfo.feature:52)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in contact us page- TC_ID_Update_contact_8" time="15.676"/>
+</testsuite>
