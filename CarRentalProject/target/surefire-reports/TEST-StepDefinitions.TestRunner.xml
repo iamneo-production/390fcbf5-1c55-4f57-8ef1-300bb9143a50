@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="0" name="StepDefinitions.TestRunner" time="197.342" errors="9" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/coder/project/workspace/CarRentalProject"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/coder/project/workspace/CarRentalProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.10.162+"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/coder"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="coder"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="7.187">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4162606152b299039fed5fbda88c9c5d, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.Y7pgzL}, goog:chromeOptions: {debuggerAddress: localhost:37473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4162606152b299039fed5fbda88c9c5d" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4162606152b299039fed5fbda88c9c5d, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.Y7pgzL}, goog:chromeOptions: {debuggerAddress: localhost:37473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4162606152b299039fed5fbda88c9c5d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/aboutus.feature:5)
+</error>
+    <system-out>
+Scenario: Check about us page is displayed on clicking about us button # src/test/resources/Features/aboutus.feature:3
+  Given user launches chrome browser                                   # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                                           # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4162606152b299039fed5fbda88c9c5d, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.Y7pgzL}, goog:chromeOptions: {debuggerAddress: localhost:37473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4162606152b299039fed5fbda88c9c5d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/aboutus.feature:5)
+
+  And click on About us button                                         # StepDefinitions.Aboutusstep.click_on_About_us_button()
+  Then user should be able to view About us Page                       # StepDefinitions.Aboutusstep.user_should_be_able_to_view_About_us_Page()
+</system-out>
+    <system-err>Jun 29, 2023 6:12:59 AM io.cucumber.junit.Cucumber &lt;init&gt;
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+Jun 29, 2023 6:13:00 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="15.381"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="9.823">
+    <error message="unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1274a6d73cf34bc753f7667515d0933c, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.RtaClU}, goog:chromeOptions: {debuggerAddress: localhost:38621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1274a6d73cf34bc753f7667515d0933c" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1274a6d73cf34bc753f7667515d0933c, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.RtaClU}, goog:chromeOptions: {debuggerAddress: localhost:38621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1274a6d73cf34bc753f7667515d0933c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+</error>
+    <system-out>
+Scenario: Check cars are displayed on selecting brand type and fuel type # src/test/resources/Features/carlisting.feature:12
+  Given user launches chrome browser                                     # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                                             # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1274a6d73cf34bc753f7667515d0933c, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.RtaClU}, goog:chromeOptions: {debuggerAddress: localhost:38621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1274a6d73cf34bc753f7667515d0933c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+
+  Then user shoud be able to view carrental portal                       # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When user clicks on CarListing button                                  # StepDefinitions.Aboutusstep.click_on_CarListing_button()
+  And Select Brand Type                                                  # StepDefinitions.Aboutusstep.select_Brand_Type()
+  And Select Fuel Type                                                   # StepDefinitions.Aboutusstep.select_Fuel_Type()
+  And click on Find Your Car                                             # StepDefinitions.Aboutusstep.click_on_Find_Your_Car()
+  Then user should be able to view Car Listings                          # StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="24.764"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="10">
+    <error message="unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0dd1535ddf80f8fe9de9ea3c4a55ccb3, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.6VEzEi}, goog:chromeOptions: {debuggerAddress: localhost:36389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dd1535ddf80f8fe9de9ea3c4a55ccb3" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0dd1535ddf80f8fe9de9ea3c4a55ccb3, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.6VEzEi}, goog:chromeOptions: {debuggerAddress: localhost:36389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dd1535ddf80f8fe9de9ea3c4a55ccb3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+</error>
+    <system-out>
+Scenario: Check functionality of prev and next buttons # src/test/resources/Features/carlisting.feature:27
+  Given user launches chrome browser                   # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                           # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0dd1535ddf80f8fe9de9ea3c4a55ccb3, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.6VEzEi}, goog:chromeOptions: {debuggerAddress: localhost:36389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dd1535ddf80f8fe9de9ea3c4a55ccb3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+
+  Then user shoud be able to view carrental portal     # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When user clicks on CarListing button                # StepDefinitions.Aboutusstep.click_on_CarListing_button()
+  Then user should be able to view Car Listings        # StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()
+  When click on view details                           # StepDefinitions.Aboutusstep.click_on_view_details()
+  And click on prev button                             # StepDefinitions.Aboutusstep.click_on_prev_button()
+  Then user should be able to view prev image          # StepDefinitions.Aboutusstep.user_should_be_able_to_view_prev_image()
+  When click on next button                            # StepDefinitions.Aboutusstep.click_on_next_button()
+  Then user should be able to view next image          # StepDefinitions.Aboutusstep.user_should_be_able_to_view_next_image()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="11.218">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ef7ac90eb885447f8faae2d0aeab5a45, clickElement {id=012542bb-1457-4b3a-af6e-9ba5a7f898f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.BYocS3}, goog:chromeOptions: {debuggerAddress: localhost:46867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (ef7ac90eb885447f8faae2d0aeab5a45)] -&gt; xpath: //*[@id=&quot;navigation&quot;]/ul/li[3]/a]
+Session ID: ef7ac90eb885447f8faae2d0aeab5a45" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ef7ac90eb885447f8faae2d0aeab5a45, clickElement {id=012542bb-1457-4b3a-af6e-9ba5a7f898f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.BYocS3}, goog:chromeOptions: {debuggerAddress: localhost:46867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (ef7ac90eb885447f8faae2d0aeab5a45)] -&gt; xpath: //*[@id=&quot;navigation&quot;]/ul/li[3]/a]
+Session ID: ef7ac90eb885447f8faae2d0aeab5a45
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.carlistingpage.Carlistingbtn(carlistingpage.java:39)
+	at StepDefinitions.Aboutusstep.click_on_CarListing_button(Aboutusstep.java:90)
+	at ✽.user clicks on CarListing button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:37)
+</error>
+    <system-out>
+Scenario: Check functionality of Vehicle Overview button   # src/test/resources/Features/carlisting.feature:36
+  Given user launches chrome browser                       # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                               # StepDefinitions.Aboutusstep.user_navigates_to_url()
+  Then user shoud be able to view carrental portal         # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When user clicks on CarListing button                    # StepDefinitions.Aboutusstep.click_on_CarListing_button()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ef7ac90eb885447f8faae2d0aeab5a45, clickElement {id=012542bb-1457-4b3a-af6e-9ba5a7f898f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.BYocS3}, goog:chromeOptions: {debuggerAddress: localhost:46867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (ef7ac90eb885447f8faae2d0aeab5a45)] -&gt; xpath: //*[@id=&quot;navigation&quot;]/ul/li[3]/a]
+Session ID: ef7ac90eb885447f8faae2d0aeab5a45
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.carlistingpage.Carlistingbtn(carlistingpage.java:39)
+	at StepDefinitions.Aboutusstep.click_on_CarListing_button(Aboutusstep.java:90)
+	at ✽.user clicks on CarListing button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:37)
+
+  Then user should be able to view Car Listings            # StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()
+  When click on view details                               # StepDefinitions.Aboutusstep.click_on_view_details()
+  And click on Vehicle Overview button                     # StepDefinitions.Aboutusstep.click_on_Vehicle_OSverview_button()
+  Then user should be able to view overview of the vehicle # StepDefinitions.Aboutusstep.user_should_be_able_to_view_overview()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check whether the booking is done by the user" time="8.499">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2012fa9ab997b13c460dc6648f0d9392, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.TORf8c}, goog:chromeOptions: {debuggerAddress: localhost:44187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2012fa9ab997b13c460dc6648f0d9392" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2012fa9ab997b13c460dc6648f0d9392, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.TORf8c}, goog:chromeOptions: {debuggerAddress: localhost:44187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2012fa9ab997b13c460dc6648f0d9392
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+</error>
+    <system-out>
+Scenario: Check whether the booking is done by the user      # src/test/resources/Features/carlisting.feature:43
+  Given user launches chrome browser                         # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                                 # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2012fa9ab997b13c460dc6648f0d9392, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.TORf8c}, goog:chromeOptions: {debuggerAddress: localhost:44187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2012fa9ab997b13c460dc6648f0d9392
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)
+
+  Then user shoud be able to view carrental portal           # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  And Login as customer                                      # StepDefinitions.Aboutusstep.login_as_customer()
+  Then sign in as admin                                      # StepDefinitions.Aboutusstep.sign_in_as_admin()
+  And click on bookings                                      # StepDefinitions.Aboutusstep.click_on_bookings()
+  And click on New                                           # StepDefinitions.Aboutusstep.click_on_New()
+  Then check whether the customer name is viewed on bookings # StepDefinitions.Aboutusstep.check_whether_the_customer_name_is_viewed_on_bookings()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test Car Listing page functionality" name="To book the car by selecting from date, to date and a message" time="13.359">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [12f1b51b20c546fcbaa93294a029d98c, findElement {using=xpath, value=/html/body/section[2]/div/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.al8o4N}, goog:chromeOptions: {debuggerAddress: localhost:36261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12f1b51b20c546fcbaa93294a029d98c" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [12f1b51b20c546fcbaa93294a029d98c, findElement {using=xpath, value=/html/body/section[2]/div/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.al8o4N}, goog:chromeOptions: {debuggerAddress: localhost:36261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12f1b51b20c546fcbaa93294a029d98c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.carlistingpage.Viewdetailsbtn(carlistingpage.java:59)
+	at StepDefinitions.Aboutusstep.click_on_view_details(Aboutusstep.java:127)
+	at ✽.click on view details(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:52)
+</error>
+    <system-out>
+Scenario: To book the car by selecting from date, to date and a message # src/test/resources/Features/carlisting.feature:50
+  Given user launches chrome browser                                    # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                                            # StepDefinitions.Aboutusstep.user_navigates_to_url()
+  Then user shoud be able to view carrental portal                      # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When user clicks on CarListing button                                 # StepDefinitions.Aboutusstep.click_on_CarListing_button()
+  Then click on view details                                            # StepDefinitions.Aboutusstep.click_on_view_details()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [12f1b51b20c546fcbaa93294a029d98c, findElement {using=xpath, value=/html/body/section[2]/div/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.al8o4N}, goog:chromeOptions: {debuggerAddress: localhost:36261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12f1b51b20c546fcbaa93294a029d98c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.carlistingpage.Viewdetailsbtn(carlistingpage.java:59)
+	at StepDefinitions.Aboutusstep.click_on_view_details(Aboutusstep.java:127)
+	at ✽.click on view details(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:52)
+
+  And user should be able to view Car Listings                          # StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()
+  Then select From date                                                 # StepDefinitions.Aboutusstep.select_From_date()
+  And select To date                                                    # StepDefinitions.Aboutusstep.select_To_date()
+  And Type a message1                                                   # StepDefinitions.Aboutusstep.type_a_message1()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="11.897"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="29.412"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="11.013"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="14.472"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="10.037">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [cbc486f78d1753e171243deb5408a290, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.0XYGlI}, goog:chromeOptions: {debuggerAddress: localhost:40889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbc486f78d1753e171243deb5408a290" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [cbc486f78d1753e171243deb5408a290, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.0XYGlI}, goog:chromeOptions: {debuggerAddress: localhost:40889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbc486f78d1753e171243deb5408a290
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)
+</error>
+    <system-out>
+Scenario: Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively # src/test/resources/Features/homepage.feature:30
+  Given user launches chrome browser                                                                                            # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                                                                                                    # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [cbc486f78d1753e171243deb5408a290, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.0XYGlI}, goog:chromeOptions: {debuggerAddress: localhost:40889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbc486f78d1753e171243deb5408a290
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)
+
+  Then user shoud be able to view carrental portal                                                                              # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  And click on privacy button                                                                                                   # StepDefinitions.Aboutusstep.click_on_privacy_button()
+  Then user should be able to view privacy Page                                                                                 # StepDefinitions.Aboutusstep.user_should_view_Privacy_page()
+  And click on terms of use button                                                                                              # StepDefinitions.Aboutusstep.click_on_termsofuse_button()
+  Then user should be able to Terms and Conditions Page                                                                         # StepDefinitions.Aboutusstep.user_should_be_able_to_Terms_and_Conditions_Page()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality of Subscribe button" time="12.505">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7938a165d7e440a0a4143a1402b0e2ba, findElement {using=name, value=emailsubscibe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.2ms4Gl}, goog:chromeOptions: {debuggerAddress: localhost:43713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7938a165d7e440a0a4143a1402b0e2ba" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7938a165d7e440a0a4143a1402b0e2ba, findElement {using=name, value=emailsubscibe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.2ms4Gl}, goog:chromeOptions: {debuggerAddress: localhost:43713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7938a165d7e440a0a4143a1402b0e2ba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.Homepage.SubscribeBtn(Homepage.java:87)
+	at StepDefinitions.Aboutusstep.click_on_subscribe_button(Aboutusstep.java:330)
+	at ✽.click on subscribe button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:38)
+</error>
+    <system-out>
+Scenario: Check functionality of Subscribe button  # src/test/resources/Features/homepage.feature:36
+  Given user launches chrome browser               # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                       # StepDefinitions.Aboutusstep.user_navigates_to_url()
+  Then user shoud be able to view carrental portal # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When enter email address                         # StepDefinitions.Aboutusstep.enter_email_address()
+  And click on subscribe button                    # StepDefinitions.Aboutusstep.click_on_subscribe_button()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7938a165d7e440a0a4143a1402b0e2ba, findElement {using=name, value=emailsubscibe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.2ms4Gl}, goog:chromeOptions: {debuggerAddress: localhost:43713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7938a165d7e440a0a4143a1402b0e2ba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at PageObject.Homepage.SubscribeBtn(Homepage.java:87)
+	at StepDefinitions.Aboutusstep.click_on_subscribe_button(Aboutusstep.java:330)
+	at ✽.click on subscribe button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:38)
+
+  Then user should be able to see popup message    # StepDefinitions.Aboutusstep.user_should_be_able_to_see_popup_message()
+</system-out>
+  </testcase>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="7.775">
+    <error message="unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7d1790a55219e3e1c4d990c2f48a0477, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.eNUzqR}, goog:chromeOptions: {debuggerAddress: localhost:43197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d1790a55219e3e1c4d990c2f48a0477" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7d1790a55219e3e1c4d990c2f48a0477, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.eNUzqR}, goog:chromeOptions: {debuggerAddress: localhost:43197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d1790a55219e3e1c4d990c2f48a0477
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)
+</error>
+    <system-out>
+Scenario: Check functionality Service HelpLine button # src/test/resources/Features/homepage.feature:41
+  Given user launches chrome browser                  # StepDefinitions.Aboutusstep.user_launches_chrome_browser()
+  When user navigates to url                          # StepDefinitions.Aboutusstep.user_navigates_to_url()
+      org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7d1790a55219e3e1c4d990c2f48a0477, get {url=https://carrental.neohire.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.eNUzqR}, goog:chromeOptions: {debuggerAddress: localhost:43197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d1790a55219e3e1c4d990c2f48a0477
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)
+	at StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)
+	at ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)
+
+  Then user shoud be able to view carrental portal    # StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()
+  When click on Service Helpline option               # StepDefinitions.Aboutusstep.click_on_Service_Helpline_option()
+  Then user should be able to see a popup message     # StepDefinitions.Aboutusstep.user_should_be_able_to_see_a_popup_message()
+</system-out>
+  </testcase>
+</testsuite>
