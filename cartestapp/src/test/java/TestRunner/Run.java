@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "/home/coder/project/workspace/cartestapp/src/test/resources",
         glue = "sample1",
-        dryRun = true,
-        monochrome = true,
+        dryRun = false,
+        monochrome = false,
         plugin = {"pretty", "html:results/cucumber-reports.html", "json:results/cucumber.json", "junit:results/cucumber.xml"}
 )
 public class Run {

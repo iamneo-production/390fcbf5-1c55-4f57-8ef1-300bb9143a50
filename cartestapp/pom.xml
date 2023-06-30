@@ -7,8 +7,6 @@
   <groupId>com.example</groupId>
   <artifactId>cartestapp</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,60 +14,41 @@
   </properties>
 
   <dependencies>
- 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
- 
-        <dependency>
- 
-            <groupId>io.cucumber</groupId>
- 
-            <artifactId>cucumber-java</artifactId>
- 
-            <version>7.12.1</version>
- 
-        </dependency>
- 
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
- 
-        <dependency>
- 
-            <groupId>org.junit.jupiter</groupId>
- 
-            <artifactId>junit-jupiter-api</artifactId>
- 
-            <version>5.10.0-M1</version>
- 
-            <scope>test</scope>
- 
-        </dependency>
- 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
- 
-        <dependency>
- 
-            <groupId>io.cucumber</groupId>
- 
-            <artifactId>cucumber-junit</artifactId>
- 
-            <version>7.12.1</version>
- 
-            <scope>test</scope>
- 
-        </dependency>
- 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
- 
-        <dependency>
- 
-            <groupId>org.seleniumhq.selenium</groupId>
- 
-            <artifactId>selenium-java</artifactId>
- 
-            <version>4.10.0</version>
- 
-        </dependency>
-    </dependencies>
- 
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+      <scope>test</scope>
+	    <version>7.10.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>7.10.1</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-core</artifactId>
+        <scope>test</scope>
+        <version>7.10.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.7.2</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -116,5 +95,3 @@
     </pluginManagement>
   </build>
 </project>
- 
-   

@@ -28,6 +28,7 @@ public class SampleTest {
 	 public BookingsPage BookingsPage;
 	 public ManageTestimonialsPage ManageTestimonialsPage;
 	 public RegisteredUsersPage RegisteredUsersPage;
+
 	@Given("User Launch chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
 	    // Write code here that turns the phrase above into concrete actions
@@ -521,7 +522,7 @@ public class SampleTest {
 	@When("Check the BookingNo")
 	public void check_the_booking_no() {
 	    // Write code here that turns the phrase above into concrete actions
-	    LoginPage.setBookingNo("799632473");
+	    LoginPage.setBookingNo("108853124");
 	}
 
 	@When("Check the Confirm or NotYetConfirm button")
