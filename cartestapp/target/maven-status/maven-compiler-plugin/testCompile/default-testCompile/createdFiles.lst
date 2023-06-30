@@ -4,7 +4,7 @@ PageObject/RegisteredUsersPage.class
 BaseTest/BaseClass.class
 sample1/SampleTest.class
 PageObject/BookingsPage.class
+TestRunner/RunTest.class
 PageObject/ManageContactUsQueryPage.class
-TestRunner/Run.class
 PageObject/FAQPage.class
 PageObject/LoginPage.class

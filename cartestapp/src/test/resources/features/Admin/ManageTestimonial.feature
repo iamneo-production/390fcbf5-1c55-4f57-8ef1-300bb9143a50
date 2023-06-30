@@ -12,8 +12,7 @@ Feature: ManageTestimonials
   Scenario: Admin | Manage Testimonial 
   Successful Login with valid credentials
   Given User Launch chrome browser
-    When User opens url "https://carrental.neohire.io/"
-    And Click on Admin Login
+    When User opens url "https://carrental.neohire.io/admin/"
     Then User should be able to view the Admin Page
     When User Enter UserName,Password
     And Click on Login

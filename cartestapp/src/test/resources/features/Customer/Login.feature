@@ -1,3 +1,5 @@
+#CarRental Login functionality
+@Regression
 Feature: Login page
   As an Customer,
   I should be able to enter below details in the ContactUsloginBox to send a message on clicking Send Message Button
@@ -16,7 +18,6 @@ Feature: Login page
 
   Scenario: Home | Login | Profile Settings
   Successful Login with valid credentials
-
     And Click on ProfileSettings
     And Enter DateOfBirth,Address,Country,City
     And Click on SaveChanges Option
@@ -25,13 +26,11 @@ Feature: Login page
 
   Scenario: Home | Login | Update Password
   Successful Login with valid credentials
-
     And Click on UpdatePassword Option
     And Check the Page
 
   Scenario: Home | Login | My Bookings
   Successful Login with valid credentials
-
     And Click on MyBookings Option
     And Check the BookingNo
     And Check the Confirm or NotYetConfirm button
@@ -39,7 +38,6 @@ Feature: Login page
 
   Scenario: Home | Login | Post A Testimonial
   Successful Login with valid credentials
-
     And Click on Post Testimonial Option
     And Check the Page
     And Enter the Message in Testimonail Box
@@ -48,11 +46,9 @@ Feature: Login page
 
   Scenario: Home | Login | My Testimonials
   Successful Login with valid credentials
-
     And Click on My Testimonial Option
     And Check the My Testimonial page
 
   Scenario: Home | Login | Sign Out
   Successful Login with valid credentials
-
-    And Click on SignOut Login
+   And Click on SignOut Login

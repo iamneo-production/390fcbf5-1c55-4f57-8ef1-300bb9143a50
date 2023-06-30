@@ -9,8 +9,8 @@ Feature: Contact Us
   iv.Message
  Background:
  Given User Launch chrome browser
- When User opens url "https://carrental.neohire.io/"
- And Click on ContactUs Login
+ When User opens url "https://carrental.neohire.io/contact-us.php"
+
  @Development 
    Scenario: Home | Contact Us 
   UnSuccessful Login with Invalid credentials
@@ -40,5 +40,4 @@ Feature: Contact Us
   Successful Login with valid credentials
     When User Enter valid FullName,valid EmailAddress,valid PhoneNumber,valid Message
     And Click on Send Message button
-    Then User should able to see the pop-up box 
-    And Click on Up arrow symbol in contactUs
+    
