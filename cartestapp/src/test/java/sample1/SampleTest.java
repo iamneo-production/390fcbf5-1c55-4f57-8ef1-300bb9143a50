@@ -13,6 +13,7 @@ import PageObject.LoginPage;
 import PageObject.ManageContactUsQueryPage;
 import PageObject.ManageTestimonialsPage;
 import PageObject.RegisteredUsersPage;
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -28,13 +29,19 @@ public class SampleTest {
 	 public BookingsPage BookingsPage;
 	 public ManageTestimonialsPage ManageTestimonialsPage;
 	 public RegisteredUsersPage RegisteredUsersPage;
-
+    @After
+	public void tearDown(){
+      if(driver!=null){
+		driver.quit();
+	  }
+	}
 	@Given("User Launch chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
 	    // Write code here that turns the phrase above into concrete actions
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+		    
         //url page again
         System.out.println("Chrome browser is launched");
         ContactUsPage = new ContactUsPage(driver);
@@ -71,7 +78,7 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 		FAQPage.checkPageDownward();
 		FAQPage.checkUpArrowSymbol();	
-		driver.quit();
+		// driver.close();
 	}
 	@When("Click on ContactUs Login")
 	public void click_on_contact_us_login() {
@@ -186,7 +193,8 @@ public class SampleTest {
 	public void click_on_send_message_button() {
 	    // Write code here that turns the phrase above into concrete actions
 		ContactUsPage.checkSendMessageButton();
-		driver.quit();
+		// driver.quit();
+		
 		
 	}
 
@@ -260,15 +268,15 @@ public class SampleTest {
 		 ManageContactUsQueryPage.setEntries100();
 		 ManageContactUsQueryPage.setQuerypage();
 		 System.out.println("Manage Contact Us Query Page is checked");
-		 driver.quit();
+		//  driver.quit();
 	}
-	@When("Click on LoginOrRegister Option")
+	@Then("Click on LoginOrRegister Option")
 	public void click_on_login_or_register_option() {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setLoginOrRegister();
 	    System.out.println("Login Page is displayed");
 	}
-	@When("Click on SignUpHere Option")
+	@Then("Click on SignUpHere Option")
 	public void click_on_sign_up_here_option() {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setSignUp();
@@ -392,13 +400,21 @@ public class SampleTest {
 		driver.quit();
 	    
 	    }
-	@When("User Enter Email id as {string} and  Password as {string}")
-	public void user_enter_email_id_as_and_password_as(String string, String string2) {
-	    // Write code here that turns the phrase above into concrete actions
-	     LoginPage.setEmailAddress("Tester@gmail.com");
-	     LoginPage.setPasswordLogin("Tester@1234");
+	// @When("User Enter Email id as {string} and Password as {string}")
+	// public void user_enter_email_id_as_and_password_as(String emailaddress, String password) {
+	//     // Write code here that turns the phrase above into concrete actions
+	//      LoginPage.setEmailAddress(emailaddress);
+	//      LoginPage.setPasswordLogin(password);
+	//      System.out.println("Login Successful");
+	// }
+
+	@When("User Enter Email id and password")
+public void user_enter_email_id_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    LoginPage.setEmailAddress();
+	     LoginPage.setPasswordLogin();
 	     System.out.println("Login Successful");
-	}
+}
 
 	@When("Click on LoginButton")
 	public void click_on_login_button() {
@@ -443,7 +459,7 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setQuerySent();
 	    LoginPage.setFooterPS();
-
+        
 	}
 
 	@When("Click on UpArrowSymbol again1")
@@ -482,7 +498,7 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 		RegisteredUsersPage.setEntries50();
 		System.out.println("Reg Users page  is checked and action should be read");
-		driver.quit();
+		// driver.quit();
 	}
 	@When("Click on UpdatePassword Option")
 	public void click_on_update_password_option() {
@@ -501,7 +517,7 @@ public class SampleTest {
 			Assert.assertTrue(false);
 			System.out.println("Page passed");
 		}
-	    driver.quit();
+	    //  driver.quit();
 	}
 	@When("Click on MyBookings Option")
 	public void click_on_my_bookings_option() {
@@ -526,16 +542,17 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 	   LoginPage.setGrandPrice();
 	   System.out.println("My Bookings page is checked");
-	   driver.quit();
+	//   driver.quit();
+
 	}
 	@When("User Click on Bookings")
-	public void user_click_on_bookings() throws InterruptedException {
+	public void user_click_on_bookings()  {
 	    // Write code here that turns the phrase above into concrete actions
 	    BookingsPage.setDownArrowSymbol();
 	}
 
 	@When("User Click on New Option")
-	public void user_click_on_new_option() throws InterruptedException {
+	public void user_click_on_new_option() {
 	    // Write code here that turns the phrase above into concrete actions
 	    BookingsPage.setNewBookings();
 	   
@@ -644,8 +661,9 @@ public class SampleTest {
 	    LoginPage.setFooterSelect();
 	    LoginPage.setArrow();
 		driver.quit();
+		
 	}
-	 
+	
 	
 	@When("User Click on ManageTestimonials")
 	public void user_click_on_manage_testimonials() {
@@ -704,7 +722,7 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 	    ManageTestimonialsPage.setEntries25();
 	    System.out.println("Manage Testimonial is checked");
-		driver.quit();
+		// driver.quit();
 	}
 	@When("Click on My Testimonial Option")
 	public void click_on_my_testimonial_option() {
@@ -724,14 +742,14 @@ public class SampleTest {
 			Assert.assertTrue(false);
 			System.out.println("Page successful");
 		}
-		driver.quit();
+		 driver.quit();
 	}
 	    @When("Click on SignOut Login")
 	    public void click_on_sign_out_login() {
 	        // Write code here that turns the phrase above into concrete actions
 	        LoginPage.setSignOut();
 	        System.out.println("Sign out successful");
-			driver.quit();
+			 driver.quit();
 	    }
 	}
 

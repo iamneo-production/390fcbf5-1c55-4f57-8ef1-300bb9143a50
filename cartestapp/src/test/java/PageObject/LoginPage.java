@@ -15,7 +15,7 @@ public class LoginPage {
 	}
 	@FindBy(xpath="/html/body/header/div/div/div/div[2]/div/div[4]/a")
 	WebElement LoginOrRegister;
-	@FindBy(xpath="//*[@id=\"loginform\"]/div/div/div[3]/p[1]/a")
+	@FindBy(xpath="//*[@id='loginform']/div/div/div[3]/p[1]/a")
 	WebElement SignUp;
 	@FindBy(name="fullname")
 	WebElement FullName;
@@ -35,9 +35,9 @@ public class LoginPage {
 	WebElement CloseButton;
 	@FindBy(xpath="//*[@id=\"signupform\"]/div/div/div[3]/p/a")
 	WebElement LoginHere;
-	@FindBy(name="email")
+	@FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[1]/input")
 	WebElement EmailAddress;
-	@FindBy(xpath="//*[@id=\"loginform\"]/div/div/div[2]/div/div/div/form/div[2]/input")
+	@FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[2]/input")
 	WebElement PasswordLogin;
 	@FindBy(xpath="//*[@id=\"loginform\"]/div/div/div[2]/div/div/div/form/div[4]/input")
 	WebElement Login;
@@ -95,6 +95,8 @@ public class LoginPage {
 	WebElement MyTestimonialPage;
 	@FindBy(xpath="//*[@id=\"navigation_bar\"]/div/div[2]/div[1]/ul/li/ul/li[6]/a")
 	WebElement SignOut;
+	@FindBy(xpath="//*[@id='navigation_bar']/div/div[2]/div[1]/ul/li/a")
+	WebElement Tester;
 	public void CheckLoginPage() {
 		LoginOrRegister.isDisplayed();
 		SignUp.isDisplayed();
@@ -175,13 +177,13 @@ public class LoginPage {
         public void setLoginHere() {
         	LoginHere.click();
         }
-        public void setEmailAddress(String emailaddress) {
-        	EmailAddress.clear();
-        	EmailAddress.sendKeys(emailaddress);
+        public void setEmailAddress() {
+        	
+        	EmailAddress.sendKeys("Tester@gmail.com");
         }
-        public void setPasswordLogin(String password) {
-        	PasswordLogin.clear();
-        	PasswordLogin.sendKeys(password);
+        public void setPasswordLogin() {
+        	
+        	PasswordLogin.sendKeys("Tester@1234");
         }
         public void setLogin() {
         	Login.click();
@@ -273,8 +275,11 @@ public class LoginPage {
 	    public void setMyTestimonialPage() {
 	    	MyTestimonialPage.isDisplayed();
 	    }
+
 	    public void setSignOut() {
+			Tester.click();
 	    	SignOut.click();
 	    }
+		
 	    
 }

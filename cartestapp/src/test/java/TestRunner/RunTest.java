@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "/home/coder/project/workspace/cartestapp/src/test/resources",
+        features = "/home/coder/project/workspace/cartestapp/src/test/resources/features",
         glue = "sample1",
         dryRun = false,
         monochrome = false,
