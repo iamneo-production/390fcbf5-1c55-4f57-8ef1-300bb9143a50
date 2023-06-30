@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.AdminLoginTest
 -------------------------------------------------------------------------------
-Tests run: 53, Failures: 0, Errors: 0, Skipped: 41, Time elapsed: 8.384 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.124 sec

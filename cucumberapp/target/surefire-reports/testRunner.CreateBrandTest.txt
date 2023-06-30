@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.CreateBrandTest
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 16, Time elapsed: 10.806 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.799 sec
