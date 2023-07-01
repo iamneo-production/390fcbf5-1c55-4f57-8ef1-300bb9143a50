@@ -1,5 +1,4 @@
 package PageObject;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +24,9 @@ public class UpdateContactInfoPage {
 	@FindBy(xpath="/html/body/section[2]/div/div/div[2]/div/ul/li[3]/div[2]/a")WebElement contactusphoneno;
 	@FindBy(xpath="//*[@id=\"navigation\"]/ul/li[5]/a") WebElement contactus;
 	@FindBy(xpath="/html/body/div[2]/nav/ul/li[10]/a")WebElement updatecontactinfo;
+	@FindBy(xpath="/html/body/div[1]/ul/li/ul/li[2]/a") WebElement logout;
+	@FindBy(xpath="/html/body/div[1]/ul/li/a/i") WebElement drop;
+	@FindBy(xpath="/html/body/div/div/div/div/div/div/div/p/a") WebElement backtohome;
 	public void checksuccessmessage() {
 		boolean t =contactsuccess.isDisplayed();
 		if (t) {
@@ -62,9 +64,9 @@ public class UpdateContactInfoPage {
 		     }
 	}
 	public void checkhomeupdateinfo() {
-		driver.navigate().to("https://carrental.neohire.io/");
-		driver.manage().timeouts().implicitlyWait(120,TimeUnit.SECONDS);
-    driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		drop.click();
+	    logout.click();
+	    backtohome.click();
 		String emailid="nehakoutika123@gmail.com";
 		String phoneno="8639890782";
 		String emailid1=homeemail.getText();

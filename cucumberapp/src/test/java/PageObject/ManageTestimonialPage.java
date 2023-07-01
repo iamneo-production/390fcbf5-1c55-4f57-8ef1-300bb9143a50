@@ -1,7 +1,6 @@
 package PageObject;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.PageFactory;
@@ -30,10 +29,13 @@ public class ManageTestimonialPage {
 @FindBy(xpath="/html/body/section[4]/div[1]/div[1]/h2") WebElement oursatisfiedcustomers;
 @FindBy(xpath="//*[@id=\"testimonial-slider\"]/div[1]/div") WebElement hometestimonials;
 @FindBy(xpath="//*[@id=\"testimonial-slider\"]/div[2]/div/div[1]") WebElement homescroll;
+@FindBy(xpath="/html/body/div[1]/ul/li/ul/li[2]/a") WebElement logout;
+@FindBy(xpath="/html/body/div[1]/ul/li/a/i") WebElement drop;
+@FindBy(xpath="/html/body/div/div/div/div/div/div/div/p/a") WebElement backtohome;
 public void checkactivemessagedisplay(){
-	driver.navigate().to("https://carrental.neohire.io/");
-	driver.manage().timeouts().implicitlyWait(240,TimeUnit.SECONDS);
-	driver.manage().timeouts().pageLoadTimeout(240, TimeUnit.SECONDS);
+	drop.click();
+	logout.click();
+	backtohome.click();
 	String tabletext ="I am satisfied with their service great job";
 	String text2 = hometestimonials.getText();
 	if(text2.contains(tabletext)) {
@@ -44,9 +46,9 @@ public void checkactivemessagedisplay(){
 	}
 }
 public void checkinactivenotdisplay(){
-	driver.navigate().to("https://carrental.neohire.io/");
-	driver.manage().timeouts().implicitlyWait(240,TimeUnit.SECONDS);
-	driver.manage().timeouts().pageLoadTimeout(240, TimeUnit.SECONDS);
+	drop.click();
+	logout.click();
+	backtohome.click();
 	String tabletext2 ="Hello. great service";
 	String text2 = hometestimonials.getText();
 	if(text2.contains(tabletext2)) {

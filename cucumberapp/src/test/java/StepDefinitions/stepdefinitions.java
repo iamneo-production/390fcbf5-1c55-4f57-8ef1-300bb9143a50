@@ -29,7 +29,7 @@ public class stepdefinitions {
 	public void user_opens_url(String string)throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 		// System.setProperty("webdriver.com.driver","C:/Users/kouti/eclipse-workspace/Cucumber/src/test/resources/drivers/chromedriver.exe;");
 		// driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
