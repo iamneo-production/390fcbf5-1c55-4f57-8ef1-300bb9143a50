@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="21" failures="0" name="testRunner.TestRun" time="118.549" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/coder/project/workspace/cucumberapp"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/coder/project/workspace/cucumberapp"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.10.162+"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/coder"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="coder"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Reg Users Page in Dashboard" time="6.977"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Vehicles Page in Dashboard" time="5.178"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Total Bookings Page in Dashboard" time="5.226"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Brands Page in Dashboard" time="5.141"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Subscibers Page in Dashboard" time="5.321"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Queries Page in Dashboard" time="5.276"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Testimonials Page in Dashboard" time="5.116"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Logout Functionality in Dashboard" time="4.761"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Brand Name in Create Brand" time="7.676"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Empty Brand Name in Create Brand" time="4.869"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="5.669"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #1" time="5.419"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #2" time="5.421"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #3" time="5.207"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #4" time="5.405"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Navigating to the back to home page" time="4.964"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify show and search in Manage Brands" time="5.515"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify previous and next button in Manage Brands" time="5.279"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify edit option in Manage Brands" time="9.414"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #1" time="5.512"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #2" time="5.203"/>
+</testsuite>

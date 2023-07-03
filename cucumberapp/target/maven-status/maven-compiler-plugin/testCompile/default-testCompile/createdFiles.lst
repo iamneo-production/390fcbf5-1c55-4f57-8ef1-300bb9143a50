@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 com/example/AppTest.class
+=======
+pageObject/DashBoardPage.class
+testRunner/TestRun.class
+pageObject/CreateBrandPage.class
+pageObject/ManageBrandPage.class
+stepDefinition/Stepdefinition.class
+pageObject/AdminLoginPage.class
+>>>>>>> Car_Rental_Management-Bhavana-mugala
