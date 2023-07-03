@@ -10,7 +10,8 @@ import java.net.URL;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 import pageObject.AdminLoginPage;
 import pageObject.CreateBrandPage;
 import pageObject.DashBoardPage;
@@ -23,7 +24,7 @@ import io.cucumber.java.en.Then;
 
 public class Stepdefinition {
 
-	public WebDriver driver = null;
+	public WebDriver driver=null;
 	public AdminLoginPage loginPage;
 	public DashBoardPage dashboard;
 	public CreateBrandPage createBrand;
@@ -40,7 +41,8 @@ public class Stepdefinition {
 	public void admin_launch_the_browser() throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+//driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
 
 		//System.setProperty("webdriver.com.driver",
 		//		"D:/Eclipse-workspace/CarRental_Cucumber_Project/src/test/resources/drivers/chromedriver.exe");
@@ -50,6 +52,7 @@ driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 		dashboard = new DashBoardPage(driver);
 		createBrand = new CreateBrandPage(driver);
 		manageBrand = new ManageBrandPage(driver);
+		System.out.println("User Succesfully launched Chrome Browser");
 	}
 
 	@When("admin is on the Car Rental page")
@@ -57,6 +60,23 @@ driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 		driver.get("https://carrental.neohire.io/");
 		loginPage = new AdminLoginPage(driver);
 		driver.manage().window().maximize();
+	}
+	@When("admin opens the url {string}")
+	public void admin_opens_the_url(String url){
+		//Here driver opens the Car Rental Website
+		driver.get(url);
+		//Thread.sleep(2500);
+	    //Here We are checking Website Interface is launched or not
+		// WebElement Interface=  driver.findElement(By.xpath("//img[@alt='image']"));
+		// if(Interface.isDisplayed())
+		//  {
+		// 	System.out.println("Car Rental Website Succesfully Launched");
+			
+		// }
+		// else {
+		// 	System.out.println("Website is not opened");
+		// }
+        
 	}
 
 	@When("admin clicks on Admin module")
@@ -104,10 +124,14 @@ driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 		Assert.assertTrue(true);
 	}
 
-	@When("admin click on the {string} link")
-	public void admin_click_on_the_link(String string) {
-		loginPage.clickBacktoHomeLink();
-	}
+	// @When("admin click on the back to home link")
+	// public void admin_click_on_the_link() {
+	// 	loginPage.clickBacktoHomeLink();
+	// }
+	@When("admin click on the Back to Home link")
+public void admin_click_on_the_back_to_home_link() {
+	loginPage.clickBacktoHomeLink();
+}
 
 	@Then("admin should be redirected to the home page")
 	public void admin_should_be_redirected_to_the_home_page() {
@@ -115,7 +139,10 @@ driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 		String homePage = loginPage.getHomePageTitle();
 		System.out.println(homePage+ " page is displayed");
 	}
-
+@Then("admin should be navigated to {string}")
+public void admin_should_be_navigated_to(String url){
+	driver.get(url);
+}
 	@When("admin opens url {string}")
 	public void admin_opens_url(String url) {
 		driver.get(url);
@@ -403,6 +430,7 @@ driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 	@Then("admin will be on manage brand page")
 	public void admin_will_be_on_manage_brand_page() {
 		manageBrand.getManageBrandTitle();
+		
 	}
 }
 

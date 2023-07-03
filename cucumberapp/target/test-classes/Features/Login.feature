@@ -2,12 +2,13 @@ Feature: Admin Login Functionality for Car Rental Website
 
   Background: 
     Given admin launch the browser
-    When admin is on the Car Rental page
+   # When admin is on the Car Rental page
+     When admin opens the url "https://carrental.neohire.io/"
     And admin clicks on Admin module
     Then admin navigates to sign in page
 
   Scenario: Successful login with valid credentials
-    When admin enters a valid username and password
+    When admin enters username as "admin"  and password as "Test@12345"
     And admin click on the login button
     Then admin should be logged in successfully
 
@@ -24,5 +25,5 @@ Feature: Admin Login Functionality for Car Rental Website
       |          |            | Invalid Details |
 
   Scenario: Navigating to the back to home page
-    When admin click on the "Back to Home" link
+    When admin click on the Back to Home link
     Then admin should be redirected to the home page

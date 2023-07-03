@@ -11,7 +11,7 @@ public class AdminLoginPage {
 	private By usernameInputLocator = By.name("username");
 	private By passwordInputLocator = By.name("password");
 	private By loginButtonLocator = By.name("login");
-	private By backToHomeLocator = By.linkText("Back to Home");
+	private By backToHomeLocator = By.xpath("/html/body/div/div/div/div/div/div/div/p/a");
 
 	public AdminLoginPage(WebDriver driver) {
 		this.driver = driver;

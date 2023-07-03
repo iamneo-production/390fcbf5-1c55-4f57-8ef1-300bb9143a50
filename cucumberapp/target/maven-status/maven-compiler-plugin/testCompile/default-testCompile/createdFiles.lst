@@ -1,9 +1,6 @@
-testRunner/CreateBrandTest.class
 pageObject/DashBoardPage.class
+testRunner/TestRun.class
+pageObject/CreateBrandPage.class
 pageObject/ManageBrandPage.class
 stepDefinition/Stepdefinition.class
-testRunner/DashboardTest.class
-pageObject/CreateBrandPage.class
-testRunner/AdminLoginTest.class
 pageObject/AdminLoginPage.class
-testRunner/ManageBrandTest.class
