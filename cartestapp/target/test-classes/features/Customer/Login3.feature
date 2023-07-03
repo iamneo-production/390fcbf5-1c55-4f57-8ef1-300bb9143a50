@@ -7,17 +7,17 @@ Feature: Login page
   ii.EmailAddress
   iii.PhoneNumber
   iv.Message
-# Background:
-# Given User Launch chrome browser
-#     When User opens url "https://carrental.neohire.io/"
-#     Then Click on LoginOrRegister Option
-#     When User Enter Email id and password
-#     And Click on LoginButton
-#     And Click on DownArrowSymbol beside profile
+Background:
+Given User Launch chrome browser
+    When User opens url "https://carrental.neohire.io/"
+    Then Click on LoginOrRegister Option
+    When User Enter Email id and password
+    And Click on LoginButton
+    And Click on DownArrowSymbol beside profile
 
-# Scenario: Home | Login | My Testimonials
-#   Successful Login with valid credentials
-#     And Click on My Testimonial Option
-#     And Check the My Testimonial page
+Scenario: Home | Login | My Testimonials
+  Successful Login with valid credentials
+    And Click on My Testimonial Option
+    And Check the My Testimonial page
     
     

@@ -8,20 +8,20 @@ Feature: Login page
   iii.PhoneNumber
   iv.Message
 
-# Background:
-# Given User Launch chrome browser
-# When User opens url "https://carrental.neohire.io/"
-#     Then Click on LoginOrRegister Option
-#     When User Enter Email id and password
-#     And Click on LoginButton
-#     And Click on DownArrowSymbol beside profile
+Background:
+Given User Launch chrome browser
+When User opens url "https://carrental.neohire.io/"
+    Then Click on LoginOrRegister Option
+    When User Enter Email id and password
+    And Click on LoginButton
+    And Click on DownArrowSymbol beside profile
 
-#     Scenario: Home | Login | My Bookings
-#   Successful Login with valid credentials
-#     And Click on MyBookings Option
-#     And Check the BookingNo
-#     And Check the Confirm or NotYetConfirm button
-#     And Check the Grand Total Price
+    Scenario: Home | Login | My Bookings
+  Successful Login with valid credentials
+    And Click on MyBookings Option
+    And Check the BookingNo
+    And Check the Confirm or NotYetConfirm button
+    And Check the Grand Total Price
    
 
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="56.713">
-    <testcase classname="ManageContactUsQuery" name="Admin | Manage Contact Us Query" time="8.283">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="1.514">
+    <testcase classname="ManageContactUsQuery" name="Admin | Manage Contact Us Query" time="0.041">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
@@ -17,7 +17,7 @@ And Check the no of entries made............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="ManageTestimonials" name="Admin | Manage Testimonial" time="7.294">
+    <testcase classname="ManageTestimonials" name="Admin | Manage Testimonial" time="0.083">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
@@ -35,7 +35,7 @@ And Check the no of entries made2...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="RegUsers" name="Admin | Reg Users" time="5.965">
+    <testcase classname="RegUsers" name="Admin | Reg Users" time="0.008">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
@@ -50,7 +50,7 @@ And Check the no of entries made1...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us" time="4.324">
+    <testcase classname="Contact Us" name="Home | Contact Us" time="0.015">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -59,7 +59,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us 2" time="4.598">
+    <testcase classname="Contact Us" name="Home | Contact Us 2" time="0.005">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -68,7 +68,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us 3" time="4.423">
+    <testcase classname="Contact Us" name="Home | Contact Us 3" time="0.012">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -77,7 +77,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us 4" time="4.011">
+    <testcase classname="Contact Us" name="Home | Contact Us 4" time="0.012">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -86,7 +86,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us 5" time="4.973">
+    <testcase classname="Contact Us" name="Home | Contact Us 5" time="0.017">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -95,7 +95,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="FAQs" name="Home | FAQs" time="4.736">
+    <testcase classname="FAQs" name="Home | FAQs" time="0.071">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/".........................passed
@@ -105,7 +105,17 @@ When Click on Up arrow symbol...............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page" name="Home | Login | Profile Settings" time="7.733">
+    <testcase classname="Login page" name="Home | Login | Profile Settings" time="0.012">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/profile.php"..............passed
+When User Enter Email id and password.......................................passed
+And Click on ProfileSettings................................................passed
+And Enter DateOfBirth,Address,Country,City..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login page" name="Home | Login | Update Password" time="0.021">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/".........................passed
@@ -113,11 +123,51 @@ Then Click on LoginOrRegister Option........................................pass
 When User Enter Email id and password.......................................passed
 And Click on LoginButton....................................................passed
 And Click on DownArrowSymbol beside profile.................................passed
-And Click on ProfileSettings................................................passed
-And Enter DateOfBirth,Address,Country,City..................................passed
-And Click on SaveChanges Option.............................................passed
-Then Check the pop-up box...................................................passed
-When Click on UpArrowSymbol again1..........................................passed
+And Click on UpdatePassword Option..........................................passed
+And Check the Page..........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login page" name="Home | Login | My Bookings" time="0.071">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/".........................passed
+Then Click on LoginOrRegister Option........................................passed
+When User Enter Email id and password.......................................passed
+And Click on LoginButton....................................................passed
+And Click on DownArrowSymbol beside profile.................................passed
+And Click on MyBookings Option..............................................passed
+And Check the BookingNo.....................................................passed
+And Check the Confirm or NotYetConfirm button...............................passed
+And Check the Grand Total Price.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login page" name="Home | Login | Post A Testimonial" time="0.066">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/".........................passed
+Then Click on LoginOrRegister Option........................................passed
+When User Enter Email id and password.......................................passed
+And Click on LoginButton....................................................passed
+And Click on DownArrowSymbol beside profile.................................passed
+And Click on Post Testimonial Option........................................passed
+And Enter the Message in Testimonail Box....................................passed
+And Click on Save button....................................................passed
+Then Check the pop-up Box Successful or not.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login page" name="Home | Login | My Testimonials" time="0.012">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/".........................passed
+Then Click on LoginOrRegister Option........................................passed
+When User Enter Email id and password.......................................passed
+And Click on LoginButton....................................................passed
+And Click on DownArrowSymbol beside profile.................................passed
+And Click on My Testimonial Option..........................................passed
+And Check the My Testimonial page...........................................passed
 ]]>
         </system-out>
     </testcase>

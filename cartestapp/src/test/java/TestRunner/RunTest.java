@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "/home/coder/project/workspace/cartestapp/src/test/resources/features",
         glue = "sample1",
-        dryRun = false,
+        dryRun = true,
         monochrome = false,
         plugin = {"pretty", "html:results/cucumber-reports.html", "json:results/cucumber.json", "junit:results/cucumber.xml"}
 )

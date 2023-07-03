@@ -177,13 +177,12 @@ public class LoginPage {
         public void setLoginHere() {
         	LoginHere.click();
         }
-        public void setEmailAddress() {
+        public void setEmailAddress(String emailaddress) {
         	
-        	EmailAddress.sendKeys("Tester@gmail.com");
+        	EmailAddress.sendKeys(emailaddress);
         }
-        public void setPasswordLogin() {
-        	
-        	PasswordLogin.sendKeys("Tester@1234");
+        public void setPasswordLogin(String passwordlogin) {
+        	PasswordLogin.sendKeys(passwordlogin);
         }
         public void setLogin() {
         	Login.click();
@@ -277,7 +276,6 @@ public class LoginPage {
 	    }
 
 	    public void setSignOut() {
-			Tester.click();
 	    	SignOut.click();
 	    }
 		

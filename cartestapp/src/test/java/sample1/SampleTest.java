@@ -18,6 +18,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import java.net.URL;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SampleTest {
 
@@ -38,10 +39,16 @@ public class SampleTest {
 	@Given("User Launch chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
 	    // Write code here that turns the phrase above into concrete actions
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-		driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-		    
+		ChromeOptions chromeOptions = new ChromeOptions();
+       
+        driver=new RemoteWebDriver(new URL("http://localhost:4444"),chromeOptions);
+       
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--remote-allow-origins=*");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+		chromeOptions.addArguments("--no-sandbox");         
+
         //url page again
         System.out.println("Chrome browser is launched");
         ContactUsPage = new ContactUsPage(driver);
@@ -78,7 +85,7 @@ public class SampleTest {
 	    // Write code here that turns the phrase above into concrete actions
 		FAQPage.checkPageDownward();
 		FAQPage.checkUpArrowSymbol();	
-		// driver.close();
+		// driver.quit();
 	}
 	@When("Click on ContactUs Login")
 	public void click_on_contact_us_login() {
@@ -397,22 +404,15 @@ public class SampleTest {
 	public void click_on_sign_up_button()  {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setSignUpButton();
-		driver.quit();
+		// driver.quit();
 	    
 	    }
-	// @When("User Enter Email id as {string} and Password as {string}")
-	// public void user_enter_email_id_as_and_password_as(String emailaddress, String password) {
-	//     // Write code here that turns the phrase above into concrete actions
-	//      LoginPage.setEmailAddress(emailaddress);
-	//      LoginPage.setPasswordLogin(password);
-	//      System.out.println("Login Successful");
-	// }
-
+	
 	@When("User Enter Email id and password")
 public void user_enter_email_id_and_password() {
     // Write code here that turns the phrase above into concrete actions
-    LoginPage.setEmailAddress();
-	     LoginPage.setPasswordLogin();
+         LoginPage.setEmailAddress("Tester@gmail.com");
+	     LoginPage.setPasswordLogin("Tester@1234");
 	     System.out.println("Login Successful");
 }
 
@@ -421,6 +421,12 @@ public void user_enter_email_id_and_password() {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setLogin();
 	}
+
+// 	@When("User open url {string}")
+// public void user_open_url(String string) {
+//     // Write code here that turns the phrase above into concrete actions
+//     driver.get(string);
+// }
 
 	@When("Check the header on the Login profile")
 	public void check_the_header_on_the_login_profile() {
@@ -466,7 +472,6 @@ public void user_enter_email_id_and_password() {
 	public void click_on_up_arrow_symbol_again1() {
 	    // Write code here that turns the phrase above into concrete actions
 	    LoginPage.setUpArrowSymbolagain1();
-		driver.quit();
 	}
 	@When("User Click on RegUsers")
 	public void user_click_on_reg_users() {
@@ -517,7 +522,8 @@ public void user_enter_email_id_and_password() {
 			Assert.assertTrue(false);
 			System.out.println("Page passed");
 		}
-	    //  driver.quit();
+		LoginPage.setSignOut();
+	    driver.quit();
 	}
 	@When("Click on MyBookings Option")
 	public void click_on_my_bookings_option() {
@@ -542,7 +548,7 @@ public void user_enter_email_id_and_password() {
 	    // Write code here that turns the phrase above into concrete actions
 	   LoginPage.setGrandPrice();
 	   System.out.println("My Bookings page is checked");
-	//   driver.quit();
+	   driver.navigate().back();
 
 	}
 	@When("User Click on Bookings")
@@ -660,7 +666,7 @@ public void user_enter_email_id_and_password() {
 	    
 	    LoginPage.setFooterSelect();
 	    LoginPage.setArrow();
-		driver.quit();
+		driver.navigate().back();
 		
 	}
 	
@@ -742,6 +748,7 @@ public void user_enter_email_id_and_password() {
 			Assert.assertTrue(false);
 			System.out.println("Page successful");
 		}
+		LoginPage.setSignOut();
 		 driver.quit();
 	}
 	    @When("Click on SignOut Login")
@@ -749,7 +756,7 @@ public void user_enter_email_id_and_password() {
 	        // Write code here that turns the phrase above into concrete actions
 	        LoginPage.setSignOut();
 	        System.out.println("Sign out successful");
-			 driver.quit();
+			driver.quit();
 	    }
 	}
 
