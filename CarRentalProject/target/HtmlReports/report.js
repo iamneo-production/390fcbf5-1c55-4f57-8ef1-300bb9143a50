@@ -30,8 +30,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [4162606152b299039fed5fbda88c9c5d, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.Y7pgzL}, goog:chromeOptions: {debuggerAddress: localhost:37473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4162606152b299039fed5fbda88c9c5d\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/aboutus.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on About us button",
@@ -41,7 +40,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_About_us_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view About us Page",
@@ -51,7 +50,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_About_us_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -154,8 +153,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom unknown error: cannot determine loading status\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [1274a6d73cf34bc753f7667515d0933c, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.RtaClU}, goog:chromeOptions: {debuggerAddress: localhost:38621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1274a6d73cf34bc753f7667515d0933c\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user shoud be able to view carrental portal",
@@ -165,7 +163,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check cars are displayed on selecting brand type and fuel type",
@@ -180,7 +178,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_CarListing_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Select Brand Type",
@@ -190,7 +188,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.select_Brand_Type()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Select Fuel Type",
@@ -200,7 +198,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.select_Fuel_Type()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on Find Your Car",
@@ -210,7 +208,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_Find_Your_Car()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view Car Listings",
@@ -220,7 +218,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -357,8 +355,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom unknown error: cannot determine loading status\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [0dd1535ddf80f8fe9de9ea3c4a55ccb3, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.6VEzEi}, goog:chromeOptions: {debuggerAddress: localhost:36389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0dd1535ddf80f8fe9de9ea3c4a55ccb3\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user shoud be able to view carrental portal",
@@ -368,7 +365,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check functionality of prev and next buttons",
@@ -383,7 +380,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_CarListing_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view Car Listings",
@@ -393,7 +390,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on view details",
@@ -403,7 +400,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_view_details()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on prev button",
@@ -413,7 +410,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_prev_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view prev image",
@@ -423,7 +420,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_prev_image()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on next button",
@@ -433,7 +430,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_next_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view next image",
@@ -443,7 +440,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_next_image()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -499,8 +496,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_CarListing_button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [ef7ac90eb885447f8faae2d0aeab5a45, clickElement {id\u003d012542bb-1457-4b3a-af6e-9ba5a7f898f4}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.BYocS3}, goog:chromeOptions: {debuggerAddress: localhost:46867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[RemoteWebDriver: chrome on LINUX (ef7ac90eb885447f8faae2d0aeab5a45)] -\u003e xpath: //*[@id\u003d\"navigation\"]/ul/li[3]/a]\nSession ID: ef7ac90eb885447f8faae2d0aeab5a45\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\n\tat PageObject.carlistingpage.Carlistingbtn(carlistingpage.java:39)\n\tat StepDefinitions.Aboutusstep.click_on_CarListing_button(Aboutusstep.java:90)\n\tat ✽.user clicks on CarListing button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:37)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view Car Listings",
@@ -510,7 +506,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on view details",
@@ -520,7 +516,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_view_details()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on Vehicle Overview button",
@@ -530,7 +526,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_Vehicle_OSverview_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view overview of the vehicle",
@@ -540,7 +536,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_overview()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -571,8 +567,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [2012fa9ab997b13c460dc6648f0d9392, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.TORf8c}, goog:chromeOptions: {debuggerAddress: localhost:44187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2012fa9ab997b13c460dc6648f0d9392\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user shoud be able to view carrental portal",
@@ -582,7 +577,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check whether the booking is done by the user",
@@ -597,7 +592,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.login_as_customer()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "sign in as admin",
@@ -607,7 +602,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.sign_in_as_admin()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on bookings",
@@ -617,7 +612,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_bookings()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on New",
@@ -627,7 +622,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_New()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "check whether the customer name is viewed on bookings",
@@ -637,114 +632,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.check_whether_the_customer_name_is_viewed_on_bookings()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
   "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user launches chrome browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user navigates to url",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user shoud be able to view carrental portal",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To book the car by selecting from date, to date and a message",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "user clicks on CarListing button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.click_on_CarListing_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on view details",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.click_on_view_details()"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [12f1b51b20c546fcbaa93294a029d98c, findElement {using\u003dxpath, value\u003d/html/body/section[2]/div/div/div/div[2]/div[2]/a}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.al8o4N}, goog:chromeOptions: {debuggerAddress: localhost:36261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 12f1b51b20c546fcbaa93294a029d98c\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\n\tat PageObject.carlistingpage.Viewdetailsbtn(carlistingpage.java:59)\n\tat StepDefinitions.Aboutusstep.click_on_view_details(Aboutusstep.java:127)\n\tat ✽.click on view details(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/carlisting.feature:52)\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "user should be able to view Car Listings",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "select From date",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.select_From_date()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "select To date",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.select_To_date()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "Type a message1",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.type_a_message1()"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.after({
   "status": "passed"
@@ -1105,8 +993,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [cbc486f78d1753e171243deb5408a290, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.0XYGlI}, goog:chromeOptions: {debuggerAddress: localhost:40889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cbc486f78d1753e171243deb5408a290\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user shoud be able to view carrental portal",
@@ -1116,7 +1003,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively",
@@ -1131,7 +1018,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_privacy_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to view privacy Page",
@@ -1141,7 +1028,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_view_Privacy_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "click on terms of use button",
@@ -1151,7 +1038,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_termsofuse_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to Terms and Conditions Page",
@@ -1161,7 +1048,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_Terms_and_Conditions_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -1227,8 +1114,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_subscribe_button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [7938a165d7e440a0a4143a1402b0e2ba, findElement {using\u003dname, value\u003demailsubscibe}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.2ms4Gl}, goog:chromeOptions: {debuggerAddress: localhost:43713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7938a165d7e440a0a4143a1402b0e2ba\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\n\tat PageObject.Homepage.SubscribeBtn(Homepage.java:87)\n\tat StepDefinitions.Aboutusstep.click_on_subscribe_button(Aboutusstep.java:330)\n\tat ✽.click on subscribe button(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:38)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to see popup message",
@@ -1238,7 +1124,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_see_popup_message()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -1269,8 +1155,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash\nfrom tab crashed\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.162+\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCommand: [7d1790a55219e3e1c4d990c2f48a0477, get {url\u003dhttps://carrental.neohire.io/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.eNUzqR}, goog:chromeOptions: {debuggerAddress: localhost:43197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://10.56.17.3:4444/sessio..., se:cdpVersion: 96.0.4664.45, se:vnc: ws://10.56.17.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.17.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7d1790a55219e3e1c4d990c2f48a0477\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:975)\n\tat StepDefinitions.Aboutusstep.user_navigates_to_url(Aboutusstep.java:68)\n\tat ✽.user navigates to url(file:///home/coder/project/workspace/CarRentalProject/src/test/resources/Features/homepage.feature:5)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user shoud be able to view carrental portal",
@@ -1280,7 +1165,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check functionality Service HelpLine button",
@@ -1295,7 +1180,7 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.click_on_Service_Helpline_option()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to see a popup message",
@@ -1305,7 +1190,1201 @@ formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_see_a_popup_message()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/profilesettings.feature");
+formatter.feature({
+  "name": "To validate the profile settings option in the user module",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the login/Register button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_login_register_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the Email address as \"steja7600@gmail.com\" and password as \"9014963608\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.enter_the_email_address_as_and_password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the welcome message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_welcome_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should click on the dropdown and select the profile settings",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_click_on_the_dropdown_and_select_the_profile_settings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the Your Profile settings page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_your_profile_settings_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate the entered fields are updated in the admin module",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user enter all the details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_enter_all_the_details()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on save changes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_save_changes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the success message in profile page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_success_message_in_profile_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the signout",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_signout()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the login/Register button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_login_register_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the Email address as \"steja7600@gmail.com\" and password as \"9014963608\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.enter_the_email_address_as_and_password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the welcome message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_welcome_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should click on the dropdown and select the profile settings",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_click_on_the_dropdown_and_select_the_profile_settings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the Your Profile settings page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_your_profile_settings_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate the entered fields are updated in the admin module",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user should clear the name field",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_clear_the_name_field()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on save changes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_save_changes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the validation message near name filed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_validation_message_near_name_filed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the signout",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_signout()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the login/Register button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_login_register_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the Email address as \"steja7600@gmail.com\" and password as \"9014963608\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.enter_the_email_address_as_and_password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the welcome message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_welcome_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should click on the dropdown and select the profile settings",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_click_on_the_dropdown_and_select_the_profile_settings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the Your Profile settings page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_your_profile_settings_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate the entered fields are updated in the admin module",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user should clear the phone number field",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_clear_the_phone_number_field()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on save changes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_save_changes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the validation message near phone number field",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_validation_message_near_phone_number_field()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the signout",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_signout()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the login/Register button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_the_login_register_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the Email address as \"steja7600@gmail.com\" and password as \"9014963608\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.enter_the_email_address_as_and_password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the welcome message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_welcome_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should click on the dropdown and select the profile settings",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_click_on_the_dropdown_and_select_the_profile_settings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the Your Profile settings page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_your_profile_settings_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate the entered fields are updated in the admin module",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user enter all the details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_enter_all_the_details()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on save changes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_save_changes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should click on the dropdown and select the profile settings",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_click_on_the_dropdown_and_select_the_profile_settings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on admin",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_admin()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin should able to see the admin signin page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_should_able_to_see_the_admin_signin_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin enters username as \"admin\"  and password as \"Test@12345\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_enters_username_as_and_passwrod_ad(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_login_button1()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin should able to view car rental portal | admin panel",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_should_able_to_view_car_rental_portal_admin_panel()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Reg Users",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_reg_users()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the Registered Users Page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_registered_users_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter the user name in the search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.enter_the_user_name_in_the_search_box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see the updated info in the table",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_see_the_updated_info_in_the_table()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/usermodule.feature");
+formatter.feature({
+  "name": "Feature to verify post a testimonial functionality of car rental website",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login/Register module",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_clicks_on_login_register_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "fill the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.fill_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "welcome message will be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.welcome_message_will_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on dropdown menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_click_on_dropdown_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Post a testimonial",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_post_a_testimonial()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to post a testimonial page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_post_a_testimonial_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify post a testimonial",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user enters a testimonial",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_enters_a_testimonial()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_clicks_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "testimonial submitted message will be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.testimonial_submitted_message_will_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin clicks on Admin module",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_clicks_on_admin_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin should able to see the admin signin page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_should_able_to_see_the_admin_signin_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin enters username as \"admin\"  and password as \"Test@12345\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_enters_username_as_and_passwrod_ad(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_login_button1()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin should able to view car rental portal | admin panel",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_should_able_to_view_car_rental_portal_admin_panel()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin click on manage testimonials",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_click_on_manage_testimonials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "admin navigates to manage testimonial page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.admin_navigates_to_manage_testimonial_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify the posted testimonial",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.verify_the_posted_testimonial()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login/Register module",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_clicks_on_login_register_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "fill the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.fill_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "welcome message will be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.welcome_message_will_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on dropdown menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_click_on_dropdown_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Post a testimonial",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_post_a_testimonial()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to post a testimonial page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_post_a_testimonial_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify empty testimonial field",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user click on save button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "warning message will be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.warning_message_will_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login/Register module",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_clicks_on_login_register_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "fill the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.fill_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "welcome message will be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.welcome_message_will_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on dropdown menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_click_on_dropdown_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Post a testimonial",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_post_a_testimonial()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to post a testimonial page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_post_a_testimonial_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify signout option",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user click on dropdown menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_click_on_dropdown_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on signout option",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_signout_option()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "it should be redirected to the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.it_should_be_redirected_to_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

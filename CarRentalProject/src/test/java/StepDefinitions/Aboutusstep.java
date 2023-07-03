@@ -10,18 +10,23 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import PageObject.Aboutuspage;
 import PageObject.Homepage;
+import PageObject.ProfileSettings;
+import PageObject.UserModule;
 import PageObject.carlistingpage;
 public class Aboutusstep {
 	public WebDriver driver = null;
 	public Aboutuspage aboutuspage;
 	public carlistingpage carlisting;
 	public Homepage homepage; 
+	public UserModule usermodule;
+	public ProfileSettings profile;
 	
 	@Before
 	public void browser_setup() {
@@ -55,11 +60,13 @@ public class Aboutusstep {
 
 
 
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4451"), capabilities);
 		
 		aboutuspage = new Aboutuspage(driver);
 		carlisting = new carlistingpage(driver);
 		homepage = new Homepage(driver);
+		usermodule = new UserModule(driver);
+		profile = new ProfileSettings(driver);
 	 
 	}
 
@@ -202,22 +209,6 @@ public class Aboutusstep {
 	   carlisting.checkBooking();
 	   Thread.sleep(2000);
 	}
-	@Then("select From date")
-	public void select_From_date() {
-	    driver.findElement(By.xpath("/html/body/section[2]/div/div[2]/aside/div[2]/form/div[1]/input")).click();
-	}
-
-	@And("select To date")
-	public void select_To_date() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@And("Type a message1")
-	public void type_a_message1() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
 	
 	@When("click on FAQs button")
 	public void click_on_FAQs_button() throws InterruptedException {
@@ -347,5 +338,264 @@ public class Aboutusstep {
 		Thread.sleep(2000);
 	}
 
+	@When("user clicks on Login\\/Register module")
+	public void user_clicks_on_login_register_module() {
+		usermodule.clickUserLogin();
+	}
+	@When("fill the form")
+	public void fill_the_form() throws InterruptedException {
+	//usermodule.userSignUp("gok", "987", "gok@gmail.com", "gok", "gok");
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	usermodule.userLogin("rent@gmail.com", "rent");
+	Thread.sleep(2000);
+	}
+	@When("click on Login button")
+	public void click_on_login_button() {
+	  usermodule.clickLogin();
+	}
+	@Then("welcome message will be displayed")
+	public void welcome_message_will_be_displayed() throws InterruptedException {
+	  usermodule.welcomeMsg();
+	  Thread.sleep(2000);
+	}
+	@When("user click on dropdown menu")
+	public void user_click_on_dropdown_menu() throws InterruptedException {
+	  usermodule.clickDropdown();
+	  Thread.sleep(2000);
+	}
 
-}
+	@When("click on Post a testimonial")
+	public void click_on_post_a_testimonial() throws InterruptedException {
+	 usermodule.clickpost();
+	 Thread.sleep(2000);
+	}
+
+	@Then("user navigates to post a testimonial page")
+	public void user_navigates_to_post_a_testimonial_page() throws InterruptedException {
+	    usermodule.postATestMsg();
+	    Thread.sleep(2000);
+	}
+	@When("user enters a testimonial")
+	public void user_enters_a_testimonial() throws InterruptedException {
+	 usermodule.enterPostATestimonial("satisfied");
+	 Thread.sleep(2000);
+	}
+
+	@When("user click on save button")
+	public void user_click_on_save_button() throws InterruptedException {
+	   usermodule.clickSave();
+	   Thread.sleep(2000);
+	}
+
+	@Then("testimonial submitted message will be displayed")
+	public void testimonial_submitted_message_will_be_displayed() throws InterruptedException {
+	String message = usermodule.getSuccessMsg();
+	System.out.println(message);
+	Thread.sleep(2000);
+	}
+
+	@When("admin clicks on Admin module")
+	public void admin_clicks_on_admin_module() throws InterruptedException {
+	//loginPage=new AdminLoginPage(driver);
+	usermodule.clickAdminButton();
+	Thread.sleep(2000);
+	}
+	@Then("admin should able to see the admin signin page")
+	public void admin_should_able_to_see_the_admin_signin_page() throws InterruptedException {
+	String adminpage = usermodule.adminSignInPage();
+	System.out.println(adminpage+" page is displayed");
+	Thread.sleep(2000);
+	}
+	@When("admin enters username as {string}  and password as {string}")
+	public void admin_enters_username_as_and_passwrod_ad(String string, String string2) throws InterruptedException {
+	usermodule.enterUsername("admin");
+	usermodule.enterPassword("Test@12345");
+	Thread.sleep(2000);
+	}
+	@When("click on login button")
+	public void click_on_login_button1() throws InterruptedException {
+	usermodule.clickLoginButton();
+	Thread.sleep(2000);
+	}
+
+	@Then("admin should able to view car rental portal | admin panel")
+	public void admin_should_able_to_view_car_rental_portal_admin_panel() throws InterruptedException {
+	//dashboard.checkCarRentalPortal();
+	//dashboard=new DashBoardPage(driver);
+	String title = "Car Rental Portal | Admin Panel";
+
+	String actualtitle = usermodule.AdminInterface();
+
+	        if (title.equals(actualtitle)) {
+	        System.out.println("Successfully Admin Login Page is Opened");
+	        } else {
+	        System.out.println("Admin Login Page is Not Opened");
+	        }
+	        Thread.sleep(2000);
+	}
+	@When("admin click on manage testimonials")
+	public void admin_click_on_manage_testimonials() throws InterruptedException {
+	   usermodule.clickManageTestimonial();
+	   Thread.sleep(2000);
+	}
+
+	@Then("admin navigates to manage testimonial page")
+	public void admin_navigates_to_manage_testimonial_page() throws InterruptedException {
+	  usermodule.manageTestPageTitle();
+	  Thread.sleep(2000);
+	}
+
+	@Then("verify the posted testimonial")
+	public void verify_the_posted_testimonial() throws InterruptedException {
+	usermodule.checkPostedTest();
+	Thread.sleep(2000);
+	}
+	@When("click on signout option")
+	public void click_on_signout_option() throws InterruptedException {
+	usermodule.clickSignOut();
+	Thread.sleep(2000);
+	}
+	@When("user clicks on save button")
+	public void user_clicks_on_save_button() throws InterruptedException {
+	   usermodule.clickSave();
+	   Thread.sleep(2000);
+	}
+
+	@Then("warning message will be displayed")
+	public void warning_message_will_be_displayed() throws InterruptedException {
+	String message = usermodule.getValidationMsg();
+	System.out.println(message);
+	Thread.sleep(2000);
+	}
+	@Then("it should be redirected to the home page")
+	public void it_should_be_redirected_to_the_home_page() throws InterruptedException {
+	//Assert.assertTrue(loginPage.getHomePageTitle().contains("Car Rental Portal"));
+	//loginPage=new AdminLoginPage(driver);
+	String homePage = usermodule.getHomePageTitle();
+	System.out.println(homePage+ " page is displayed");
+	Thread.sleep(2000);
+	}
+	
+
+		@Then("Click on the login\\/Register button")
+		public void click_on_the_login_register_button() throws InterruptedException {
+		profile.clicklogin_registerbutton();
+	   Thread.sleep(2000);
+	}
+
+	@Then("Enter the Email address as {string} and password as {string}")
+	public void enter_the_email_address_as_and_password_as(String string, String string2) throws InterruptedException{
+	    profile.enteremail("steja7600@gmail.com");
+	    profile.enterpass("9014963608");
+	    Thread.sleep(2000);
+	    
+	}
+
+	@Then("clicks on login button")
+	public void clicks_on_login_button()throws InterruptedException {
+	    profile.clickonloginbutton();
+	    Thread.sleep(2000);
+	}
+
+	@Then("user should see the welcome message")
+	public void user_should_see_the_welcome_message() throws InterruptedException{
+	    profile.checkwelcomemessage();
+	    Thread.sleep(2000);
+	}
+
+	@Then("user should click on the dropdown and select the profile settings")
+	public void user_should_click_on_the_dropdown_and_select_the_profile_settings()throws InterruptedException {
+	   profile.clickondropdown();
+	   Thread.sleep(2000);
+	}
+
+	@Then("user should see the Your Profile settings page")
+	public void user_should_see_the_your_profile_settings_page()throws InterruptedException {
+	    profile.checkprofilepage();
+	    Thread.sleep(2000);
+	}
+
+	@When("user enter all the details")
+	public void user_enter_all_the_details() throws InterruptedException{
+	   profile.enterfullname("saiteja");
+	   profile.enterphonenumber("9876543210");
+	   Thread.sleep(2000);
+	}
+
+	@When("click on save changes")
+	public void click_on_save_changes()throws InterruptedException {
+	    profile.clickonsavechangesbutton();
+	    Thread.sleep(2000);
+	}
+	@Then("user should see the success message in profile page")
+	public void user_should_see_the_success_message_in_profile_page()throws InterruptedException {
+	    profile.checksuccessmessage();
+	    Thread.sleep(2000);
+	}
+
+	@When("user should clear the name field")
+	public void user_should_clear_the_name_field() throws InterruptedException{
+	   profile.clearnamefield();
+	   Thread.sleep(2000);
+	}
+
+	@Then("user should see the validation message near name filed")
+	public void user_should_see_the_validation_message_near_name_filed()throws InterruptedException {
+	    profile.checkpopupname();
+	    Thread.sleep(2000);
+	}
+
+	@Then("user should see the validation message near phone number field")
+	public void user_should_see_the_validation_message_near_phone_number_field() throws InterruptedException{
+	    profile.checkpopupphonenumber();
+	    Thread.sleep(2000);
+	}
+	@When("user should clear the phone number field")
+	public void user_should_clear_the_phone_number_field() throws InterruptedException{
+	    profile.clearphonenumber();
+	    Thread.sleep(2000);
+	}
+
+	@Then("click on admin")
+	public void click_on_admin()throws InterruptedException {
+	    profile.adminbutton();
+	    Thread.sleep(2000);
+	}
+
+	@Then("Click on Reg Users")
+	public void click_on_reg_users() throws InterruptedException{
+	    profile.clickonreguser();
+	    Thread.sleep(2000);
+	}
+
+	@Then("user should see the Registered Users Page")
+	public void user_should_see_the_registered_users_page() throws InterruptedException{
+	   profile.checkreguserpage();
+	   Thread.sleep(2000);
+	}
+
+	@Then("enter the user name in the search box")
+	public void enter_the_user_name_in_the_search_box() throws InterruptedException{
+	   profile.entersearchbox("saiteja");
+	   Thread.sleep(2000);
+	}
+
+	@Then("user should see the updated info in the table")
+	public void user_should_see_the_updated_info_in_the_table()throws InterruptedException {
+	   profile.checktheupdatedinfo();
+	   Thread.sleep(2000);
+	}
+
+	@And("Click on the signout")
+	public void click_on_the_signout() {
+	    profile.clicksignout();
+	}
+	@Then("user should see the homepage")
+	public void user_should_see_the_homepage() {
+	    profile.checkloginbuttonhome();
+	}
+	}
+
+
+
+

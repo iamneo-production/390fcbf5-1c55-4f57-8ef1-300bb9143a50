@@ -1,5 +1,7 @@
+StepDefinitions/TestRunner.class
 PageObject/carlistingpage.class
 PageObject/Homepage.class
 PageObject/Aboutuspage.class
-StepDefinitions/TestRunner.class
+PageObject/UserModule.class
 StepDefinitions/Aboutusstep.class
+PageObject/ProfileSettings.class

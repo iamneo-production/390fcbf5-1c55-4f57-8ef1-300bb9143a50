@@ -47,10 +47,4 @@ Feature: Feature to test Car Listing page functionality
   	And click on New
   	Then check whether the customer name is viewed on bookings
   	
-  Scenario: To book the car by selecting from date, to date and a message
-    When user clicks on CarListing button
-    Then click on view details
-    And user should be able to view Car Listings
-    Then select From date
-    And select To date
-    And Type a message1
+ 
