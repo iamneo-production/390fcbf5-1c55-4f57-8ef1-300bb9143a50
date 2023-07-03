@@ -1,8 +1,0 @@
-pageObject/AdminPage.class
-StepDefinitions/PostaVehicle.class
-StepDefinitions/TestRunner.class
-pageObject/ManageContactUsQueryPage.class
-pageObject/ManageVehiclespage.class
-StepDefinitions/ManageVehiclesDef.class
-StepDefinitions/manage1.class
-pageObject/PostaVehiclePage.class

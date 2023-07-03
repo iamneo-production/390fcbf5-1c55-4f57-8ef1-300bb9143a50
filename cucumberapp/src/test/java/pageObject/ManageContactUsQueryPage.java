@@ -18,7 +18,7 @@ public class ManageContactUsQueryPage {
  @FindBy(xpath="//*[@id=\"zctb_length\"]/label/select")WebElement testshow;
  @FindBy(xpath="//*[@id=\"zctb_next\"]/a") WebElement testnext;
  @FindBy(xpath="//*[@id=\"zctb_previous\"]/a")WebElement testprev;
-@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[14]/td[7]/a")WebElement testpending ;
+@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[20]/td[7]/a")WebElement testpending ;
  //@FindBy(xpath="//*[@id="zctb"]/tbody/tr[7]/td[7]/a")WebElement testinactive;
 @FindBy(xpath="/html/body/div[1]/a") WebElement carrentalportal;
 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[1]") WebElement testtext;
