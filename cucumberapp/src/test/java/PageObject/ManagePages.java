@@ -1,6 +1,4 @@
 package PageObject;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,18 +49,7 @@ public class ManagePages {
 		        System.out.println("success message is not dispalyed");
 		     }
 	 }
-	 public void clicktermsofuse() {
-		termsofusehome.click();
-	 }
-	 public void clickprivacy() {
-		privacyhome.click();
-	 }
-	 public void clickaboutus() {
-		aboutushome.click();
-	 }
-	 public void clickfaqs() {
-		faqshome.click();
-	 }
+	 
 	 public void selectpagedropdown(String name) {
 		 String neh=selectedpage.getText();
 		 Select showdrop = new Select(selectpagedropdown);

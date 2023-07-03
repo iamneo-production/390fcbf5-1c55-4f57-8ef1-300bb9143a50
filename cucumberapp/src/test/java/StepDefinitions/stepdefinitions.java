@@ -29,9 +29,7 @@ public class stepdefinitions {
 	public void user_opens_url(String string)throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-		// System.setProperty("webdriver.com.driver","C:/Users/kouti/eclipse-workspace/Cucumber/src/test/resources/drivers/chromedriver.exe;");
-		// driver= new ChromeDriver();
+        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4456"),capabilities);
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	    manage =new ManageTestimonialPage(driver);
@@ -298,10 +296,6 @@ public class stepdefinitions {
     public void user_should_able_see_the_success_notification(){
         managepage.checksuccessmessage();
     }
-    @Then("user should see the terms and conditions page with updated information")
-    public void user_should_see_the_terms_and_conditions_page_with_updated_information() {
-        managepage.checktermsofuseinfo();
-    }
     @When("user click on select page dropdown and select privacy and policy")
     public void user_click_on_select_page_dropdown_and_select_privacy_and_policy(){
     	managepage.selectpagedropdown("privacy and policy");
@@ -321,11 +315,6 @@ public class stepdefinitions {
     	managepage.enterinfoinpagedetails("alkene aboutus");
     }
 
-    @Then("user should see the about us page with updated information")
-    public void user_should_see_the_about_us_page_with_updated_information(){
-        managepage.checkaboutusinfo();
-    }
-
     @When("user click on select page dropdown and select FQAs")
 	public void user_click_on_select_page_dropdown_and_select_fq_as(){
 	    managepage.selectpagedropdown("FAQs");	
@@ -336,10 +325,6 @@ public class stepdefinitions {
 	  managepage.enterinfoinpagedetails("Any doubts faqs");
 	}
 	
-	@Then("user should see the FQAs page with updated information")
-	public void user_should_see_the_fq_as_page_with_updated_information(){
-	   managepage.checkfaqsinfo();
-	}
 
 	@Then("user go to terms and condition page")
 	public void user_go_to_terms_and_condition_page() {
@@ -363,4 +348,17 @@ public class stepdefinitions {
 	public void user_should_navigate_to_contactus_page() {
 	    driver.navigate().to("https://carrental.neohire.io/contact-us.php");
 	}	
+	@Then("user should see the terms and conditions page with updated information")
+    public void user_should_see_the_terms_and_conditions_page_with_updated_information() {
+        managepage.checktermsofuseinfo();
+    }
+	@Then("user should see the about us page with updated information")
+		public void user_should_see_the_about_us_page_with_updated_information() {
+			managepage.checkaboutusinfo();	
+		}
+	@Then("user should see the FQAs page with updated information")
+	public void user_should_see_the_fq_as_page_with_updated_information() {
+	   managepage.checkfaqsinfo();
+	   
+	}
 }

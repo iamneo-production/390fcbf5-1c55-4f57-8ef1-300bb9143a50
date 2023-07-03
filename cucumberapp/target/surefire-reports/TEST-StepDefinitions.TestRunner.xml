@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="25" failures="0" name="StepDefinitions.TestRunner" time="175.045" errors="0" skipped="0">
+<testsuite tests="25" failures="0" name="StepDefinitions.TestRunner" time="169.689" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,29 +59,29 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="feature to test the Manage pages page" name="Validate the Manage Page button is working or not - TC_ID_ManagePages_1" time="10.306"/>
-  <testcase classname="feature to test the Manage pages page" name="Validate terms and conditions option in dropdown - TC_ID_ManagePage_2" time="8.645"/>
-  <testcase classname="feature to test the Manage pages page" name="Validate privacy and policy option in dropdown - TC_ID_ManagePage_3" time="8.584"/>
-  <testcase classname="feature to test the Manage pages page" name="Validate about us option in dropdown - TC_ID_ManagePage_4" time="8.586"/>
-  <testcase classname="feature to test the Manage pages page" name="Validate FQAs option in dropdown  -TC_ID_ManagePage_5" time="8.594"/>
-  <testcase classname="feature to test the manage subscribers Page" name="validate the search field in manage subscribers page -  TC_ID_Manage_subscribers_1" time="5.888"/>
-  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_2" time="6.122"/>
-  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_3" time="5.87"/>
-  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  -  TC_ID_Manage_subscribers_4" time="6.086"/>
-  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  - TC_ID_Manage_subscribers_5" time="5.613"/>
-  <testcase classname="feature to test the manage testimonial Page" name="validate the search field in manage testimonial page -  TC_ID_Manage_1" time="5.768"/>
-  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_2" time="6.124"/>
-  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_3" time="5.822"/>
-  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on okay in testimonial page - TC_ID_Manage_4" time="8.986"/>
-  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on cancel in testimonial page -  TC_ID_Manage_5" time="6.613"/>
-  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on okay in testimonial page - TC_ID_Manage_6" time="9.249"/>
-  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on cancel in testimonial page - TC_ID_Manage_7" time="6.369"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid Email id -TC_ID_Update_contact_1" time="6.152"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid contact - TC_ID_Update_contact_2 (Failed testcase)" time="6.414"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only email, contact -TC_ID_Update_contact_3" time="5.419"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, contact - TC_ID_Update_contact_4" time="5.464"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, emailid - TC_ID_Update_contact_5" time="5.41"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when all the fields are empty - TC_ID_Update_contact_6" time="5.618"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in home page -   TC_ID_Update_contact_7" time="9.368"/>
-  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in contact us page- TC_ID_Update_contact_8" time="7.975"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate the Manage Page button is working or not - TC_ID_ManagePages_1" time="7.929"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate terms and conditions option in dropdown - TC_ID_ManagePage_2" time="8.479"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate privacy and policy option in dropdown - TC_ID_ManagePage_3" time="8.377"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate about us option in dropdown - TC_ID_ManagePage_4" time="8.589"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate FQAs option in dropdown  -TC_ID_ManagePage_5" time="8.429"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the search field in manage subscribers page -  TC_ID_Manage_subscribers_1" time="5.719"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_2" time="5.966"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_3" time="5.668"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  -  TC_ID_Manage_subscribers_4" time="5.926"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  - TC_ID_Manage_subscribers_5" time="5.465"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the search field in manage testimonial page -  TC_ID_Manage_1" time="5.858"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_2" time="6.064"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_3" time="5.612"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on okay in testimonial page - TC_ID_Manage_4" time="9.404"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on cancel in testimonial page -  TC_ID_Manage_5" time="6.109"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on okay in testimonial page - TC_ID_Manage_6" time="8.982"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on cancel in testimonial page - TC_ID_Manage_7" time="6.212"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid Email id -TC_ID_Update_contact_1" time="5.954"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid contact - TC_ID_Update_contact_2 (Failed testcase)" time="6.277"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only email, contact -TC_ID_Update_contact_3" time="5.364"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, contact - TC_ID_Update_contact_4" time="5.311"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, emailid - TC_ID_Update_contact_5" time="5.205"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when all the fields are empty - TC_ID_Update_contact_6" time="5.4"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in home page -   TC_ID_Update_contact_7" time="9.315"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in contact us page- TC_ID_Update_contact_8" time="8.075"/>
 </testsuite>
