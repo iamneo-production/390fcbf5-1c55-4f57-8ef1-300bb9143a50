@@ -18,7 +18,7 @@ public class ManageContactUsQueryPage {
  @FindBy(xpath="//*[@id=\"zctb_length\"]/label/select")WebElement testshow;
  @FindBy(xpath="//*[@id=\"zctb_next\"]/a") WebElement testnext;
  @FindBy(xpath="//*[@id=\"zctb_previous\"]/a")WebElement testprev;
-@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[8]/td[7]/a")WebElement testpending ;
+@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[14]/td[7]/a")WebElement testpending ;
  //@FindBy(xpath="//*[@id="zctb"]/tbody/tr[7]/td[7]/a")WebElement testinactive;
 @FindBy(xpath="/html/body/div[1]/a") WebElement carrentalportal;
 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[1]") WebElement testtext;
@@ -28,7 +28,7 @@ public class ManageContactUsQueryPage {
  public void managecontactusquerysearch(String text) throws InterruptedException {
 	 testsearch.clear();
 	 testsearch.sendKeys(text);
-	 Thread.sleep(1000);
+	 //Thread.sleep(1000);
  }
  public void managecontactusqueryfindtext() {
 	 testtext.isDisplayed();
@@ -45,7 +45,7 @@ public class ManageContactUsQueryPage {
  }
  public void managecontactusquerypending() throws InterruptedException {
 	 testpending.click();
-	 Thread.sleep(2000);
+	 //Thread.sleep(2000);
 	 driver.switchTo().alert().accept();
  }
 // public void managetestimonialinactive() {

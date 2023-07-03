@@ -1,9 +1,9 @@
 package StepDefinitions;
 
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import pageObject.AdminPage;
 import pageObject.ManageContactUsQueryPage;
 //import pageObject.ManageTestimonialPage;
@@ -12,6 +12,7 @@ import java.net.URL;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+//import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.*;
 
 public class manage1 {
@@ -26,8 +27,8 @@ public class manage1 {
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 		driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		// driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	    manage =new ManageContactUsQueryPage(driver);
 		admin=new AdminPage(driver);
 	    driver.navigate().to("https://carrental.neohire.io/admin/");
@@ -42,13 +43,13 @@ public class manage1 {
 	public void user_should_enter_username_as_and_password_ad(String string, String string2) throws InterruptedException {
 		admin.adminusername("admin");
 		admin.adminpass("Test@12345");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 
 	@And("click on login")
 	public void click_on_login() throws InterruptedException {
 		admin.adminloginbutton();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 
 	@Then("admin should able to view car rental portal | admin panel")
@@ -59,7 +60,7 @@ public class manage1 {
 	@And("click on Manage Contactus Query")
 	public void click_on_managecontactusquery() throws InterruptedException {
 		manage.managecontactusquerybutton();
-	    Thread.sleep(2000);
+	    //Thread.sleep(2000);
 	}
 
 	@Then("admin should able to see the Manage Contact Us Queries page")
@@ -69,47 +70,47 @@ public class manage1 {
 	@And("admin checks the next option")
 	public void clickingnextbutton() throws InterruptedException {
 		manage.managecontactusquerynext();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		manage.managecontactusquerynext();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	@Then("admin checks the previous option")
 	public void clickingpreviousbutton() throws InterruptedException {
 		manage.managecontactusqueryprev();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		manage.managecontactusqueryprev();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	@And("admin enter the text")
 	public void user_enter_the_text() throws InterruptedException {
 	    manage.managecontactusquerysearch("sai teja");
-	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
 	}
 
-	@Then("the details of the entered text will appear")
+	@Then("the details of the entered text will appear")
 	public void the_details_of_the_entered_text_will_appear() throws InterruptedException{
 	    // Write code here that turns the phrase above into concrete actions
 		manage.managecontactusqueryfindtext();
-	    Thread.sleep(2000);
+	    //Thread.sleep(2000);
 	}
 	
-	@And("admin reads the pending queries")
-	public void clickon_pending_and_read() throws InterruptedException{
-		manage.managecontactusquerypending();
-	}
-
-	@Then("admin checks the show entries")
+	@When("admin checks the show entries")
 	public void user_checks_the_show_entries() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    manage.managecontactusqueryshow("25");
-	    Thread.sleep(2000);
+	    //Thread.sleep(2000);
 	    manage.managecontactusqueryshow("50");
-	    Thread.sleep(2000);
+	    //Thread.sleep(2000);
 	    manage.managecontactusqueryshow("100");
-	    Thread.sleep(2000);
-	    driver.close();
-		driver.quit();
+	    //Thread.sleep(2000);
 	    
+	    
+	}
+	@Then("admin reads the pending queries")
+	public void clickon_pending_and_read() throws InterruptedException{
+		manage.managecontactusquerypending();
+		driver.close();
+		driver.quit();
 	}
 
 }

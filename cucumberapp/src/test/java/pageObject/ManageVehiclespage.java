@@ -37,14 +37,12 @@ public class ManageVehiclespage {
 	 @FindBy(xpath="/html/body/section[2]/div/div/div/div[3]/div[2]/a")WebElement viewtest;
 	 @FindBy(xpath="/html/body/section[2]/div/div[2]/div/div[2]/div/ul/li[2]/a") WebElement testaccessories;
 	
-	public void managevehiclesbutton() throws InterruptedException {
+	public void managevehiclesbutton(){
 		testbutton1.click();
-		//Thread.sleep(1000);
 		testbutton2.click();
 	}
-	public void checkedited() throws InterruptedException{
+	public void checkedited(){
 		viewtest.click();
-		Thread.sleep(2000);
 		testaccessories.click();
 	}
 	public void doneedit(){
@@ -66,9 +64,8 @@ public class ManageVehiclespage {
 	// 	driver.navigate().back();
 	// 	Thread.sleep(2000);
 	// }
-	public void managevehicleseditcheckboxes() throws InterruptedException {
+	public void managevehicleseditcheckboxes(){
 		checkbox_pdl.click();
-		//Thread.sleep(2000);
 		checkbox_albs.click();
 	}
 	public void checkeditvehicles() {
@@ -77,25 +74,21 @@ public class ManageVehiclespage {
 	public void managevehicleseditsave() {
 		editsave.click();
 	}
-	public void managevehicleseditppd(String price) throws InterruptedException {
+	public void managevehicleseditppd(String price){
 		editpriceperday.clear();
 		editpriceperday.sendKeys(price);
-		//Thread.sleep(1000);
 	}
-	public void managevehiclesedittitle(String title) throws InterruptedException {
+	public void managevehiclesedittitle(String title){
 		editvehicletitle.clear();
 		editvehicletitle.sendKeys(title);
-		//Thread.sleep(1000);
 	}
-	public void managevehicleseditseating(String seat) throws InterruptedException {
+	public void managevehicleseditseating(String seat){
 		editseating.clear();
 		editseating.sendKeys(seat);
-		//Thread.sleep(1000);
 	}
-	public void managevehiclessearch(String text) throws InterruptedException {
+	public void managevehiclessearch(String text){
 		 testsearch.clear();
 		 testsearch.sendKeys(text);
-		 //Thread.sleep(1000);
 	 }
 	 public void managevehiclesfindtext() {
 		 testtext.isDisplayed();
@@ -104,9 +97,8 @@ public class ManageVehiclespage {
 		 Select showdrop = new Select(testshow);
 		 showdrop.selectByVisibleText(num);
 	 }
-	 public void managevehicleseditbrand() throws InterruptedException {
+	 public void managevehicleseditbrand(){
 		 selectbrand1.click();
-		 //Thread.sleep(1000);
 		 selectbrand2.click();
 	 }
 	 public void managevehiclesnext() {
@@ -124,9 +116,7 @@ public class ManageVehiclespage {
 	public void managevehiclesedit() {
 		testedit.click();
 	}
-	public void managevehicledelete() throws InterruptedException {
+	public void managevehicledelete(){
 		testdelete.click();
-		//Thread.sleep(2000);
-		//driver.switchTo().alert().accept();
 	}
 }

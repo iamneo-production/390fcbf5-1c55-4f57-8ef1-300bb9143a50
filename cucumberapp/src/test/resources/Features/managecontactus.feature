@@ -13,6 +13,7 @@ Feature: feature to test the manage contactus query Page
     And admin checks the next option
     Then admin checks the previous option
     And admin enter the text
-    Then the details of the entered text will appear
-    And admin reads the pending queries
-    Then admin checks the show entries
+    Then the details of the entered text will appear
+    When admin checks the show entries
+    Then admin reads the pending queries
+    
