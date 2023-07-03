@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="testRunner.TestRun" time="119.551" errors="0" skipped="0">
+<testsuite tests="21" failures="0" name="testRunner.TestRun" time="118.549" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,25 +59,25 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Reg Users Page in Dashboard" time="7.016"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Vehicles Page in Dashboard" time="5.184"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Total Bookings Page in Dashboard" time="5.178"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Brands Page in Dashboard" time="5.185"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Subscibers Page in Dashboard" time="5.115"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Queries Page in Dashboard" time="5.529"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Testimonials Page in Dashboard" time="5.419"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Logout Functionality in Dashboard" time="4.775"/>
-  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Brand Name in Create Brand" time="7.725"/>
-  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Empty Brand Name in Create Brand" time="4.919"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="5.817"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #1" time="5.321"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #2" time="5.262"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #3" time="5.412"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #4" time="5.364"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Navigating to the back to home page" time="5.069"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify show and search in Manage Brands" time="5.615"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify previous and next button in Manage Brands" time="5.311"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify edit option in Manage Brands" time="9.569"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #1" time="5.511"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #2" time="5.255"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Reg Users Page in Dashboard" time="6.977"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Vehicles Page in Dashboard" time="5.178"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Total Bookings Page in Dashboard" time="5.226"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Brands Page in Dashboard" time="5.141"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Subscibers Page in Dashboard" time="5.321"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Queries Page in Dashboard" time="5.276"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Testimonials Page in Dashboard" time="5.116"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Logout Functionality in Dashboard" time="4.761"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Brand Name in Create Brand" time="7.676"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Empty Brand Name in Create Brand" time="4.869"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="5.669"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #1" time="5.419"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #2" time="5.421"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #3" time="5.207"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #4" time="5.405"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Navigating to the back to home page" time="4.964"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify show and search in Manage Brands" time="5.515"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify previous and next button in Manage Brands" time="5.279"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify edit option in Manage Brands" time="9.414"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #1" time="5.512"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #2" time="5.203"/>
 </testsuite>
