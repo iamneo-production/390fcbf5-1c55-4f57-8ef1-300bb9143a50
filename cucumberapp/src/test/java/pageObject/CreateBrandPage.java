@@ -5,10 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class CreateBrandPage {
-
+public class CreateBrandPage {	
 	public static WebDriver driver;
-
 	public CreateBrandPage(WebDriver driver) {
 		CreateBrandPage.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -34,38 +32,34 @@ public class CreateBrandPage {
 	public void clickBrands() {
 		brandsLocator.click();
 	}
-
 	public void clickCreateBrands() {
 		createBrandLocator.click();
 	}
-
-	public void getpageTitle() {
-		createBrandTitle.isDisplayed();
+	public void createBrandInterface() {
+		if (createBrandTitle.isDisplayed()) {
+			System.out.println("Create Brand Interface will be displayed");
+		} else {
+			System.out.println("Create Brand Interface is not displayed");
+		}
 	}
-
 	public void enterBrandName(String brandName) {
 		brandNameLocator.sendKeys(brandName);
 	}
-
 	public void clickSubmit() {
 		submitLocator.click();
 	}
-
 	public String getMessage() {
 		String msg = successLocator.getText();
 		return msg;
 	}
-
 	public String getValMessage() {
 		String message = validationMsg.getAttribute("validationMessage");
 		return message;
 	}
-
 	public void clickSelectBrandDropdown() {
 		Select brandName = new Select(validationMsg);
 		brandName.selectByVisibleText("BMW");
 	}
-
 	public void findYourCar() {
 		validateBrand.isDisplayed();
 	}

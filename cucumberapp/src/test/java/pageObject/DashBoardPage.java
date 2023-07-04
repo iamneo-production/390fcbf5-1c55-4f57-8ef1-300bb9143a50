@@ -10,7 +10,8 @@ public class DashBoardPage {
 		DashBoardPage.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	@FindBy(xpath = "//a[text()='Car Rental Portal | Admin Panel']")
+	WebElement admininterface;
 	@FindBy(xpath = "/html/body/div[1]/a")
 	WebElement carRentalPortal;
 	@FindBy(xpath = "/html/body/div[2]/nav/ul/li[2]/a")
@@ -48,76 +49,94 @@ public class DashBoardPage {
 	@FindBy(xpath = "/html/body/div[1]/ul/li/ul/li[2]/a")
 	WebElement logoutLocator;
 
-
 	public void checkCarRentalPortal() {
 		carRentalPortal.isDisplayed();
 	}
-
+	public String AdminInterface() {
+		admininterface.isDisplayed();
+		String title = admininterface.getText();
+		return title;
+	}
 	public void dashboardButton() {
 		testDashButton.click();
 	}
-
 	public void regUserButton() {
 		testRegButton.click();
 	}
-
-	public void checkRegUser() {
-		testRegHeader.isDisplayed();
+	public void regUserInterface() {
+		if (testRegHeader.isDisplayed()) {
+			System.out.println("Registered Users Interface is displayed");
+		} else {
+			System.out.println("Registered Users Interface is not displayed");
+		}
 	}
-
 	public void listVehButton() {
 		testListVehButton.click();
 	}
-
-	public void checkManVeh() {
-		testManVehHeader.isDisplayed();
+	public void manVehInterface() {
+		if (testManVehHeader.isDisplayed()) {
+			System.out.println("Manage Vehicles Interface is displayed");
+		} else {
+			System.out.println("Manage Vehicles Interface is not displayed");
+		}
 	}
-
 	public void totalBookButton() {
 		testTotBookButton.click();
 	}
-
-	public void checkManBook() {
-		testManBookHeader.isDisplayed();
+	public void manBookInterface() {
+		if (testManBookHeader.isDisplayed()) {
+			System.out.println("Manage Bookings Interface is displayed");
+		} else {
+			System.out.println("Manage Bookings Interface is not displayed");
+		}
 	}
-
 	public void listBrandButton() {
 		testListBrandButton.click();
 	}
-
-	public void checkListBrand() {
-		testManBrandHeader.isDisplayed();
+	public void listBrandInterface() {
+		if (testManBrandHeader.isDisplayed()) {
+			System.out.println("Manage Brands Interface is displayed");
+		} else {
+			System.out.println("Manage Brands Interface is not displayed");
+		}
 	}
-
 	public void subscibersButton() {
 		testSubscibersButton.click();
 	}
-
-	public void checkSubscibers() {
-		testManSubHeader.isDisplayed();
+	public void subscibersInterface() {
+		if (testManSubHeader.isDisplayed()) {
+			System.out.println("Manage Subscribers Interface is displayed");
+		} else {
+			System.out.println("Manage Subscribers Interface is not displayed");
+		}
 	}
-
 	public void queriesButton() {
 		testQueriesButton.click();
 	}
-
-	public void checkQueries() {
-		testManContactHeader.isDisplayed();
+	public void queriesInterface() {
+		if (testManContactHeader.isDisplayed()) {
+			System.out.println("Manage Contact Us Queries Interface is displayed");
+		} else {
+			System.out.println("Manage Contact Us Queries Interface is not displayed");
+		}
 	}
-
 	public void testimonialButton() {
 		testTestimonialButton.click();
 	}
-
-	public void checktestimonial() {
-		testManTestHeader.isDisplayed();
+	public void testimonialInterface() {
+		if (testManTestHeader.isDisplayed()) {
+			System.out.println("Manage Testimonial Interface is displayed");
+		} else {
+			System.out.println("Manage Testimonial Interface is not displayed");
+		}
 	}
-
 	public void clickAccount() {
 		accountLocator.click();
 	}
-
 	public void clickLogout() {
 		logoutLocator.click();
 	}
 }
+
+
+	

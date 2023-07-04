@@ -3,10 +3,9 @@ Feature: Admin Dashboard Functionality for Car Rental Website
   Background: 
     Given admin launch the browser
     When admin opens url "https://carrental.neohire.io/admin/"
-    Then admin navigates to sign in page
-    #Then admin navigates to Admin|SignIn page
+    Then admin navigates to Admin|SignIn page
     When admin enters username as "admin"  and password as "Test@12345"
-    And click on login
+    And click on login button
     Then admin should able to view car rental portal | admin panel
 
   Scenario: Verify Reg Users Page in Dashboard

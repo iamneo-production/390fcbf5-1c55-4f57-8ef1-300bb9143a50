@@ -1,65 +1,47 @@
 package pageObject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
 
 public class AdminLoginPage {
-	private WebDriver driver;
-
-	private By adminLocator = By.xpath("/html/body/header/nav/div/div[3]/ul/li[6]/a");
-	private By usernameInputLocator = By.name("username");
-	private By passwordInputLocator = By.name("password");
-	private By loginButtonLocator = By.name("login");
-	private By backToHomeLocator = By.xpath("/html/body/div/div/div/div/div/div/div/p/a");
+	public static WebDriver driver;
 
 	public AdminLoginPage(WebDriver driver) {
-		this.driver = driver;
+		AdminLoginPage.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-
+	@FindBy(xpath="/html/body/header/nav/div/div[3]/ul/li[6]/a")
+    WebElement adminLocator;
+	@FindBy(name="username")
+	WebElement usernameInputLocator;
+	@FindBy(name="password")
+	WebElement passwordInputLocator;
+	@FindBy(name="login")
+	WebElement loginButtonLocator;
+	@FindBy(linkText="Back to Home")
+	WebElement backToHomeLocator;
+	
 	public void clickAdminButton() {
-		WebElement adminButton = driver.findElement(adminLocator);
-		adminButton.click();
+		adminLocator.click();
 	}
-
-	public String adminSignInPage() {
+    public String adminSignInPage() {
 		String adminPage = driver.getTitle();
 		return adminPage;
-	}
-
-	public void enterUsername(String username) {
-		WebElement usernameInput = driver.findElement(usernameInputLocator);
-		usernameInput.sendKeys(username);
-	}
-
-	public void enterPassword(String password) {
-		WebElement passwordInput = driver.findElement(passwordInputLocator);
-		passwordInput.sendKeys(password);
-	}
-
+    }
+    public void enterUsername(String username) {
+	 usernameInputLocator.sendKeys(username);
+    }
+ 	public void enterPassword(String password) {
+ 		passwordInputLocator.sendKeys(password);
+ 	}
 	public void clickLoginButton() {
-		WebElement loginButton = driver.findElement(loginButtonLocator);
-		loginButton.click();
+		loginButtonLocator.click();
 	}
-
 	public void clickBacktoHomeLink() {
-		WebElement backToHomeLink = driver.findElement(backToHomeLocator);
-		backToHomeLink.click();
+		backToHomeLocator.click();
 	}
-
 	public String getHomePageTitle() {
-		String homePage = driver.getTitle();
+	String homePage = driver.getTitle();
 		return homePage;
-	}
-
-	public void login(String username, String password) {
-		enterUsername(username);
-		enterPassword(password);
-		clickLoginButton();
-	}
-
-	public String getAdminSignInPageTitle() {
-		String adminSignInPageTitle = driver.getTitle();
-		return adminSignInPageTitle;
 	}
 }

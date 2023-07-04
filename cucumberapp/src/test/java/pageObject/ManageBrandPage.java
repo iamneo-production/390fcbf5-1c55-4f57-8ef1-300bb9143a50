@@ -6,14 +6,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class ManageBrandPage {
-
 	public static WebDriver driver;
-
 	public ManageBrandPage(WebDriver driver) {
 		ManageBrandPage.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	@FindBy(xpath = "/html/body/div[2]/nav/ul/li[3]/ul/li[2]/a")
 	WebElement manageBrandLocator;
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div/h2")
@@ -22,8 +19,6 @@ public class ManageBrandPage {
 	WebElement show;
 	@FindBy(xpath = "//*[@id=\"zctb_filter\"]/label/input")
 	WebElement search;
-//	@FindBy(xpath = "//*[@id=\"zctb\"]/tbody/tr[1]/td[2]")
-//	WebElement searchedBrand;
 	@FindBy(xpath = "//*[@id=\"zctb_next\"]/a")
 	WebElement nextLocator;
 	@FindBy(xpath = "//*[@id=\"zctb_previous\"]/a")
@@ -54,79 +49,65 @@ public class ManageBrandPage {
 	public void clickManageBrand() {
 		manageBrandLocator.click();
 	}
-
-	public void getManageBrandTitle() {
-		manageBrandTitle.isDisplayed();
+	public void ManageBrandInterface() {
+		if (manageBrandTitle.isDisplayed()) {
+			System.out.println("Manage Brands Interface is Displayed");
+		} else {
+			System.out.println("Manage Brands Interface is not Displayed");
+		}
 	}
-
 	public void clickShowDropdown() {
 		Select drpEntries = new Select(show);
 		drpEntries.selectByValue("10");
 	}
-
 	public void enterSearchField(String brandname) {
 		search.sendKeys(brandname);
 	}
-
-//	public void getSearchedBrandName() {
-//		searchedBrand.isDisplayed();
-//		search.clear();
-//	}
-
 	public String getFilteredBrand() {
 		String fil_msg = filteredResult.getText();
 		return fil_msg;
 	}
-
 	public void clickNextButton() {
 		nextLocator.click();
 	}
-
 	public void clickPreviousButton() {
 		previousLocator.click();
 	}
-
 	public void getEntries() {
 		entriesLocator.isDisplayed();
 	}
-
 	public void clickEdit() {
 		editLocator.click();
 	}
-
 	public void getUpdateBrandTitle() {
 		updateBrandTitle.isDisplayed();
 	}
-
 	public void enterUpdateBrandName(String updateBrand) {
 		updateBrandName.clear();
 		updateBrandName.sendKeys(updateBrand);
 	}
-
 	public String getSuccessMessage() {
 		String message = successMessage.getText();
 		return message;
 	}
-
 	public void clickDelete() {
 		deleteLocator.click();
 	}
-
 	public String getSuccessUpdateMessage() {
 		String suc_msg = successUpdate.getText();
 		return suc_msg;
 	}
-
 	public void getUpdationDate() {
 		updateDate.isDisplayed();
 	}
-
 	public void clickSelectBrand() {
 		Select brandName = new Select(validationMsg);
 		brandName.selectByVisibleText("Audi");
 	}
-
 	public void findBrandName() {
 		verifyUpdateBrand.isDisplayed();
 	}
 }
+
+
+	

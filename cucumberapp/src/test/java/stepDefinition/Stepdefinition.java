@@ -1,12 +1,9 @@
 package stepDefinition;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import org.openqa.selenium.remote.CapabilityType;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +13,6 @@ import pageObject.AdminLoginPage;
 import pageObject.CreateBrandPage;
 import pageObject.DashBoardPage;
 import pageObject.ManageBrandPage;
-//import cucumber.api.java.After;
 import io.cucumber.java.After;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Given;
@@ -40,9 +36,9 @@ public class Stepdefinition {
 	@Given("admin launch the browser")
 	public void admin_launch_the_browser() throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-//driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
+        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+        //driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
 
 		//System.setProperty("webdriver.com.driver",
 		//		"D:/Eclipse-workspace/CarRental_Cucumber_Project/src/test/resources/drivers/chromedriver.exe");
@@ -55,17 +51,14 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 		System.out.println("User Succesfully launched Chrome Browser");
 	}
 
-	@When("admin is on the Car Rental page")
-	public void admin_is_on_the_car_rental_page() {
-		driver.get("https://carrental.neohire.io/");
-		loginPage = new AdminLoginPage(driver);
-		driver.manage().window().maximize();
-	}
-	@When("admin opens the url {string}")
+    @When("admin opens the url {string}")
 	public void admin_opens_the_url(String url){
 		//Here driver opens the Car Rental Website
 		driver.get(url);
-	    //Here We are checking Website Interface is launched or not
+		loginPage = new AdminLoginPage(driver);
+		driver.manage().window().maximize();
+		
+		 //Here We are checking Website Interface is launched or not
 		WebElement Interface=  driver.findElement(By.xpath("//img[@alt='image']"));
 		if(Interface.isDisplayed())
 		 {
@@ -76,62 +69,41 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 			System.out.println("Website is not opened");
 		}
 	}
-
+	
 	@When("admin clicks on Admin module")
 	public void admin_clicks_on_admin_module() {
+		loginPage=new AdminLoginPage(driver);
 		//Here we are clicking on admin module
 		loginPage.clickAdminButton();
 	}
-
-	@Then("admin navigates to sign in page")
-	public void admin_navigates_to_sign_in_page() {
-		//Assert.assertTrue(loginPage.adminSignInPage().contains("Car Rental Portal | Admin Login"));
+	
+	@Then("admin navigates to Admin|SignIn page")
+	public void admin_navigates_to_admin_sign_in_page() {
 		String adminpage = loginPage.adminSignInPage();
 		System.out.println(adminpage+" page is displayed");
 	}
-	// @Then("admin navigates to Admin|SignIn page")
-	// public void admin_navigates_to_admin_sign_in_page() {
-	// 	String adminpage = loginPage.adminSignInPage();
-	// 	System.out.println(adminpage+" page is displayed");
-	// }
-
-	@When("admin enters a valid username and password")
-	public void admin_enters_a_valid_username_and_password() {
-		loginPage.enterUsername("admin");
-		loginPage.enterPassword("Test@12345");
-	}
+	
 	@When("admin enters username as {string}  and password as {string}")
 	public void admin_enters_username_as_and_password_as(String string, String string2) {
 		loginPage.enterUsername("admin");
 		loginPage.enterPassword("Test@12345");
 	}
-
-	@When("admin click on the login button")
-	public void admin_click_on_the_login_button() {
-		loginPage.clickLoginButton();
-	}
+	
 	@When("click on login button")
 	public void click_on_login_button1() {
 		loginPage.clickLoginButton();
 	}
-	// @Then("admin should able to view car rental portal | admin panel")
-	// public void admin_should_able_to_view_car_rental_portal_admin_panel() {
-	// 	//dashboard.checkCarRentalPortal();
-	// 	dashboard=new DashBoardPage(driver);
-	// 	String title = "Car Rental Portal | Admin Panel";		
-	// 	String actualtitle = dashboard.AdminInterface();
-    //     if (title.equals(actualtitle)) {
-    //     	System.out.println("Admin Login Page is Successfully Opened");
-    //     } else {
-    //     	System.out.println("Admin Login Page is Not Opened");
-    //     }
-	// }
 
-	@Then("admin should be logged in successfully")
-	public void admin_should_be_logged_in_successfully() {
-		//Assert.assertTrue(loginPage.getAdminSignInPageTitle().contains("Car Rental Portal | Admin Dashboard"));
-		String adminSignInPageTitle = loginPage.getAdminSignInPageTitle();
-		System.out.println(adminSignInPageTitle+" page is displayed");
+	@Then("admin should able to view car rental portal | admin panel")
+	public void admin_should_able_to_view_car_rental_portal_admin_panel() {
+		dashboard=new DashBoardPage(driver);
+		String title = "Car Rental Portal | Admin Panel";		
+		String actualtitle = dashboard.AdminInterface();
+        if (title.equals(actualtitle)) {
+        	System.out.println("Admin Login Page is Successfully Opened");
+        } else {
+        	System.out.println("Admin Login Page is Not Opened");
+        }
 	}
 
 	@When("admin enters invalid {string} and {string}")
@@ -149,50 +121,22 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 		Assert.assertTrue(true);
 	}
 
-	@When("admin click on the back to home link")
-	public void admin_click_on_the_link() {
-		loginPage.clickBacktoHomeLink();
-	}
 	@When("admin click on the Back to Home link")
-public void admin_click_on_the_back_to_home_link() {
+    public void admin_click_on_the_back_to_home_link() {
 	loginPage.clickBacktoHomeLink();
-}
-
+    }
+	
 	@Then("admin should be redirected to the home page")
 	public void admin_should_be_redirected_to_the_home_page() {
-		//Assert.assertTrue(loginPage.getHomePageTitle().contains("Car Rental Portal"));
+		loginPage=new AdminLoginPage(driver);
 		String homePage = loginPage.getHomePageTitle();
 		System.out.println(homePage+ " page is displayed");
 	}
-@Then("admin should be navigated to {string}")
-public void admin_should_be_navigated_to(String url){
-	driver.get(url);
-}
+//Dashboard step definitions
 	@When("admin opens url {string}")
 	public void admin_opens_url(String url) {
+		//Here admin opens the admin sign in page
 		driver.get(url);
-	}
-
-	@Then("admin should able to see the admin signin page")
-	public void admin_should_able_to_see_the_admin_signin_page() {
-		String adminpage = loginPage.adminSignInPage();
-		System.out.println(adminpage+" page is displayed");
-	}
-
-	// @When("admin enters username as {string}  and password as {string}")
-	// public void admin_enters_username_as_and_passwrod_ad(String string, String string2) {
-	// 	loginPage.enterUsername("admin");
-	// 	loginPage.enterPassword("Test@12345");
-	// }
-
-	@When("click on login")
-	public void click_on_login() {
-		loginPage.clickLoginButton();
-	}
-
-	@Then("admin should able to view car rental portal | admin panel")
-	public void admin_should_able_to_view_car_rental_portal_admin_panel() {
-		dashboard.checkCarRentalPortal();
 	}
 
 	@When("admin click on Dashboard")
@@ -202,12 +146,21 @@ public void admin_should_be_navigated_to(String url){
 
 	@When("click on Reg Users Full Detail link")
 	public void click_on_reg_users_full_detail_link() {
+		//Here we are clicking on reg user in dashboard
 		dashboard.regUserButton();
 	}
 
 	@Then("admin should be navigated to Registered Users Page")
 	public void admin_should_be_navigated_to_registered_users_page() {
-		dashboard.checkRegUser();
+		//Here we are verifying Registered User Interface
+		dashboard.regUserInterface();
+		 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+			if(sno1.isDisplayed()) {
+				System.out.println("Registered Users details are present");
+			}
+			else {
+				System.out.println("Registered Users details are empty");
+			}
 		driver.navigate().back();
 	}
 
@@ -218,7 +171,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Vehicles Page")
 	public void admin_should_be_navigated_to_manage_vehicles_page() {
-		dashboard.checkManVeh();
+		//Here we are verifying Manage Vehicles Interface
+		dashboard.manVehInterface();
+		 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+			if(sno1.isDisplayed()) {
+				System.out.println("Manage Vehicles details are present");
+			}
+			else {
+				System.out.println("Manage Vehicles details are empty");
+			}
 		driver.navigate().back();
 	}
 
@@ -229,7 +190,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Bookings Page")
 	public void admin_should_be_navigated_to_manage_bookings_Page() {
-		dashboard.checkManBook();
+		//Here we are verifying Manage Bookings Interface
+		dashboard.manBookInterface();
+		 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+			if(sno1.isDisplayed()) {
+				System.out.println("Manage Bookings details are present");
+			}
+			else {
+				System.out.println("Manage Bookings details are empty");
+			}
 		driver.navigate().back();
 	}
 
@@ -240,7 +209,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Brands Page")
 	public void admin_should_be_navigated_to_manage_brands_Page() {
-		dashboard.checkListBrand();
+		//Here we are verifying Manage Brands Interface
+				dashboard.listBrandInterface();	
+				 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+					if(sno1.isDisplayed()) {
+						System.out.println("Manage Brands details are present");
+					}
+					else {
+						System.out.println("Manage Brands details are empty");
+					}
 		driver.navigate().back();
 	}
 
@@ -251,7 +228,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Subscribers Page")
 	public void admin_should_be_navigated_to_manage_subscribers_Page() {
-		dashboard.checkSubscibers();
+		//Here we are verifying Manage subscibers Interface
+		dashboard.subscibersInterface();
+		 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+			if(sno1.isDisplayed()) {
+				System.out.println("Manage Subscibers details are present");
+			}
+			else {
+				System.out.println("Manage Subscibers details are empty");
+			}
 		driver.navigate().back();
 	}
 
@@ -262,7 +247,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Contact Us Queries Page")
 	public void admin_should_be_navigated_to_manage_contact_us_queries_Page() {
-		dashboard.checkQueries();
+		//Here we are verifying Manage Contact Us Queries Interface
+				dashboard.queriesInterface();		
+				 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+					if(sno1.isDisplayed()) {
+						System.out.println("Manage Contact Us Queries details are present");
+					}
+					else {
+						System.out.println("Manage Contact Us Queries details are empty");
+					}
 		driver.navigate().back();
 	}
 
@@ -273,7 +266,15 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin should be navigated to Manage Testimonials Page")
 	public void admin_should_be_navigated_to_manage_testimonials_Page() {
-		dashboard.checktestimonial();
+		//Here we are verifying Manage Testimonials Interface
+				dashboard.testimonialInterface();
+				 WebElement sno1 = driver.findElement(By.xpath("//*[@id=\"zctb\"]/tbody/tr[1]/td[1]"));
+					if(sno1.isDisplayed()) {
+						System.out.println("Manage Testimonials details are present");
+					}
+					else {
+						System.out.println("Manage Testimonials details are empty");
+					}
 		driver.navigate().back();
 	}
 
@@ -287,11 +288,7 @@ public void admin_should_be_navigated_to(String url){
 		dashboard.clickLogout();
 	}
 
-	@Then("admin navigates to Admin|SignIn page")
-	public void admin_navigates_to_admin_sign_in_page() {
-		loginPage.adminSignInPage();
-	}
-
+//create brand step definitions
 	@When("admin click on Brands")
 	public void admin_click_on_brands() {
 		createBrand.clickBrands();
@@ -304,7 +301,7 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin will navigates to create Brand Page")
 	public void admin_will_navigates_to_create_brand_page() {
-		createBrand.getpageTitle();
+		createBrand.createBrandInterface();		
 	}
 
 	@When("admin enter Brand name in the text field")
@@ -325,6 +322,7 @@ public void admin_should_be_navigated_to(String url){
 
 	@When("admin navigates to {string}")
 	public void admin_navigates_to(String url) {
+		//Here admin navigates to car listing page 
 		driver.get(url);
 	}
 
@@ -332,26 +330,28 @@ public void admin_should_be_navigated_to(String url){
 	public void click_on_select_brand_dropdown_menu() {
 		createBrand.clickSelectBrandDropdown();
 	}
+	
+	@Then("verify the brand name")
+	public void verify_the_brand_name() {
+		//Here brand name is verified in car listing page
+		createBrand.findYourCar();
+	}
+	
+	@Then("alert message will be displayed")
+	public void alert_message_will_be_displayed() {
+		String message = createBrand.getValMessage();
+		System.out.println(message+" alert message will be displayed");
+	}
 
+	//manage brand step definitions
 	@When("click on select brand dropdown")
 	public void click_on_select_brand_dropdown() {
 		manageBrand.clickSelectBrand();
 	}
-
-	@Then("verify the brand name")
-	public void verify_the_brand_name() {
-		createBrand.findYourCar();
-	}
-
+	
 	@Then("verify the updated brand name")
 	public void verify_the_updated_brand_name() {
 		manageBrand.findBrandName();
-	}
-
-	@Then("alert message will be displayed")
-	public void alert_message_will_be_displayed() {
-		String message = createBrand.getValMessage();
-		System.out.println(message);
 	}
 
 	@When("click on Manage Brands")
@@ -361,7 +361,7 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin will navigate to Manage Brands Page")
 	public void admin_will_navigate_to_manage_brands_page() {
-		manageBrand.getManageBrandTitle();
+		manageBrand.ManageBrandInterface();
 	}
 
 	@When("admin selects show entries")
@@ -454,12 +454,13 @@ public void admin_should_be_navigated_to(String url){
 
 	@Then("admin will be on manage brand page")
 	public void admin_will_be_on_manage_brand_page() {
-		manageBrand.getManageBrandTitle();
-		
-	}
+		manageBrand.ManageBrandInterface();
+	}	
 }
-
-
+	
+	
+	
+	
 
 
 
