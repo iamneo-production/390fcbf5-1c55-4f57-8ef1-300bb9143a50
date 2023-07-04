@@ -3,7 +3,8 @@ Feature: Verify Create Brand Functionality for car Rental Management
   Background: 
     Given admin launch the browser
     When admin opens url "https://carrental.neohire.io/admin/"
-    Then admin should able to see the admin signin page
+    Then admin navigates to sign in page
+    #Then admin navigates to Admin|SignIn page
     When admin enters username as "admin"  and password as "Test@12345"
     And click on login
     Then admin should able to view car rental portal | admin panel

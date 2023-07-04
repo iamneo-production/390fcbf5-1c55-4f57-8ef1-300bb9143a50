@@ -65,22 +65,21 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 	public void admin_opens_the_url(String url){
 		//Here driver opens the Car Rental Website
 		driver.get(url);
-		//Thread.sleep(2500);
 	    //Here We are checking Website Interface is launched or not
-		// WebElement Interface=  driver.findElement(By.xpath("//img[@alt='image']"));
-		// if(Interface.isDisplayed())
-		//  {
-		// 	System.out.println("Car Rental Website Succesfully Launched");
+		WebElement Interface=  driver.findElement(By.xpath("//img[@alt='image']"));
+		if(Interface.isDisplayed())
+		 {
+			System.out.println("Car Rental Website Succesfully Launched");
 			
-		// }
-		// else {
-		// 	System.out.println("Website is not opened");
-		// }
-        
+		}
+		else {
+			System.out.println("Website is not opened");
+		}
 	}
 
 	@When("admin clicks on Admin module")
 	public void admin_clicks_on_admin_module() {
+		//Here we are clicking on admin module
 		loginPage.clickAdminButton();
 	}
 
@@ -90,9 +89,19 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 		String adminpage = loginPage.adminSignInPage();
 		System.out.println(adminpage+" page is displayed");
 	}
+	// @Then("admin navigates to Admin|SignIn page")
+	// public void admin_navigates_to_admin_sign_in_page() {
+	// 	String adminpage = loginPage.adminSignInPage();
+	// 	System.out.println(adminpage+" page is displayed");
+	// }
 
 	@When("admin enters a valid username and password")
 	public void admin_enters_a_valid_username_and_password() {
+		loginPage.enterUsername("admin");
+		loginPage.enterPassword("Test@12345");
+	}
+	@When("admin enters username as {string}  and password as {string}")
+	public void admin_enters_username_as_and_password_as(String string, String string2) {
 		loginPage.enterUsername("admin");
 		loginPage.enterPassword("Test@12345");
 	}
@@ -101,6 +110,22 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 	public void admin_click_on_the_login_button() {
 		loginPage.clickLoginButton();
 	}
+	@When("click on login button")
+	public void click_on_login_button1() {
+		loginPage.clickLoginButton();
+	}
+	// @Then("admin should able to view car rental portal | admin panel")
+	// public void admin_should_able_to_view_car_rental_portal_admin_panel() {
+	// 	//dashboard.checkCarRentalPortal();
+	// 	dashboard=new DashBoardPage(driver);
+	// 	String title = "Car Rental Portal | Admin Panel";		
+	// 	String actualtitle = dashboard.AdminInterface();
+    //     if (title.equals(actualtitle)) {
+    //     	System.out.println("Admin Login Page is Successfully Opened");
+    //     } else {
+    //     	System.out.println("Admin Login Page is Not Opened");
+    //     }
+	// }
 
 	@Then("admin should be logged in successfully")
 	public void admin_should_be_logged_in_successfully() {
@@ -119,15 +144,15 @@ driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities)
 	public void admin_should_see_an_error_message_indicating(String string) {
 		Alert alert = driver.switchTo().alert();
 		String alertMessage = driver.switchTo().alert().getText();
-		System.out.println(alertMessage);
+		System.out.println(alertMessage+" alert message will be displayed");
 		alert.accept();
 		Assert.assertTrue(true);
 	}
 
-	// @When("admin click on the back to home link")
-	// public void admin_click_on_the_link() {
-	// 	loginPage.clickBacktoHomeLink();
-	// }
+	@When("admin click on the back to home link")
+	public void admin_click_on_the_link() {
+		loginPage.clickBacktoHomeLink();
+	}
 	@When("admin click on the Back to Home link")
 public void admin_click_on_the_back_to_home_link() {
 	loginPage.clickBacktoHomeLink();
@@ -154,11 +179,11 @@ public void admin_should_be_navigated_to(String url){
 		System.out.println(adminpage+" page is displayed");
 	}
 
-	@When("admin enters username as {string}  and password as {string}")
-	public void admin_enters_username_as_and_passwrod_ad(String string, String string2) {
-		loginPage.enterUsername("admin");
-		loginPage.enterPassword("Test@12345");
-	}
+	// @When("admin enters username as {string}  and password as {string}")
+	// public void admin_enters_username_as_and_passwrod_ad(String string, String string2) {
+	// 	loginPage.enterUsername("admin");
+	// 	loginPage.enterPassword("Test@12345");
+	// }
 
 	@When("click on login")
 	public void click_on_login() {
