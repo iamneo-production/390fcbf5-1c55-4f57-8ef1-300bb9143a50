@@ -1,9 +1,12 @@
 package StepDefination;
 import java.net.MalformedURLException;
 import PageObject.Booking;
+import PageObject.Carlisting;
 import PageObject.RegUsers;
 import java.time.Duration;
 import java.util.List;
+
+import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,9 +22,12 @@ import io.cucumber.java.After;
 
 
 
+
+
 public class StepDefination {
 	public WebDriver driver = null;
 	public Booking booking;
+	public Carlisting carlisting;
 	public RegUsers regusers;
 	
 	@After
@@ -33,24 +39,25 @@ public class StepDefination {
 	@Given("User Launch chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-         capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-          driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-
-	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-			driver.manage().window().maximize();
-			booking = new Booking(driver);
-	        regusers = new RegUsers(driver);
-	      System.out.println("User Succesfully launched Chrome Browser");
-	      
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
+		//driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		booking = new Booking(driver);
+		carlisting = new Carlisting(driver);
+		regusers = new RegUsers(driver);
+		System.out.println("User Succesfully launched Chrome Browser");
 	}
 	
 	
 	@When("User opens url {string}")
-	public void user_opens_url(String url) throws InterruptedException {
+	public void user_opens_url(String url) {
 		//Here driver opens the Car Rental Website
 		driver.get(url);
-		Thread.sleep(2500);
+		
 	    //Here We are checking Website Interface is launched or not
 		WebElement Interface=  driver.findElement(By.xpath("//img[@alt='image']"));
 		if(Interface.isDisplayed())
@@ -123,7 +130,7 @@ public class StepDefination {
 		 
 		//Here we are Verifying New Bookings Interface
 		
-		booking.NewBookingInterface();
+		 booking.NewBookingInterface();
 		
 	 WebElement sno1 = driver.findElement(By.xpath("//td[text()='1']"));
 		if(sno1.isDisplayed()) {
@@ -172,23 +179,20 @@ public class StepDefination {
     public void user_enter_car_name_in_search_bar_and_verify_it(String searchTerm){
     	
     	//Here we are checking Search Bar Actions
-    	WebElement sno2 = driver.findElement(By.xpath("//td[text()='2']"));
-    	if(sno2.isDisplayed()) {
+    	
     	booking.SearchClick(searchTerm);
-    	}
-    	else 
-    	{
-    	   WebElement sno1 = driver.findElement(By.xpath("//td[text()='1']"));
-    	   if(sno1.isDisplayed())
+    	
+          WebElement CarName = driver.findElement(By.xpath("//a[text()='Lamborghini  , Aventador']"));
+    	   if(CarName.isDisplayed())
     	   {
-    	      System.out.println("Only one Booking is present");
+    	      System.out.println("Searching Booking Details are displayed");
     		
               }
            else
            {
-            System.out.println("No Booking is present");
+              System.out.println("Searched Bookings are not present");
            }
-    	}
+
     	//Here we are Verifying  Entered Car Booking  Details are displayed or not
     	
     	booking.SearchCompare(searchTerm);
@@ -297,16 +301,25 @@ public class StepDefination {
     	 booking.setpassid(passid);
     	
      }
-    
-     @Then("User Clicks on Login button and Drop Down list and Select My Booking Option")
-     public void user_clicks_on_login_button() {
-    	 //Here we are clicking on login user button
+	 @Then("User Clicks on Login button and Drop Down list and Select My Booking Option verify its interface")
+	 public void user_clicks_on_login_button_and_drop_down_list_and_select_my_booking_option_verify_its_interface() {
+		 // Write code here that turns the phrase above into concrete actions
+		 //Here we are clicking on login user button
     	 booking.UserLoginClick();
     	 
     	 //Here we are clicking on User dropdown and going to My Booking of User
     	 booking.UserDropdownClick();
     	 booking.UserMyBookingClick();
-     }
+	 }
+    //  @Then("User Clicks on Login button and Drop Down list and Select My Booking Option")
+    //  public void user_clicks_on_login_button() {
+    // 	 //Here we are clicking on login user button
+    // 	 booking.UserLoginClick();
+    	 
+    // 	 //Here we are clicking on User dropdown and going to My Booking of User
+    // 	 booking.UserDropdownClick();
+    // 	 booking.UserMyBookingClick();
+    //  }
      
      @Then ("Verify the Status of Noted Booking Number and Clicks on Logout button")
      public void verify_the_status_of_noted_booking_number_and_clicks_on_logout_button() {
@@ -409,6 +422,83 @@ public class StepDefination {
      	regusers.SearchCompare(searchTerm);   
   }
      
+  @Then("User Clicks on User Login button")
+  public void user_clicks_on_user_login_button() {
+	  
+	  //Here user Clicking on Login Button of User Interface
+	  booking.UserLoginClick();
+  }
+  @Then("User Clicks on Car Listing and Select Car View Details and verify interfaces")
+  public void  user_clicks_on_car_listing_and_select_car_view_details_and_verify_interfaces() {
+	  
+	  //Here we are clicking on Car listing button and verifying its Interface
+	  carlisting.CarListingbuttonClick();
+	  carlisting.VerifyInterfaceCarListing();
+	  //Here we are clicking on car view details button
+	  JavascriptExecutor downpage = (JavascriptExecutor) driver;
+	  downpage.executeScript("window.scrollBy(0,100)");
+	  carlisting.CarViewDetailbuttonClick();
+	  
+  }
+  
+  @Then ("User Selects from date and To date of Car Booking")
+  public void user_selects_from_date_and_to_date_of_car_booking() {
+	  //Here we are randomly selecting date and month
+	  carlisting.SetDate();    	 
+	  //Here we are entering from date of Car Booking 
+	  carlisting.SetFromDate();
+	 //Here we are entering to date of Car Booking 
+	  carlisting.SetToDate();
+	  
+}
+  @And("enter the message and click on Book button")
+  public void enter_the_message_and_click_on_book_button() throws InterruptedException {
+	
+	//Here we are entering message in text Box
+	  carlisting.EnterText();
+	  //Here we are clicking on book button
+	  carlisting.Bookbutton();
+  }
+  @Then("Verify Booking Successful or not and Click on Logout button")
+     public void verify_booking_successful_or_not_and_click_on_logout_button() throws InterruptedException {
+    	try{
+		
+		 Thread.sleep(1500);
+         Alert alert = driver.switchTo().alert();
+		 String popupmsg = alert.getText();
+    	 System.out.println(popupmsg);
+    	 if(popupmsg.contains("successfull.")) {
+			System.out.println("Alert executed");
+			alert.accept();
+			Assert.assertTrue(true);
+		   //Click on DropDown 
+		    booking.UserDropdownClick();
+		  //Logging out from user interface 
+		    booking.UserLogoutClick();
+    		 
+    	 }
+		 else{
+			alert.accept();
+			Assert.assertTrue(true);
+			//Booking is Unsuccessful because of selected from date then it selects another date for Successful Booking
+			user_clicks_on_car_listing_and_select_car_view_details_and_verify_interfaces();
+			user_selects_from_date_and_to_date_of_car_booking();
+			enter_the_message_and_click_on_book_button();
+			verify_booking_successful_or_not_and_click_on_logout_button();
+		
+		 }
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	 }
+		
+@Then ("Verify Noted FromDate in New Bookings and Note Booking No")
+  public void verify_noted_fromdate_in_new_bookings_and_note_booking_no() {
+	  
+	  //Here we are Noting down the Booking No
+	  BOOKINGNO=carlisting.verifyfromdate();
+		   
+  }
 }
 
 

@@ -19,18 +19,19 @@ Background:
    Then User Clicks on Confirm Booking verify pop message and cancel it and Confirm it
    Then User Clicks on logout button and back to home button
    Then User Clicks on LoginRegister button and Enters Valid Email Address as "kalyanguguloth111@gmail.com" and Password as "@Kalki111"
-   Then User Clicks on Login button and Drop Down list and Select My Booking Option
+   Then User Clicks on Login button and Drop Down list and Select My Booking Option verify its interface
    Then Verify the Status of Noted Booking Number and Clicks on Logout button
   
    
  Scenario:  Verify the New Bookings(Cancel) Functionality of Car Rental Website   
             and Verifying Noted Booking No In User My Booking status reflected or not
    When User Clicks on New Option and Verify Interface
+   Then User Enter Car Name in Search Bar "Lamborghini" and Verify it
    Then User Clicks on view option and Display Status of Noted Booking Id
    Then User Clicks on Cancel Booking verify pop message and cancel it and Confirm it
    Then User Clicks on logout button and back to home button
    Then User Clicks on LoginRegister button and Enters Valid Email Address as "kalyanguguloth111@gmail.com" and Password as "@Kalki111"
-   Then User Clicks on Login button and Drop Down list and Select My Booking Option
+   Then User Clicks on Login button and Drop Down list and Select My Booking Option verify its interface
    Then Verify the Status of Noted Booking Number and Clicks on Logout button
   
       
