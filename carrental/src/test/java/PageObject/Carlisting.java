@@ -3,9 +3,6 @@ import java.time.LocalDate;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,7 +73,7 @@ public class Carlisting {
     public void SetFromDate() {
     	
      	FromDate.sendKeys(formattedDate);
-     	//FromDate.sendKeys(Keys.TAB);
+     	
      	WebElement fromyear = driver.switchTo().activeElement();
      	fromyear.sendKeys(String.valueOf(desiredyear));
         System.out.println(FromDate.getText());
@@ -84,7 +81,7 @@ public class Carlisting {
 
     public void SetToDate() {	
      	ToDate.sendKeys(formattedDate);
-     	//ToDate.sendKeys(Keys.TAB);
+     	
      	WebElement toyear = driver.switchTo().activeElement();
         toyear.sendKeys(String.valueOf(desiredyear));
         System.out.println(ToDate.getText());
@@ -94,8 +91,7 @@ public class Carlisting {
     }
     public void Bookbutton() {
     	bookbutton.click();
-        // JavascriptExecutor downpage = (JavascriptExecutor) driver;
-	    // downpage.executeScript("arguments[0].click();",bookbutton);
+        
     }
     public String verifyfromdate() {
     	 System.out.println("SearchFromDate="+CarBookFromDate);
