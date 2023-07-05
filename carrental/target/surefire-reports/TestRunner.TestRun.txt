@@ -1,0 +1,82 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRun
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 63.292 s <<< FAILURE! - in TestRunner.TestRun
+Verify the New Bookings(Confirm) Functionality of Car Rental Website(Verify The Admin Booking Functionality of Car Rental Website)  Time elapsed: 11.797 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
+Verify the New Bookings(Cancel) Functionality of Car Rental Website(Verify The Admin Booking Functionality of Car Rental Website)  Time elapsed: 10.084 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
+Verify the Confirmed Bookings Functionality of Car Rental Website(Verify The Admin Booking Functionality of Car Rental Website)  Time elapsed: 10.096 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
+Verify the Canceled Bookings Functionality of Car Rental Website(Verify The Admin Booking Functionality of Car Rental Website)  Time elapsed: 10.104 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
+Here We are Booking a Car then Noting down the fromdate and Verifying it in Admin New Bookings(User Module CarListing and My Booking)  Time elapsed: 10.121 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
+Verify Registered Users Of Admin Module(Verify The Req Users Functionality of Car Rental Website)  Time elapsed: 10.058 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'afecaddbecbadfdbcfacbbcbfbcabbadf-0', ip: '10.56.81.10'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: java.net.ConnectException: connection timed out: /34.85.242.216:4454
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /34.85.242.216:4454
+
