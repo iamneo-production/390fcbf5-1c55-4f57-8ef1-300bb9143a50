@@ -315,12 +315,13 @@ public class StepDefination {
          List <WebElement> Bookingnos = driver.findElements(By.xpath("/html/body/section[2]/div/div[2]/div[2]/div/div/ul/li"));
          
          for(WebElement Bookingno : Bookingnos) {
-        	    String BookingNumber = Bookingno.getText();
-        	   	  if(BookingNumber.contains(BOOKINGNO) ) 
+        	    String BookingDetails = Bookingno.getText();
+        	   	  if(BookingDetails.contains(BOOKINGNO) ) 
         	     {
         		   // Here below line is print vehicle Information
-        		   System.out.println(BookingNumber);   
+        		   System.out.println("Car Booking Details are:"+BookingDetails);   
         	     }
+			     
             }
          booking.UserDropdownClick();
          //Logging out from user interface 
@@ -389,20 +390,15 @@ public class StepDefination {
      	 Uppage.executeScript("window.scrollTo(0,0)");
      	 
      	 //Here we are Entering Name in Search Bar
-    	 WebElement sno2 = driver.findElement(By.xpath("//td[text()='2']"));
-     	if(sno2.isDisplayed()) {
-     	regusers.SearchClick(searchTerm);
-     	}
-     	else {
      	      WebElement sno1 = driver.findElement(By.xpath("//td[text()='1']"));
      	      if(sno1.isDisplayed()){
-     	      System.out.println("Only one Reqistered User is present");
-     		
-               }
+				System.out.println("Reqistered User Details are displayed");
+			    regusers.SearchClick(searchTerm);
+     	      }
              else{
              System.out.println("Registered Users are empty");
              }
-     	}
+     	
      	//Here we are Verifying  Entered Name Registered User Details are displayed or not
      	
      	regusers.SearchCompare(searchTerm);   
@@ -414,19 +410,22 @@ public class StepDefination {
 	  //Here user Clicking on Login Button of User Interface
 	  booking.UserLoginClick();
   }
-  @Then("User Clicks on Car Listing and Select Car View Details and verify interfaces")
-  public void  user_clicks_on_car_listing_and_select_car_view_details_and_verify_interfaces() {
+  @Then("User Clicks on Car Listing and licks on Car View Details and verify interfaces")
+  public void  user_clicks_on_car_listing_and_clicks_on_car_view_details_and_verify_interfaces() {
 	  
 	  //Here we are clicking on Car listing button and verifying its Interface
-	  carlisting.CarListingbuttonClick();
-	  carlisting.VerifyInterfaceCarListing();
-	  //Here we are clicking on car view details button
-	  JavascriptExecutor downpage = (JavascriptExecutor) driver;
-	  downpage.executeScript("window.scrollBy(0,100)");
-	  carlisting.CarViewDetailbuttonClick();
+	    carlisting.CarListingbuttonClick();
+	    carlisting.VerifyInterfaceCarListing();
+
+	  //Here we are clicking on car view details button and verifying its Interface
+	   JavascriptExecutor downpage = (JavascriptExecutor) driver;
+	   downpage.executeScript("window.scrollBy(0,100)");
+	   carlisting.CarViewDetailbuttonClick();
+	   carlisting.VerifyCarViewDetailInterface();
 	  
   }
-  
+ 
+
   @Then ("User Selects from date and To date of Car Booking")
   public void user_selects_from_date_and_to_date_of_car_booking() {
 	  //Here we are randomly selecting date and month
@@ -438,28 +437,28 @@ public class StepDefination {
 	  
 }
   @And("enter the message and click on Book button")
-  public void enter_the_message_and_click_on_book_button() throws InterruptedException {
+  public void enter_the_message_and_click_on_book_button() {
 	
 	//Here we are entering message in text Box
 	  carlisting.EnterText();
 	  //Here we are clicking on book button
 	  carlisting.Bookbutton();
   }
+  String FromdateSearch;
   @Then("Verify Booking Successful or not and Click on Logout button")
      public void verify_booking_successful_or_not_and_click_on_logout_button() throws InterruptedException {
     	try{
-		
 		 Thread.sleep(1500);
          Alert alert = driver.switchTo().alert();
 		 String popupmsg = alert.getText();
     	 System.out.println(popupmsg);
     	 if(popupmsg.contains("successfull.")) {
-			System.out.println("Alert executed");
 			alert.accept();
 			Assert.assertTrue(true);
-		   //Click on DropDown 
-		    booking.UserDropdownClick();
-		  //Logging out from user interface 
+			FromdateSearch = driver.findElement(By.xpath("/html/body/section[2]/div/div[2]/div[2]/div/div/ul/table[1]/tbody/tr[2]/td[2]")).getText();
+			//Click on DropDown 
+			booking.UserDropdownClick();
+		   //Logging out from user interface 
 		    booking.UserLogoutClick();
     		 
     	 }
@@ -467,7 +466,7 @@ public class StepDefination {
 			alert.accept();
 			Assert.assertTrue(true);
 			//Booking is Unsuccessful because of selected from date then it selects another date for Successful Booking
-			user_clicks_on_car_listing_and_select_car_view_details_and_verify_interfaces();
+			user_clicks_on_car_listing_and_clicks_on_car_view_details_and_verify_interfaces();
 			user_selects_from_date_and_to_date_of_car_booking();
 			enter_the_message_and_click_on_book_button();
 			verify_booking_successful_or_not_and_click_on_logout_button();
@@ -482,9 +481,10 @@ public class StepDefination {
   public void verify_noted_fromdate_in_new_bookings_and_note_booking_no() {
 	  
 	  //Here we are Noting down the Booking No
-	  BOOKINGNO=carlisting.verifyfromdate();
-		   
+	  BOOKINGNO=carlisting.verifyfromdate(FromdateSearch);
+	  System.out.println("CompareBookingNo="+BOOKINGNO);	   
   }
+
 }
 
 

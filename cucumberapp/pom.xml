@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>carrental</artifactId>
+  <artifactId>cucumberapp</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>car rental project</name>

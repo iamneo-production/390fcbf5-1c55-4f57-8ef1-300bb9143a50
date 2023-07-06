@@ -269,9 +269,4 @@ public class Booking {
 		logoutbutton.click();
 	}
 	
-	
-	
-	
-	
-	
 }
