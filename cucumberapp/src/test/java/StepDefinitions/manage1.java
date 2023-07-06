@@ -84,7 +84,7 @@ public class manage1 {
 	@And("admin enter the text")
 	public void user_enter_the_text() throws InterruptedException {
 	    manage.managecontactusquerysearch("sai teja pending");
-	    //Thread.sleep(3000);
+	    
 	}
 
 	@Then("the details of the entered text will appear")
