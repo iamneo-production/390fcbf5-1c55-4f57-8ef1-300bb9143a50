@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="StepDefinitions.TestRunner" time="389.505" errors="0" skipped="0">
+<testsuite tests="22" failures="0" name="StepDefinitions.TestRunner" time="414.948" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,25 +59,26 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="9.932"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="8.099"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="13.837"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="17.743"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="16.186"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="15.835"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check whether the booking is done by the user" time="18.402"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="8.178"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="21.29"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="8.622"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="7.721"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="13.684"/>
+  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="9.638"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="8.186"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="13.885"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of recently listed cars" time="11.985"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="18.515"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="16.441"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="15.839"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="8.285"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="16.234"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Verify the warning message for empty fields" time="33.813"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="8.675"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="7.716"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="13.724"/>
   <testcase classname="Feature to test FAQs button functionality" name="Check functionality of Subscribe button" time="10.174"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="7.667"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="26.213"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.425"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.582"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="47.302"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify post a testimonial" time="43.699"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify empty testimonial field" time="20.641"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify signout option" time="23.273"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="7.675"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="26.347"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.534"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.704"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="48.664"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify post a testimonial" time="43.766"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify empty testimonial field" time="20.785"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify signout option" time="23.363"/>
 </testsuite>

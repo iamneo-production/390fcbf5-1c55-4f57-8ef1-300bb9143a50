@@ -11,7 +11,9 @@ public class Homepage {
 	}
 	
 	@FindBy(xpath="//*[@id=\"navigation\"]/ul/li[4]/a")WebElement Faqsbtn;
+	@FindBy(xpath="/html/body/section[2]/div/div/p")WebElement Faqsfield;
 	@FindBy(xpath="//*[@id=\"navigation\"]/ul/li[5]/a")WebElement Contactusbtn;
+	@FindBy(xpath="/html/body/section[1]/div[1]/div/div/h1")WebElement Contactusfield;
 	@FindBy(id = "fullname")WebElement fullname;
 	@FindBy(id="emailaddress")WebElement email;
 	@FindBy(id="phonenumber")WebElement phnnumber;
@@ -30,13 +32,13 @@ public class Homepage {
 		Faqsbtn.click();
 	}
 	public void checkfaqspage() {
-		driver.getPageSource().contains("FAQs");
+		Faqsfield.isDisplayed();
 	}
 	public void ContactUsBtn() {
 		Contactusbtn.click();
 	}
 	public void checkcontacuspage() {
-		driver.getPageSource().contains("Contact Info");
+		Contactusfield.isDisplayed();
 	}
 	public void FullName() {
 		fullname.sendKeys("Y SAI TEJA");
@@ -55,6 +57,33 @@ public class Homepage {
 	}
 	public void checkmessageinfo() {
 		driver.getPageSource().contains("SUCCESS:Query Sent. We will contact you shortly");
+	}
+	public void clearfullname() {
+		fullname.clear();
+	}
+	public void clearemail() {
+		email.clear();
+	}
+	public void clearphonenumber() {
+		phnnumber.clear();
+	}
+	public void checkvalidation() {
+		String message=fullname.getAttribute("validationMessage");
+		System.out.println(message);
+		if(message.contains("Please fill out this field.")) {
+			System.out.println("popup is displayed");
+		}
+		String message1=email.getAttribute("validationMessage");
+		System.out.println(message1);
+		if(message1.contains("Please fill out this field.")) {
+			System.out.println("popup is displayed");
+		}
+		String message2=phnnumber.getAttribute("validationMessage");
+		System.out.println(message2);
+		if(message.contains("Please fill out this field.")) {
+			System.out.println("popup is displayed");
+		}
+		
 	}
 	public void AdminBtn() {
 		adminbtn.click();

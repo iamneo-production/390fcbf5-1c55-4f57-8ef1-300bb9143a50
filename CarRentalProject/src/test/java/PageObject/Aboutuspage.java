@@ -12,6 +12,7 @@ public class Aboutuspage {
 	}
 	@FindBy(xpath="/html/body/header/div/div/div/div[1]/div/a/img")WebElement carRentalPortal;
 	@FindBy(xpath="//*[@id=\"navigation\"]/ul/li[2]/a")WebElement aboutusbutton;
+	@FindBy(xpath="/html/body/section[2]/div/div/p[1]") WebElement aboutusmsg;
 	
 	
 	public void checkCarRentalPortal() {
@@ -21,6 +22,12 @@ public class Aboutuspage {
 		aboutusbutton.click();
 	}
 	public void checkAboutuspage() {
-	    driver.getPageSource().contains("About Us");
+	    boolean abt = aboutusmsg.isDisplayed();
+	    if(abt) {
+	    	System.out.println("Aboutus page is displayed");
+	    }
+	    else {
+	    	System.out.println("Aboutus page is not displayed");
+	    }
 	}
 }

@@ -16,6 +16,12 @@ Feature: Feature to test Car Listing page functionality
     And click on Find Your Car
     Then user should be able to view Car Listings
 
+  Scenario: Check functionality of recently listed cars
+    When user clicks on CarListing button
+    Then user should be able to view Car Listings
+    When click on one of the recently listed cars
+    Then user should be able to view the details of car
+
   Scenario: Check the details of the car is displayed on clicking on view details button
     When user clicks on CarListing button
     Then user should be able to view Car Listings
@@ -25,7 +31,7 @@ Feature: Feature to test Car Listing page functionality
     Then all the accessories are displayed
 
   Scenario: Check functionality of prev and next buttons
-  	When user clicks on CarListing button
+    When user clicks on CarListing button
     Then user should be able to view Car Listings
     When click on view details
     And click on prev button
@@ -34,17 +40,10 @@ Feature: Feature to test Car Listing page functionality
     Then user should be able to view next image
 
   Scenario: Check functionality of Vehicle Overview button
-  	When user clicks on CarListing button
+    When user clicks on CarListing button
     Then user should be able to view Car Listings
     When click on view details
     And click on Vehicle Overview button
     Then user should be able to view overview of the vehicle
-    
-  Scenario: Check whether the booking is done by the user
-  	And Login as customer
-  	Then sign in as admin
-  	And click on bookings 
-  	And click on New
-  	Then check whether the customer name is viewed on bookings
-  	
- 
+
+

@@ -1,6 +1,9 @@
 package StepDefinitions;
 
 
+import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
@@ -60,7 +63,7 @@ public class Aboutusstep {
 
 
 
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4451"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
 		
 		aboutuspage = new Aboutuspage(driver);
 		carlisting = new carlistingpage(driver);
@@ -102,6 +105,18 @@ public class Aboutusstep {
 	@Then("user should be able to view Car Listing Page")
 	public void user_should_be_able_to_view_Car_Listing_Page() throws InterruptedException {
 	    carlisting.checkcarlistingpage();
+	    Thread.sleep(2000);
+	}
+	
+	@When("click on one of the recently listed cars")
+	public void click_on_one_of_the_recently_listed_cars() throws InterruptedException {
+	    carlisting.RecentlyListedCar();
+	    Thread.sleep(1000);
+	}
+
+	@Then("user should be able to view the details of car")
+	public void user_should_be_able_to_view_the_details_of_car() throws InterruptedException {
+	    carlisting.checkrecentlylstcar();
 	    Thread.sleep(2000);
 	}
 	
@@ -179,37 +194,7 @@ public class Aboutusstep {
 	public void user_should_be_able_to_view_overview() throws InterruptedException {
 		carlisting.checkvehicleoverview();
 		Thread.sleep(2000);
-	}
-	@And("Login as customer")
-	public void login_as_customer() throws InterruptedException {
-	    carlisting.CustomerLogin();
-	    Thread.sleep(2000);
-	}
-
-
-	@Then("sign in as admin")
-	public void sign_in_as_admin() throws InterruptedException {
-	   carlisting.adminLogin();
-	   Thread.sleep(2000);
-	}
-
-	@Then("click on bookings")
-	public void click_on_bookings() {
-	    carlisting.BookingBtn();
-	}
-
-	@Then("click on New")
-	public void click_on_New() throws InterruptedException {
-	   carlisting.NewBtn();
-	   Thread.sleep(2000);
-	}
-
-	@Then("check whether the customer name is viewed on bookings")
-	public void check_whether_the_customer_name_is_viewed_on_bookings() throws InterruptedException {
-	   carlisting.checkBooking();
-	   Thread.sleep(2000);
-	}
-	
+	}	
 	@When("click on FAQs button")
 	public void click_on_FAQs_button() throws InterruptedException {
 		homepage.FAQsbtn();
@@ -236,25 +221,22 @@ public class Aboutusstep {
 	}
 
 	@When("type your full name")
-	public void type_your_full_name() throws InterruptedException {
+	public void type_your_full_name() {
 		homepage.FullName();
-		Thread.sleep(2000);
 	}
 
 	@And("type your email")
-	public void type_your_email() throws InterruptedException {
+	public void type_your_email() {
 		homepage.Emailadd();
-		Thread.sleep(2000);
 	}
 
 	@And("your phone number")
-	public void your_phone_number() throws InterruptedException {
+	public void your_phone_number() {
 		homepage.PhoneNumber();
-		Thread.sleep(2000);
 	}
 
 	@And("type a message")
-	public void type_a_message() throws InterruptedException {
+	public void type_a_message() throws InterruptedException{
 		homepage.Message();
 		Thread.sleep(2000);
 	}
@@ -262,7 +244,7 @@ public class Aboutusstep {
 	@And("click on send message")
 	public void click_on_send_message() throws InterruptedException {
 		homepage.SendBtn();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	@Then("user should view SUCCESS")
@@ -270,6 +252,31 @@ public class Aboutusstep {
 		homepage.checkmessageinfo();
 		Thread.sleep(2000);
 	}
+	
+	@When("clear full name")
+	public void clear_full_name() throws InterruptedException {
+	   homepage.clearfullname();
+	   Thread.sleep(2000);
+	}
+
+	@Then("a validation message is displayed")
+	public void a_validation_message_is_displayed() throws InterruptedException {
+	    homepage.checkvalidation();
+	    Thread.sleep(2000);
+	}
+
+	@When("clear email")
+	public void clear_email() throws InterruptedException {
+	    homepage.clearemail();
+	    Thread.sleep(2000);
+	}
+
+	@When("clear phone number")
+	public void clear_phone_number() throws InterruptedException {
+	   homepage.clearphonenumber();
+	   Thread.sleep(2000);
+	}
+
 	@And("click on Admin button")
 	public void click_on_Admin_button() throws InterruptedException{
 		homepage.AdminBtn();
@@ -327,6 +334,7 @@ public class Aboutusstep {
 	   homepage.checkpopupmessage();
 	   Thread.sleep(2000);
 	}
+	
 	@When("click on Service Helpline option")
 	public void click_on_Service_Helpline_option() throws InterruptedException {
 	    homepage.HelpLineBtn();
@@ -595,7 +603,6 @@ public class Aboutusstep {
 	    profile.checkloginbuttonhome();
 	}
 	}
-
 
 
 

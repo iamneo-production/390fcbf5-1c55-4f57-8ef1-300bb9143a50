@@ -18,6 +18,25 @@ Feature: Feature to test FAQs button functionality
     And type a message
     And click on send message
     Then user should view SUCCESS
+  
+  Scenario: Verify the warning message for empty fields
+  	And click on Contact us button
+    Then user should be able to view Contact us Page
+    When type your full name
+    And type your email
+    And your phone number
+    And type a message
+    When clear full name
+    And click on send message
+    Then a validation message is displayed
+    When type your full name
+    When clear email
+    And click on send message
+    Then a validation message is displayed
+    When type your email
+    When clear phone number
+    And click on send message
+    Then a validation message is displayed
 
   Scenario: Check Admin sign in page is displayed on clicking Admin button
     And click on Admin button
@@ -41,3 +60,6 @@ Feature: Feature to test FAQs button functionality
   Scenario: Check functionality Service HelpLine button
     When click on Service Helpline option
     Then user should be able to see a popup message
+  
+  
+  

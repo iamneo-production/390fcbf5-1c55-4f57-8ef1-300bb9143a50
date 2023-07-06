@@ -262,6 +262,92 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "Check functionality of recently listed cars",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user clicks on CarListing button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_CarListing_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be able to view Car Listings",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Car_Listings()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on one of the recently listed cars",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_one_of_the_recently_listed_cars()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be able to view the details of car",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_the_details_of_car()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Check the details of the car is displayed on clicking on view details button",
   "description": "",
   "keyword": "Scenario"
@@ -541,102 +627,6 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user launches chrome browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user navigates to url",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user shoud be able to view carrental portal",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Check whether the booking is done by the user",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "Login as customer",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.login_as_customer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "sign in as admin",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.sign_in_as_admin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on bookings",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.click_on_bookings()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on New",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.click_on_New()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "check whether the customer name is viewed on bookings",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.Aboutusstep.check_whether_the_customer_name_is_viewed_on_bookings()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
 formatter.uri("file:src/test/resources/Features/homepage.feature");
 formatter.feature({
   "name": "Feature to test FAQs button functionality",
@@ -828,6 +818,222 @@ formatter.step({
 });
 formatter.match({
   "location": "StepDefinitions.Aboutusstep.user_should_view_SUCCESS()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user launches chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_launches_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigates to url",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_navigates_to_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user shoud be able to view carrental portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_shoud_be_able_to_view_carrental_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify the warning message for empty fields",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "click on Contact us button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_Contact_us_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be able to view Contact us Page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.user_should_be_able_to_view_Contact_us_Page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type your full name",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.type_your_full_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type your email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.type_your_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "your phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.your_phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type a message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.type_a_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clear full name",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clear_full_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on send message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_send_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a validation message is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.a_validation_message_is_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type your full name",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.type_your_full_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clear email",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clear_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on send message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_send_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a validation message is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.a_validation_message_is_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type your email",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.type_your_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clear phone number",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.clear_phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on send message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.click_on_send_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a validation message is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.Aboutusstep.a_validation_message_is_displayed()"
 });
 formatter.result({
   "status": "passed"
