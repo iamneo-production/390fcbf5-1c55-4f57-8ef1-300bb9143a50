@@ -19,11 +19,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import java.net.URL;
 import io.cucumber.java.After;
 
-
-
-
-
-
 public class StepDefination {
 	public WebDriver driver = null;
 	public Booking booking;
@@ -316,10 +311,13 @@ public class StepDefination {
     // 	 //Here we are clicking on login user button
     // 	 booking.UserLoginClick();
     	 
+    	 
     // 	 //Here we are clicking on User dropdown and going to My Booking of User
     // 	 booking.UserDropdownClick();
     // 	 booking.UserMyBookingClick();
     //  }
+	//*[@id="zctb"]/tbody/tr[1]/td[7]/a
+	//*[@id="zctb"]/tbody/tr[2]/td[7]/a
      
      @Then ("Verify the Status of Noted Booking Number and Clicks on Logout button")
      public void verify_the_status_of_noted_booking_number_and_clicks_on_logout_button() {
