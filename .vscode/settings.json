@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "maven.view": "hierarchical",
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.compile.nullAnalysis.mode": "automatic"
+=======
+    "java.configuration.updateBuildConfiguration": "disabled"
+>>>>>>> Car_Rental_Management-kalyan325
 }
