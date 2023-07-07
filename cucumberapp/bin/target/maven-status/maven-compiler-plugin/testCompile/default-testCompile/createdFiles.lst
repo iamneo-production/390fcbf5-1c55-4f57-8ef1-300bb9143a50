@@ -3,4 +3,3 @@ testRunner/TestRun.class
 pageObject/CreateBrandPage.class
 pageObject/ManageBrandPage.class
 stepDefinition/Stepdefinition.class
-pageObject/AdminLoginPage.class
