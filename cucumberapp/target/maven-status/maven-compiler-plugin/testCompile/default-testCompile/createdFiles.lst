@@ -1,7 +1,7 @@
+PageObject/ManageSubscribersPage.class
 PageObject/ManageTestimonialPage.class
 StepDefinitions/TestRunner.class
 PageObject/ManagePages.class
-StepDefinitions/stepdefinitions.class
-PageObject/ManageSubscribersPage.class
 PageObject/AdminPage.class
+StepDefinitions/stepdefinitions.class
 PageObject/UpdateContactInfoPage.class
