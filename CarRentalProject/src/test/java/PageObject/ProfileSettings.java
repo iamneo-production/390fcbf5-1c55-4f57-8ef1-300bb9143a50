@@ -51,6 +51,17 @@ public class ProfileSettings {
 	         System.out.println("Welcome message is not dispalyed");
 	      }
 	 }
+	 public void invalid_login(String email, String password) {
+		emailid.sendKeys(email);
+		pass.sendKeys(password);
+	}
+	
+	public void geterror_message(String error_message) {
+		error_message = driver.switchTo().alert().getText();
+	   System.out.println(error_message);
+	   driver.switchTo().alert().accept();
+	}
+
 	 public void clickondropdown() {
 		 dropdown.click();
 		 profilesettingsbutton.click();

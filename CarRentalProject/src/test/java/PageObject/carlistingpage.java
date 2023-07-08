@@ -1,5 +1,7 @@
 package PageObject;
 
+import java.util.List;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
@@ -29,6 +31,13 @@ public class carlistingpage {
 	@FindBy(xpath="/html/body/section[2]/div/div/aside/div[2]/div[2]/ul/li[1]/div[2]/a") WebElement RecentcarBtn;
 	@FindBy(xpath="/html/body/section[2]/div/div[1]/div[1]") WebElement cartitle;
 	
+	@FindAll({@FindBy(xpath="//div[@class=\"product-listing-content\"]")}) List<WebElement> carlists;
+	@FindAll({@FindBy(xpath="//div[@class=\"recent_post_title\"]")}) List<WebElement> recentcarlists;
+	@FindBy(xpath="/html/body/section[2]/div/div[5]/div/div/div/div[2]/h5/a") WebElement similarcar;
+	@FindBy(xpath="/html/body/section[2]/div/div[1]/div[1]/h2") WebElement cardetails;
+	@FindAll({@FindBy(xpath="//div[@class=\"tab-pane active\"]")}) List<WebElement> accessorieslist;
+	@FindBy(xpath="//div[@class=\"tab-content\"]") WebElement caroverview;
+	
 	public void Carlistingbtn() {
 		carlistingbutton.click();
 	}
@@ -38,6 +47,12 @@ public class carlistingpage {
 	}
 		else {
 			System.out.println("Carlisting page is not displayed");
+		}
+	}
+	public void listoutcars() {
+		System.out.println("Total listings are: "+ carlists.size());
+		for(WebElement x : carlists ) {
+			System.out.println(x.getText());
 		}
 	}
 	public void selectbrand() {
@@ -60,13 +75,22 @@ public class carlistingpage {
 	public void checkcardetails() {
 		driver.getPageSource().contains("Vehicle Overview");
 	}
-	
+	public void overviewofcar() {
+		System.out.println(caroverview.getText());
+	}
 	public void Accessoriesbtn() {
 		accesories.click();
 	}
 	public void checkAccessories() {
 		//driver.getPageSource().contains("ACCESSORIES");
 		accessoriesfields.isDisplayed();
+	}
+	public void listoutaccessories() {
+		System.out.println(accessorieslist.size());
+		for(WebElement y : accessorieslist ) {
+			System.out.println(y.getText());
+		}
+		
 	}
 	public void PrevBtn() {
 		Actions act =  new Actions(driver);
@@ -94,6 +118,19 @@ public class carlistingpage {
 	}
 	public void checkrecentlylstcar() {
 		cartitle.isDisplayed();
+	}
+	public void checkrecentlylistedcars() {
+		System.out.println(recentcarlists.size());
+		for(WebElement y : recentcarlists ) {
+			System.out.println(y.getText());
+		}
+		
+	}
+	public void similarcarbtn() {
+		similarcar.click();
+	}
+	public void checksimilarcardetails() {
+		cardetails.isDisplayed();
 	}
 	
 }

@@ -23,7 +23,7 @@ import PageObject.Homepage;
 import PageObject.ProfileSettings;
 import PageObject.UserModule;
 import PageObject.carlistingpage;
-public class Aboutusstep {
+public class SaitejaStepdefinition {
 	public WebDriver driver = null;
 	public Aboutuspage aboutuspage;
 	public carlistingpage carlisting;
@@ -107,7 +107,18 @@ public class Aboutusstep {
 	    carlisting.checkcarlistingpage();
 	    Thread.sleep(2000);
 	}
-	
+
+	@And("list out the available car details")
+	public void list_out_the_available_car_details() throws InterruptedException {
+	   carlisting.listoutcars();
+	   Thread.sleep(2000);
+	}
+
+	@And("list out all the recently listed cars")
+	public void list_out_all_the_recently_listed_cars() throws InterruptedException {
+	   carlisting.checkrecentlylistedcars();
+	   Thread.sleep(2000);
+	}
 	@When("click on one of the recently listed cars")
 	public void click_on_one_of_the_recently_listed_cars() throws InterruptedException {
 	    carlisting.RecentlyListedCar();
@@ -143,6 +154,13 @@ public class Aboutusstep {
 	    carlisting.checkcarlistings();
 	    Thread.sleep(2000);
 	}
+
+	@And("list out all the cars")
+	public void list_out_all_the_cars() throws InterruptedException {
+	    carlisting.listoutcars();
+	    Thread.sleep(2000);
+	    
+	}
 	
 	@When("click on view details")
 	public void click_on_view_details() throws InterruptedException {
@@ -166,6 +184,26 @@ public class Aboutusstep {
 	public void all_the_accessories_are_displayed() throws InterruptedException {
 	    carlisting.checkAccessories();
 	    Thread.sleep(2000);
+	}
+	@And("list out all the accessories")
+	public void list_out_all_the_accessories() throws InterruptedException {
+	    carlisting.listoutaccessories();
+	    Thread.sleep(2000);
+	}
+	@Then("user should list out all the similar cars")
+	public void user_should_list_out_all_the_similar_cars() throws InterruptedException {
+	    carlisting.listoutcars();
+	    Thread.sleep(2000);
+	}
+	@When("click on one of the similar car")
+	public void click_on_one_of_the_similar_car() {
+	    carlisting.similarcarbtn();
+	}
+
+	@Then("user should be able to view details of the car")
+	public void user_should_be_able_to_view_details_of_the_car() throws InterruptedException {
+		carlisting.checksimilarcardetails();
+		Thread.sleep(2000);
 	}
 	@And("click on prev button")
 	public void click_on_prev_button() throws InterruptedException {
@@ -195,6 +233,12 @@ public class Aboutusstep {
 		carlisting.checkvehicleoverview();
 		Thread.sleep(2000);
 	}	
+	@And("display the details of the car")
+	public void print_the_details_of_the_car() throws InterruptedException {
+	    carlisting.overviewofcar();
+	    Thread.sleep(2000);
+	}
+	
 	@When("click on FAQs button")
 	public void click_on_FAQs_button() throws InterruptedException {
 		homepage.FAQsbtn();
@@ -508,6 +552,18 @@ public class Aboutusstep {
 	@Then("user should see the welcome message")
 	public void user_should_see_the_welcome_message() throws InterruptedException{
 	    profile.checkwelcomemessage();
+	    Thread.sleep(2000);
+	}
+	@When("user enters invalid {string} and {string}")
+	public void user_enters_invalid_and(String email, String password) throws InterruptedException {
+	    profile.invalid_login(email, password);
+	    Thread.sleep(2000);
+	    
+	}
+
+	@Then("user should see an error message indicating {string}")
+	public void user_should_see_an_error_message_indicating(String error_message) throws InterruptedException {
+	    profile.geterror_message(error_message);
 	    Thread.sleep(2000);
 	}
 

@@ -117,6 +117,7 @@ public class Homepage {
 	}
 	public void checkpopupmessage() {
 		 String str = driver.switchTo().alert().getText();
+		 System.out.println(str);
 		 if(str.contains("Subscribed successfully.") || str.contains("Already Subscribed.")) {
 			   driver.switchTo().alert().accept();
 		   }
