@@ -1,7 +1,7 @@
 Feature: feature to test the manage subscribers Page
 
   Background: 
-    Given user opens url "https://carrental.neohire.io/admin/"
+    Given user opens the url "https://carrental.neohire.io/admin/"
     Then user should able see the admin|signin page
     And User should enter username as "admin"  and password ad "Test@12345"
     And click on login

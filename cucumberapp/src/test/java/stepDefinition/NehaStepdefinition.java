@@ -26,7 +26,7 @@ public class NehaStepdefinition {
 		}
 	}
 	@SuppressWarnings("deprecation")
-	@Given("user opens url {string}")
+	@Given("user opens the url {string}")
 	public void user_opens_url(String string)throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");

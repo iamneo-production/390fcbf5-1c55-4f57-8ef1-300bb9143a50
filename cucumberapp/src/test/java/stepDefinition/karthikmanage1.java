@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepDefinition;
 
 //import java.util.concurrent.TimeUnit;
 
@@ -15,7 +15,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 //import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.*;
 
-public class manage1 {
+public class karthikmanage1 {
 	public WebDriver driver=null;
 	public ManageContactUsQueryPage manage;
 	public AdminPage admin;
@@ -34,7 +34,7 @@ public class manage1 {
 	    driver.navigate().to("https://carrental.neohire.io/admin/");
 	}
 
-	@Then("user should able see the admin|signin page")
+	@Then("user should able to see admin|signin page")
 	public void user_should_able_see_the_admin_signin_page() {
 		admin.adminloginpage();
 	}
@@ -46,13 +46,13 @@ public class manage1 {
 		//Thread.sleep(1000);
 	}
 
-	@And("click on login")
+	@And("click on the login")
 	public void click_on_login() throws InterruptedException {
 		admin.adminloginbutton();
 		//Thread.sleep(1000);
 	}
 
-	@Then("admin should able to view car rental portal | admin panel")
+	@Then("admin should able to view the car rental portal | admin panel")
 	public void user_should_able_to_view_car_rental_portal_admin_panel() {
 		manage.checkcarrentalportal();
 	}
@@ -87,7 +87,7 @@ public class manage1 {
 	    
 	}
 
-	@Then("the details of the entered text will appear")
+	@Then("the details of entered text will appear")
 	public void the_details_of_the_entered_text_will_appear() throws InterruptedException{
 	    // Write code here that turns the phrase above into concrete actions
 		manage.managecontactusqueryfindtext();

@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepDefinition;
 //import java.util.concurrent.TimeUnit;
 import java.net.MalformedURLException;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -12,7 +12,7 @@ import pageObject.AdminPage;
 import pageObject.ManageVehiclespage;
 //import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.*;
-public class ManageVehiclesDef {
+public class karthikManageVehiclesDef {
 	public WebDriver driver=null;
 	public ManageVehiclespage manage;
 	public AdminPage adminpage;

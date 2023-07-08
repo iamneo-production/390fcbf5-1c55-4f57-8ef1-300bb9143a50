@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepDefinition;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import pageObject.AdminPage;
 import pageObject.PostaVehiclePage;
 import io.cucumber.java.en.*;
-public class PostaVehicle {
+public class karthikPostaVehicle {
 	public WebDriver driver=null;
 	public PostaVehiclePage manage;
 	public AdminPage adminpage;
