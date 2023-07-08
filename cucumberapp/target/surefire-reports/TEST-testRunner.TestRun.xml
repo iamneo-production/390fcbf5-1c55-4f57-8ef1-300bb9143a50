@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="testRunner.TestRun" time="125.847" errors="0" skipped="0">
+<testsuite tests="46" failures="0" name="testRunner.TestRun" time="294.212" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,25 +59,50 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Reg Users Page in Dashboard" time="7.899"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Vehicles Page in Dashboard" time="5.476"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Total Bookings Page in Dashboard" time="5.569"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Brands Page in Dashboard" time="5.63"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Subscibers Page in Dashboard" time="5.475"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Queries Page in Dashboard" time="5.635"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Testimonials Page in Dashboard" time="5.42"/>
-  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Logout Functionality in Dashboard" time="4.973"/>
-  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Brand Name in Create Brand" time="8.084"/>
-  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Empty Brand Name in Create Brand" time="5.113"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="6.23"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #1" time="5.576"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #2" time="5.761"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #3" time="5.724"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #4" time="5.662"/>
-  <testcase classname="Admin Login Functionality for Car Rental Website" name="Navigating to the back to home page" time="5.376"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify show and search in Manage Brands" time="5.861"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify previous and next button in Manage Brands" time="5.472"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify edit option in Manage Brands" time="9.727"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #1" time="5.775"/>
-  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #2" time="5.409"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Reg Users Page in Dashboard" time="7.786"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Vehicles Page in Dashboard" time="5.582"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Total Bookings Page in Dashboard" time="5.594"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Listed Brands Page in Dashboard" time="5.481"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Subscibers Page in Dashboard" time="5.477"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Queries Page in Dashboard" time="5.523"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Testimonials Page in Dashboard" time="5.518"/>
+  <testcase classname="Admin Dashboard Functionality for Car Rental Website" name="Verify Logout Functionality in Dashboard" time="5.02"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Brand Name in Create Brand" time="7.862"/>
+  <testcase classname="Verify Create Brand Functionality for car Rental Management" name="Verify the Empty Brand Name in Create Brand" time="5.071"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="6.314"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #1" time="5.662"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #2" time="5.72"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #3" time="5.687"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials #4" time="5.663"/>
+  <testcase classname="Admin Login Functionality for Car Rental Website" name="Navigating to the back to home page" time="5.42"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify show and search in Manage Brands" time="5.867"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify previous and next button in Manage Brands" time="5.524"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify edit option in Manage Brands" time="9.73"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #1" time="5.773"/>
+  <testcase classname="Verify Manage Brands Functionality for car Rental Management" name="Verify delete option in Manage Brands #2" time="5.459"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate the Manage Page button is working or not - TC_ID_ManagePages_1" time="5.798"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate terms and conditions option in dropdown - TC_ID_ManagePage_2" time="8.615"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate privacy and policy option in dropdown - TC_ID_ManagePage_3" time="8.528"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate about us option in dropdown - TC_ID_ManagePage_4" time="8.367"/>
+  <testcase classname="feature to test the Manage pages page" name="Validate FQAs option in dropdown  -TC_ID_ManagePage_5" time="8.527"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the search field in manage subscribers page -  TC_ID_Manage_subscribers_1" time="5.769"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_2" time="6.073"/>
+  <testcase classname="feature to test the manage subscribers Page" name="validate the show field in manage subscribers page -  TC_ID_Manage_subscribers_3" time="5.712"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  -  TC_ID_Manage_subscribers_4" time="5.865"/>
+  <testcase classname="feature to test the manage subscribers Page" name="Validate the action option in Manage Subscribers Page  - TC_ID_Manage_subscribers_5" time="5.565"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the search field in manage testimonial page -  TC_ID_Manage_1" time="5.811"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_2" time="6.106"/>
+  <testcase classname="feature to test the manage testimonial Page" name="validate the show field in manage testimonial page -  TC_ID_Manage_3" time="5.717"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on okay in testimonial page - TC_ID_Manage_4" time="8.986"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the inactive option and then click on cancel in testimonial page -  TC_ID_Manage_5" time="6.219"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on okay in testimonial page - TC_ID_Manage_6" time="9.431"/>
+  <testcase classname="feature to test the manage testimonial Page" name="Validate the active option and then click on cancel in testimonial page - TC_ID_Manage_7" time="6.159"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid Email id -TC_ID_Update_contact_1" time="6.014"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter invalid contact - TC_ID_Update_contact_2 (Failed testcase)" time="6.266"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only email, contact -TC_ID_Update_contact_3" time="5.367"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, contact - TC_ID_Update_contact_4" time="5.355"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when the admin enter only address, emailid - TC_ID_Update_contact_5" time="5.364"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the popup message is displayed when all the fields are empty - TC_ID_Update_contact_6" time="5.625"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in home page -   TC_ID_Update_contact_7" time="9.37"/>
+  <testcase classname="feature to test the Update contact info --#line 170 in javafile" name="Validate the admin can change the fields in Update Contact Info in contact us page- TC_ID_Update_contact_8" time="7.87"/>
 </testsuite>

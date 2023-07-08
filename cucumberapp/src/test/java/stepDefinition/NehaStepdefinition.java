@@ -1,4 +1,4 @@
- package StepDefinitions;
+ package stepDefinition;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -7,10 +7,12 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import io.cucumber.java.After;
-import PageObject.*;
+import pageObject.*;
 import io.cucumber.java.en.*;
+import pageObject.ManageTestimonialPage;
+import pageObject.UpdateContactInfoPage;
 
-public class stepdefinitions {
+public class NehaStepdefinition {
 	public WebDriver driver=null;
 	public ManageTestimonialPage manage;
 	public AdminPage admin;
