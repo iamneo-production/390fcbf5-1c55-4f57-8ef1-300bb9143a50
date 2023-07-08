@@ -18,7 +18,7 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class Stepdefinition {
+public class BhavanaStepdefinition {
 
 	public WebDriver driver=null;
 	public AdminLoginPage loginPage;
