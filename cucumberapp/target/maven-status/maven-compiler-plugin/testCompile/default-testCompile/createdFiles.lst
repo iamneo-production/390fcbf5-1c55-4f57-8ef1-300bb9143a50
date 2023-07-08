@@ -4,3 +4,10 @@ pageObject/CreateBrandPage.class
 pageObject/ManageBrandPage.class
 stepDefinition/Stepdefinition.class
 pageObject/AdminLoginPage.class
+PageObject/ManageSubscribersPage.class
+PageObject/ManageTestimonialPage.class
+StepDefinitions/TestRunner.class
+PageObject/ManagePages.class
+PageObject/AdminPage.class
+StepDefinitions/stepdefinitions.class
+PageObject/UpdateContactInfoPage.class
