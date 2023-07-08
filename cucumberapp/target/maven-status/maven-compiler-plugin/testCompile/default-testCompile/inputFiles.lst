@@ -10,3 +10,11 @@
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/AdminLoginPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/AdminPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageSubscribersPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/PostaVehiclePage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageVehiclespage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/StepDefinitions/TestRunner.java
+/home/coder/project/workspace/cucumberapp/src/test/java/StepDefinitions/ManageVehiclesDef.java
+/home/coder/project/workspace/cucumberapp/src/test/java/StepDefinitions/manage1.java
+/home/coder/project/workspace/cucumberapp/src/test/java/StepDefinitions/PostaVehicle.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageContactUsQueryPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/AdminPage.java
