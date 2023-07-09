@@ -1,0 +1,8 @@
+PageObject/ManageTestimonialsPage.class
+PageObject/ManageContactUsQueryPage.class
+PageObject/ContactUsPage.class
+PageObject/RegisteredUsersPage.class
+BaseTest/BaseClass.class
+sample1/SampleTest.class
+PageObject/FAQPage.class
+TestRunner/RunTest.class

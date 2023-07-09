@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="70.58">
+    <testcase classname="Contact Us" name="Home | Contact Us" time="21.519">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter Invalid FullName,Invalid EmailAddress,Invalid PhoneNumber,Invalid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Home | Contact Us 2" time="9.126">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter valid FullName,valid EmailAddress,valid PhoneNumber,valid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Admin | Manage Contact Us Query" time="12.231">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/admin/"...................passed
+Then User should be able to view the Admin Page.............................passed
+When User Enter UserName,Password...........................................passed
+And Click on Login..........................................................passed
+And User Click on ManageContactUsQuery......................................passed
+Then Verify the ManageContactUsPage.........................................passed
+When Click on Search button.................................................passed
+And Enter anyone details among valid FullName,valid EmailAddress,valid PhoneNumber,valid Message,valid PostingDate,valid Action.passed
+And Click on action button..................................................passed
+And Select the Show entries Option..........................................passed
+And Check the no of entries made............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="FAQs" name="Home | FAQs" time="5.189">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/page.php?type=faqs".......passed
+Then User should be able to view the message................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="ManageTestimonials" name="Admin | Manage Testimonial" time="12.636">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/admin/"...................passed
+Then User should be able to view the Admin Page.............................passed
+When User Enter UserName,Password...........................................passed
+And Click on Login..........................................................passed
+And User Click on ManageTestimonials........................................passed
+Then Verify the ManageTestimonialsPage......................................passed
+When Click on Search button again0..........................................passed
+And Enter anyone details among valid FullName,valid EmailAddress,valid Testimonials,valid PostingDate,valid Action.passed
+And Click on action button again0...........................................passed
+And Click on action button again0...........................................passed
+And Select the Show entries Option2.........................................passed
+And Check the no of entries made2...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="RegUsers" name="Admin | Reg Users" time="9.581">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/admin/"...................passed
+Then User should be able to view the Admin Page.............................passed
+When User Enter UserName,Password...........................................passed
+And Click on Login..........................................................passed
+And User Click on RegUsers..................................................passed
+Then Verify the RegisteredUsersPage.........................................passed
+When Click on Search button again2..........................................passed
+And Select the Show entries Option1.........................................passed
+And Check the no of entries made1...........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
