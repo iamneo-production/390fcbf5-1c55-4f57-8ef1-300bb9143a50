@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="28" failures="0" name="StepDefinitions.TestRunner" time="517.551" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/coder/project/workspace/CarRentalProject"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/coder/project/workspace/CarRentalProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.18+10-post-Debian-1deb11u1"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.10.162+"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/coder"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="coder"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="9.699"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="11.595"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="16.002"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of recently listed cars" time="14.004"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="20.216"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of similar cars" time="16.442"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="16.391"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="17.998"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="8.487"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="16.435"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Verify the warning message for empty fields" time="33.902"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="8.729"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="7.723"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="13.733"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality of Subscribe button" time="10.317"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="7.763"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="26.679"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.764"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.814"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="47.855"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="15.04"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.731"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.63"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.785"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.579"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify post a testimonial" time="43.826"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify empty testimonial field" time="20.916"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify signout option" time="23.496"/>
+</testsuite>
