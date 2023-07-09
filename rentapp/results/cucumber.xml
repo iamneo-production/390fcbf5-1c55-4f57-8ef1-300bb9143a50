@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="59.773">
-    <testcase classname="Contact Us" name="Home | Contact Us" time="12.761">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="70.58">
+    <testcase classname="Contact Us" name="Home | Contact Us" time="21.519">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -9,7 +9,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Home | Contact Us 2" time="8.776">
+    <testcase classname="Contact Us" name="Home | Contact Us 2" time="9.126">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
@@ -18,7 +18,7 @@ And Click on Send Message button............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Contact Us" name="Admin | Manage Contact Us Query" time="11.736">
+    <testcase classname="Contact Us" name="Admin | Manage Contact Us Query" time="12.231">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
@@ -35,7 +35,7 @@ And Check the no of entries made............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="FAQs" name="Home | FAQs" time="4.882">
+    <testcase classname="FAQs" name="Home | FAQs" time="5.189">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/page.php?type=faqs".......passed
@@ -43,7 +43,7 @@ Then User should be able to view the message................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="ManageTestimonials" name="Admin | Manage Testimonial" time="11.785">
+    <testcase classname="ManageTestimonials" name="Admin | Manage Testimonial" time="12.636">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
@@ -61,7 +61,7 @@ And Check the no of entries made2...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="RegUsers" name="Admin | Reg Users" time="9.545">
+    <testcase classname="RegUsers" name="Admin | Reg Users" time="9.581">
         <system-out>
             <![CDATA[Given User Launch chrome browser............................................passed
 When User opens url "https://carrental.neohire.io/admin/"...................passed
