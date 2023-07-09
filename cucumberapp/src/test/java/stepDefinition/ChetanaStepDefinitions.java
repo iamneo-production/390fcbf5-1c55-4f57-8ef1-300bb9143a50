@@ -1,4 +1,4 @@
-package sample1;
+package stepDefinition;
 import java.net.MalformedURLException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -6,23 +6,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.CapabilityType;
-import PageObject.ContactUsPage;
-import PageObject.FAQPage;
-import PageObject.ManageContactUsQueryPage;
-import PageObject.ManageTestimonialsPage;
-import PageObject.RegisteredUsersPage;
+import pageObject.ContactUsPage;
+import pageObject.FAQPage;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pageObject.ManageContactusQuerypage;
+import pageObject.ManageTestimonialsPage;
+import pageObject.RegisteredUsersPage;
+
 import java.net.URL;
 
-public class SampleTest {
+public class ChetanaStepDefinitions {
 
 	public WebDriver driver=null;
 	public ContactUsPage ContactUsPage;
 	 public FAQPage FAQPage;
-	 public ManageContactUsQueryPage ManageContactUsQueryPage;
+	 public ManageContactusQuerypage ManageContactUsQueryPage;
 	 public ManageTestimonialsPage ManageTestimonialsPage;
 	 public RegisteredUsersPage RegisteredUsersPage;
     @After
@@ -41,7 +42,7 @@ public class SampleTest {
         System.out.println("Chrome browser is launched");
         ContactUsPage = new ContactUsPage(driver);
 	    FAQPage=new FAQPage(driver);
-	    ManageContactUsQueryPage=new ManageContactUsQueryPage(driver);
+	    ManageContactUsQueryPage=new ManageContactusQuerypage(driver);
 	    ManageTestimonialsPage=new ManageTestimonialsPage(driver);
 	    RegisteredUsersPage=new RegisteredUsersPage(driver);    
 	}
@@ -111,8 +112,6 @@ public class SampleTest {
 		ContactUsPage.checkSendMessageButton();
 		tearDown();
 	}
-
-	
 
 	@Then("User should be able to view the Admin Page")
 	public void user_should_be_able_to_view_the_admin_page() {

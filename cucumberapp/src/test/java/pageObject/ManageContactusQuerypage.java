@@ -1,13 +1,13 @@
-package PageObject;
+package pageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class ManageContactUsQueryPage {
+public class ManageContactusQuerypage {
 	public WebDriver edriver;
-	public ManageContactUsQueryPage(WebDriver fdriver)
+	public ManageContactusQuerypage(WebDriver fdriver)
 	{
 	    edriver=fdriver;
 	    PageFactory.initElements(edriver, this);
