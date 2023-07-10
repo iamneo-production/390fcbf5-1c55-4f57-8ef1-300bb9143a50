@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageVehiclespage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Aboutuspage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Carlistingpage.java
@@ -8,10 +7,12 @@
 /home/coder/project/workspace/cucumberapp/src/test/java/BaseTest/BaseClass.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageContactUsQueryPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/karthikPostaVehicle.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/RegUsers.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Homepage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/CreateBrandPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/karthikManageVehiclesDef.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/RegisteredUsersPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Carlisting.java
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/BhavanaStepdefinition.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManagePages.java
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/SaitejaStepdefinition.java
@@ -25,15 +26,10 @@
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/NehaStepdefinition.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/FAQPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/DashBoardPage.java
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Booking.java
+/home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/KalyanStepDefination.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/UpdateContactInfoPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageBrandPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/ChetanaStepDefinitions.java
-/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageSubscribersPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ContactUsPage.java
-=======
-/home/coder/project/workspace/cucumberapp/src/test/java/StepDefination/StepDefination.java
-/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/Carlisting.java
-/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/RegUsers.java
-/home/coder/project/workspace/cucumberapp/src/test/java/TestRunner/TestRun.java
-/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/Booking.java
->>>>>>> fb8e9819c049b1aba6ac1aab5840d3af5a5ccd2c
+/home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageSubscribersPage.java
