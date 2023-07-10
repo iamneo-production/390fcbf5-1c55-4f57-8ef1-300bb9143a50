@@ -97,6 +97,7 @@ public class ManageBrandPage {
 		String suc_msg = successUpdate.getText();
 		return suc_msg;
 	}
+	
 	public void getUpdationDate() {
 		updateDate.isDisplayed();
 	}
