@@ -1,7 +1,7 @@
 Feature: Feature to test Car Listing page functionality
 
   Background: 
-    Given user launches chrome browser
+    Given user launches the chrome browser
     When user navigates to url
     Then user shoud be able to view carrental portal
 

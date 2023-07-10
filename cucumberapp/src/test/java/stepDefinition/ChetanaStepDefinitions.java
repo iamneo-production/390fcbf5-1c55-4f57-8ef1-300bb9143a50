@@ -2,6 +2,7 @@ package stepDefinition;
 import java.net.MalformedURLException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -48,7 +49,7 @@ public class ChetanaStepDefinitions {
 	}
 	@When("User opens url {string}")
 	public void user_opens_url(String string) {
-	    // Write code here that turns the phrase above into concrete actions
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.get(string);
 	} 
 	@When("Click on FAQ Login")

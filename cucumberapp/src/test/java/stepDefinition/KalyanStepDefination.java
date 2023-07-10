@@ -32,7 +32,7 @@ public class KalyanStepDefination {
             driver.quit();
         }
     }
-	@Given("User Launch chrome browser")
+	@Given("User Launch the chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
@@ -49,7 +49,7 @@ public class KalyanStepDefination {
 	}
 	
 	
-	@When("User opens url {string}")
+	@When("User open url {string}")
 	public void user_opens_url(String url) {
 		//Here driver opens the Car Rental Website
 		driver.get(url);

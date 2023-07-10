@@ -1,8 +1,8 @@
 Feature: Verify The Req Users Functionality of Car Rental Website
 
 Scenario:  Verify Registered Users Of Admin Module 
-   Given User Launch chrome browser
-   When User opens url "https://carrental.neohire.io/" 
+   Given User Launch the chrome browser
+   When User open url "https://carrental.neohire.io/" 
    Then User Navigates to Admin Login Page
    Then User enters username as "admin" and password as "Test@12345"
    Then User clicks on Login Option
