@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageVehiclespage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Aboutuspage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/Carlistingpage.java
@@ -29,3 +30,10 @@
 /home/coder/project/workspace/cucumberapp/src/test/java/stepDefinition/ChetanaStepDefinitions.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ManageSubscribersPage.java
 /home/coder/project/workspace/cucumberapp/src/test/java/pageObject/ContactUsPage.java
+=======
+/home/coder/project/workspace/cucumberapp/src/test/java/StepDefination/StepDefination.java
+/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/Carlisting.java
+/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/RegUsers.java
+/home/coder/project/workspace/cucumberapp/src/test/java/TestRunner/TestRun.java
+/home/coder/project/workspace/cucumberapp/src/test/java/PageObject/Booking.java
+>>>>>>> fb8e9819c049b1aba6ac1aab5840d3af5a5ccd2c

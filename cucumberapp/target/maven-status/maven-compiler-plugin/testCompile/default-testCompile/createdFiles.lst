@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pageObject/AdminPage.class
 pageObject/ManageBrandPage.class
 pageObject/UpdateContactInfoPage.class
@@ -29,3 +30,10 @@ stepDefinition/karthikManageVehiclesDef.class
 stepDefinition/BhavanaStepdefinition.class
 pageObject/AdminLoginPage.class
 stepDefinition/karthikmanage1.class
+=======
+PageObject/Carlisting.class
+StepDefination/StepDefination.class
+TestRunner/TestRun.class
+PageObject/Booking.class
+PageObject/RegUsers.class
+>>>>>>> fb8e9819c049b1aba6ac1aab5840d3af5a5ccd2c
