@@ -9,7 +9,8 @@ Background:
    Then User able to see admin page successfully
    Then User clicks on Bookings Option and verify its Categorieslist
   
- Scenario:  Verify the New Bookings(Confirm) Functionality of Car Rental Website and Verifying Noted Booking No In User My Booking status reflected or not
+ Scenario:  Verify the New Bookings(Confirm) Functionality of Car Rental Website 
+and Verifying Noted Booking No In User My Booking status reflected or not
    When User Clicks on New Option and Verify Interface
    Then User Clicks on Show drop down list and verify it
    Then User Verify PREVIOUS and NEXT buttons of Bookings
@@ -22,7 +23,8 @@ Background:
    Then Verify the Status of Noted Booking Number and Clicks on Logout button
   
    
- Scenario:  Verify the New Bookings(Cancel) Functionality of Car Rental Website and Verifying Noted Booking No In User My Booking status reflected or not
+ Scenario:  Verify the New Bookings(Cancel) Functionality of Car Rental Website   
+and Verifying Noted Booking No In User My Booking status reflected or not
    When User Clicks on New Option and Verify Interface
    Then User Enter Car Name in Search Bar "Lamborghini" and Verify it
    Then User Clicks on view option and Display Status of Noted Booking Id

@@ -3,7 +3,8 @@ Feature: User Module CarListing and My Booking
 
 
 
-Scenario: Here We are Booking a Car then Noting down the fromdate and Verifying it in Admin New Bookings then noting down the Booking no of that Car and Verifying in User My Booking
+Scenario: Here We are Booking a Car then Noting down the fromdate and Verifying it in Admin New Bookings
+then noting down the Booking no of that Car and Verifying in User My Booking
           
    Given User Launch chrome browser
    When User opens url "https://carrental.neohire.io/" 
