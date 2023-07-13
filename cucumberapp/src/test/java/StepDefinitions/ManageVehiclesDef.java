@@ -22,14 +22,14 @@ public class ManageVehiclesDef {
 	public void user_openurl(String string) throws MalformedURLException{
 		// System.setProperty("webdriver.com.driver","C:/Users/kouti/eclipse-workspace/Cucumber/src/test/resources/drivers/chromedriver.exe;");
 		// driver= new ChromeDriver();
-		// DesiredCapabilities capabilities = new DesiredCapabilities();
+		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        // capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 
-        // driver = new RemoteWebDriver(new URL("http://34.85.242.216:4455"), capabilities);
-		ChromeOptions chromeOptions= new ChromeOptions();
-		chromeOptions.addArguments("--disable-dev-shm-usage");
-		driver=new RemoteWebDriver(new URL("http://localhost:4444"),chromeOptions);
+        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4455"), capabilities);
+		// ChromeOptions chromeOptions= new ChromeOptions();
+		// chromeOptions.addArguments("--disable-dev-shm-usage");
+		// driver=new RemoteWebDriver(new URL("http://localhost:4444"),chromeOptions);
 		//driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
