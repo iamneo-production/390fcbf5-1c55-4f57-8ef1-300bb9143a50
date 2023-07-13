@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 //import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -23,10 +24,13 @@ public class PostaVehicle {
 	public void this_url_is_opened(String string) throws MalformedURLException {
 //		System.setProperty("webdriver.com.driver","C:/Users/kouti/eclipse-workspace/Cucumber/src/test/resources/drivers/chromedriver.exe;");
 //		driver= new ChromeDriver();
-		DesiredCapabilities capabilities = new DesiredCapabilities();
+		//DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4455"), capabilities);
+        //capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		ChromeOptions chromeOptions= new ChromeOptions();
+		chromeOptions.addArguments("--disable-dev-shm-usage");
+		driver=new RemoteWebDriver(new URL("http://localhost:4444"),chromeOptions);
+        //driver = new RemoteWebDriver(new URL("http://34.85.242.216:4455"), capabilities);
 		
 		// driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
