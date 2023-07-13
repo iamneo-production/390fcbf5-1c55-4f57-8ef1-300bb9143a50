@@ -1,7 +1,6 @@
 package stepDefinition;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.Assert;
@@ -9,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
 import pageObject.AdminLoginPage;
 import pageObject.CreateBrandPage;
 import pageObject.DashBoardPage;
@@ -20,7 +20,7 @@ import io.cucumber.java.en.Then;
 
 public class BhavanaStepdefinition {
 
-	public WebDriver driver=null;
+	public static WebDriver driver=null;
 	public AdminLoginPage loginPage;
 	public DashBoardPage dashboard;
 	public CreateBrandPage createBrand;
@@ -35,14 +35,11 @@ public class BhavanaStepdefinition {
 
 	@Given("admin launch the browser")
 	public void admin_launch_the_browser() throws MalformedURLException{
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        //driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
-
-		//System.setProperty("webdriver.com.driver",
-		//		"D:/Eclipse-workspace/CarRental_Cucumber_Project/src/test/resources/drivers/chromedriver.exe");
-		//driver = new ChromeDriver();
+		
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+        driver.get("https://carrental.neohire.io/");
 		driver.manage().window().maximize();
 		loginPage = new AdminLoginPage(driver);
 		dashboard = new DashBoardPage(driver);
@@ -366,12 +363,15 @@ public class BhavanaStepdefinition {
 
 	@When("admin selects show entries")
 	public void admin_selects_show_entries() {
-		manageBrand.clickShowDropdown();
+		manageBrand.clickShowDropdown("10");
+		manageBrand.clickShowDropdown("25");
+		manageBrand.clickShowDropdown("50");
+		manageBrand.clickShowDropdown("100");
 	}
 
 	@When("admin search for the brand name")
 	public void admin_search_for_the_brand_name() {
-		manageBrand.enterSearchField("BENZ");
+		manageBrand.enterSearchField("BMW");
 	}
 
 	@Then("filtered result will be displayed")
@@ -431,6 +431,7 @@ public class BhavanaStepdefinition {
 
 	@When("admin click on delete option in action")
 	public void admin_click_on_delete_option_in_action() {
+		manageBrand.enterSearchField("BMW");
 		manageBrand.clickDelete();
 	}
 

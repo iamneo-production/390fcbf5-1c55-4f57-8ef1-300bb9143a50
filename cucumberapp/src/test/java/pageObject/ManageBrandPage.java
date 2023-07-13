@@ -33,7 +33,7 @@ public class ManageBrandPage {
 	WebElement updateBrandName;
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div/div/div/div/div[2]/form/div[1]")
 	WebElement successMessage;
-	@FindBy(xpath = "//*[@id=\"zctb\"]/tbody/tr[10]/td[5]/a[2]")
+	@FindBy(xpath = "//*[@id=\"zctb\"]/tbody/tr[1]/td[5]/a[2]/i")
 	WebElement deleteLocator;
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div/div/div[2]/div[1]")
 	WebElement successUpdate;
@@ -56,9 +56,9 @@ public class ManageBrandPage {
 			System.out.println("Manage Brands Interface is not Displayed");
 		}
 	}
-	public void clickShowDropdown() {
+	public void clickShowDropdown(String num) {
 		Select drpEntries = new Select(show);
-		drpEntries.selectByValue("10");
+		drpEntries.selectByValue(num);		
 	}
 	public void enterSearchField(String brandname) {
 		search.sendKeys(brandname);

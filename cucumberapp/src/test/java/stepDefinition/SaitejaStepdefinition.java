@@ -1,15 +1,10 @@
 package stepDefinition;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.chrome.ChromeOptions;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -38,23 +33,13 @@ public class SaitejaStepdefinition {
 		}
 	}
 	
-	
-	/**
-	 * @throws MalformedURLException
-	 * 
-	 */
 	@Given("user launches chrome browser")
 	public void user_launches_chrome_browser() throws MalformedURLException {
-		//String projectPath = System.getProperty("user.dir");
-		//System.setProperty("webdriver.chromedriver",projectPath+"/src/test/resources/drivers/chromedriver.exe");
-		
-		//driver = new ChromeDriver();
-
-		//driver.manage().window().maximize();
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
-		
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+        driver.get("https://carrental.neohire.io/");
+		driver.manage().window().maximize();
 		aboutuspage = new Aboutuspage(driver);
 		carlisting = new Carlistingpage(driver);
 		homepage = new Homepage(driver);
@@ -86,8 +71,7 @@ public class SaitejaStepdefinition {
 	
 	@When("user clicks on CarListing button")
 	public void click_on_CarListing_button()  {
-	    carlisting.Carlistingbtn();
-	    
+	    carlisting.Carlistingbtn();	    
 	}
 	
 	@Then("user should be able to view Car Listing Page")
@@ -399,34 +383,29 @@ public class SaitejaStepdefinition {
 	}
 	@When("user enters a testimonial")
 	public void user_enters_a_testimonial()  {
-	 usermodule.enterPostATestimonial("satisfied");
-	 
+	 usermodule.enterPostATestimonial("satisfied");	 
 	}
 
 	@When("user click on save button")
 	public void user_click_on_save_button()  {
 	   usermodule.clickSave();
-	   
 	}
 
 	@Then("testimonial submitted message will be displayed")
 	public void testimonial_submitted_message_will_be_displayed()  {
 	String message = usermodule.getSuccessMsg();
-	System.out.println(message);
-	
+	System.out.println(message);	
 	}
 
 	@When("admin clicks on the Admin module")
 	public void admin_clicks_on_the_admin_module()  {
 	//loginPage=new AdminLoginPage(driver);
 	usermodule.clickAdminButton();
-	
 	}
 	@Then("admin should able to see the admin signin page")
 	public void admin_should_able_to_see_the_admin_signin_page()  {
 	String adminpage = usermodule.adminSignInPage();
-	System.out.println(adminpage+" page is displayed");
-	
+	System.out.println(adminpage+" page is displayed");	
 	}
 	@When("admin enters the username as {string}  and password as {string}")
 	public void admin_enters_the_username_as_and_passwrod_ad(String string, String string2)  {
@@ -472,7 +451,6 @@ public class SaitejaStepdefinition {
 	@When("click on signout option")
 	public void click_on_signout_option()  {
 	usermodule.clickSignOut();
-	
 	}
 	@When("user clicks on save button")
 	public void user_clicks_on_save_button()  {
@@ -484,22 +462,16 @@ public class SaitejaStepdefinition {
 	public void warning_message_will_be_displayed()  {
 	String message = usermodule.getValidationMsg();
 	System.out.println(message);
-	
 	}
 	@Then("it should be redirected to the home page")
 	public void it_should_be_redirected_to_the_home_page()  {
-	//Assert.assertTrue(loginPage.getHomePageTitle().contains("Car Rental Portal"));
-	//loginPage=new AdminLoginPage(driver);
 	String homePage = usermodule.getHomePageTitle();
 	System.out.println(homePage+ " page is displayed");
 	
 	}
-	
-
 		@Then("Click on the login\\/Register button")
 		public void click_on_the_login_register_button()  {
 		profile.clicklogin_registerbutton();
-	   
 	}
 
 	@Then("Enter the Email address as {string} and password as {string}")
@@ -507,103 +479,84 @@ public class SaitejaStepdefinition {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    profile.enteremail("steja7600@gmail.com");
 	    profile.enterpass("9014963608");
-	    
-	    
 	}
 
 	@And("clicks login button")
 	public void clicks_login_button() {
 	    profile.clickonloginbutton();
-	    
 	}
 
 	@Then("user should see the welcome message")
 	public void user_should_see_the_welcome_message() {
-	    profile.checkwelcomemessage();
-	    
+	    profile.checkwelcomemessage();	    
 	}
 	@When("user enters invalid {string} and {string}")
 	public void user_enters_invalid_and(String email, String password)  {
 	    profile.invalid_login(email, password);
-	    
-	    
 	}
 
 	@Then("user should see an error message indicating {string}")
 	public void user_should_see_an_error_message_indicating(String error_message)  {
 	    profile.geterror_message(error_message);
-	    
 	}
 
 	@Then("user should click on the dropdown and select the profile settings")
 	public void user_should_click_on_the_dropdown_and_select_the_profile_settings() {
 	   profile.clickondropdown();
-	   
 	}
 
 	@Then("user should see the Your Profile settings page")
 	public void user_should_see_the_your_profile_settings_page() {
 	    profile.checkprofilepage();
-	    
 	}
 
 	@When("user enter all the details")
 	public void user_enter_all_the_details() {
 	   profile.enterfullname("saiteja");
 	   profile.enterphonenumber("9876543210");
-	   
 	}
 
 	@When("click on save changes")
 	public void click_on_save_changes() {
 	    profile.clickonsavechangesbutton();
-	    
 	}
 	@Then("user should see the success message in profile page")
 	public void user_should_see_the_success_message_in_profile_page() {
 	    profile.checksuccessmessage();
-	    
 	}
 
 	@When("user should clear the name field")
 	public void user_should_clear_the_name_field() {
 	   profile.clearnamefield();
-	   
 	}
 
 	@Then("user should see the validation message near name filed")
 	public void user_should_see_the_validation_message_near_name_filed() {
 	    profile.checkpopupname();
-	    
 	}
 
 	@Then("user should see the validation message near phone number field")
 	public void user_should_see_the_validation_message_near_phone_number_field() {
 	    profile.checkpopupphonenumber();
-	    
 	}
 	@When("user should clear the phone number field")
 	public void user_should_clear_the_phone_number_field() {
-	    profile.clearphonenumber();
-	    
+	    profile.clearphonenumber();	    
 	}
 
 	@Then("click on admin")
 	public void click_on_admin() {
-	    profile.adminbutton();
-	    
+	    profile.adminbutton();    
 	}
 
 	@Then("Click on Reg Users")
 	public void click_on_reg_users() {
 	    profile.clickonreguser();
-	    
 	}
 
 	@Then("user should see the Registered Users Page")
 	public void user_should_see_the_registered_users_page() {
-	   profile.checkreguserpage();
-	   
+	   profile.checkreguserpage();	   
 	}
 
 	@Then("enter the user name in the search box")
@@ -614,8 +567,7 @@ public class SaitejaStepdefinition {
 
 	@Then("user should see the updated info in the table")
 	public void user_should_see_the_updated_info_in_the_table() {
-	   profile.checktheupdatedinfo();
-	   
+	   profile.checktheupdatedinfo();	   
 	}
 
 	@And("Click on the signout")

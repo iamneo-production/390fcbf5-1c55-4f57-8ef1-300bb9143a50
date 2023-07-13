@@ -71,5 +71,4 @@ public class PostaVehiclePage {
 	 public void viewdetailsbutton() {
 		 viewdetails.click();
 	 }
-
 }

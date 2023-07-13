@@ -105,6 +105,5 @@ public class ManagePages {
 		 else {
 			 System.out.println("not updated");
 		 }
-	 }
-	 
+	 }	 
 }

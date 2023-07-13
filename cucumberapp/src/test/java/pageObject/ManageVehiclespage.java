@@ -17,14 +17,14 @@ public class ManageVehiclespage {
 	 @FindBy(xpath="//*[@id=\"zctb_next\"]/a") WebElement testnext;
 	 @FindBy(xpath="//*[@id=\"zctb_previous\"]/a")WebElement testprev;
 	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[2]/td[7]/a[1]/i")WebElement testedit ;
-	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[3]/td[7]/a[2]/i")WebElement testdelete;
-	@FindBy(xpath="/html/body/div[1]/a") WebElement carrentalportal;
-	@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr/td[2]") WebElement testtext;
-	@FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[5]/div[2]/input") WebElement editseating;
-	@FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[1]/input") WebElement editvehicletitle;
+	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[1]/td[7]/a[2]/i")WebElement testdelete;
+     @FindBy(xpath="/html/body/div[1]/a") WebElement carrentalportal;
+	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr/td[2]") WebElement testtext;
+	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[5]/div[2]/input") WebElement editseating;
+	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[1]/input") WebElement editvehicletitle;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[4]/div[1]/input") WebElement editpriceperday;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/h2") WebElement checkeditvehicle;
-	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/div[5]/div[2]/div[5]/div/button") WebElement editsave;
+	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/div[5]/div[6]/div/button") WebElement editsave;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[2]/div/button") WebElement selectbrand1;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[2]/div/div/ul/li[9]/a/span[1]") WebElement selectbrand2;
 	 @FindBy(xpath="//*[@id=\"inlineCheckbox1\"]") WebElement checkbox_pdl;
@@ -51,19 +51,7 @@ public class ManageVehiclespage {
 	public void check1stpage() {
 		test1stpage.isDisplayed();
 	}
-	// public void updateimg() throws InterruptedException {
-	// 	editimg1.click();
-	// 	Thread.sleep(2000);
-	// 	editchooseimg.sendKeys("C:/Users/karthik/Pictures/OIP.jpg");
-	// 	Thread.sleep(1000);
-	// 	updateimgbutton.click();
-	// 	Thread.sleep(1000);
-	// 	//driver.navigate().to("https://carrental.neohire.io/admin/edit-vehicle.php?id=21");
-	// 	//driver.navigate().refresh();
-	// 	driver.navigate().back();
-	// 	driver.navigate().back();
-	// 	Thread.sleep(2000);
-	// }
+	
 	public void managevehicleseditcheckboxes(){
 		checkbox_pdl.click();
 		checkbox_albs.click();

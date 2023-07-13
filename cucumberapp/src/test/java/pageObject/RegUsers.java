@@ -49,6 +49,5 @@ public class RegUsers {
     	else {
            	System.out.println("invalid Details");
            }
-    }
-   
+    }   
 }

@@ -1,18 +1,15 @@
 package pageObject;
 
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Booking {
 
-	
 	public WebDriver driver;
     public Booking(WebDriver driver)
-    {
-        
+    {        
         PageFactory.initElements(driver, this);
     }
 	
@@ -82,9 +79,9 @@ public class Booking {
     WebElement Logoutbutton;
     @FindBy(xpath="/html/body/div/div/div/div/div/div/div/p/a")
     WebElement Backtohomebutton;
-    @FindBy(xpath="//input[@placeholder='Email address*']")
+    @FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[1]/input")
     WebElement useremailid;
-    @FindBy(xpath="//input[@placeholder='Password*']")
+    @FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[2]/input")
     WebElement userpassword;
     @FindBy(xpath="//a[text()='Login / Register']")
     WebElement loginregisterbutton;
@@ -97,11 +94,9 @@ public class Booking {
     @FindBy(xpath="//*[@id=\"navigation_bar\"]/div/div[2]/div[1]/ul/li/ul/li[6]/a")
     WebElement logoutbutton;
     
-    
     public void adminbuttonclick() {
     	Adminbutton.click();
     }
-    
     public void setUserid(String userid) {
     	adminusername.sendKeys(userid);
     }
@@ -117,7 +112,6 @@ public class Booking {
     	String title = admininterface.getText();
     	return title;
     }
-    
     public void ClickBookingButton() {
     	bookingbutton.click();
     }
@@ -133,7 +127,6 @@ public class Booking {
     public void NewClick() {
     	newbutton.click();
     }
-    
     public void  NewBookingInterface() {
     	
     	if(newbooking.isDisplayed())
@@ -142,8 +135,7 @@ public class Booking {
 		}
 		else {
 			System.out.println("New Bookings Interface not displayed");
-		}
-    	
+		}	
     }
     public void ShowDisplay() {
     	if(show.isDisplayed()) {
@@ -184,11 +176,9 @@ public class Booking {
     	System.out.println("Noted Booking No="+BookingNo);
     	return BookingNo;
     }
-   
     public void ClickViewButton() {
     	viewbutton.click();
     }
-    
     public void BookingDetailInterface() {
     	if(bookingdetail.isDisplayed()) {
     		String comparebookid = bookid.getText();
@@ -203,18 +193,15 @@ public class Booking {
      		}
     	}
     }
-
     public void BookingIdStatus() {
     	System.out.println("Booking Status= " +bookingstatus.getText());
     }
     public void ClickNewConfirmButton() {
     	newconfirm.click();
     }
-    
     public void ClickNewCancelButton() {
     	newcancel.click();
     }
-    
     public void ClickConfirmedBooking() {
     	confirmedbutton.click();
     }
@@ -238,23 +225,29 @@ public class Booking {
    			System.out.println("Error Occurred");
    		}
     }
-    
     public void AdminLogoutClick() {
     	Account.click();
     	Logoutbutton.click();
     	Backtohomebutton.click();
     }
-    
     public void setemailid(String emailid) {
-    	useremailid.sendKeys(emailid);
+        if(useremailid.isDisplayed()){
+            System.out.println("user enters the emailid");
+            useremailid.sendKeys(emailid);
+        }
     }
     public void setpassid(String passid) {
+        if(userpassword.isDisplayed()){
+            System.out.println("user enters the password");
     	userpassword.sendKeys(passid);
     }
-	
+}
 	public void UserLoginRegisterClick() {
+        if(loginregisterbutton.isDisplayed()){
+            System.out.println("Here user click on login");
 		loginregisterbutton.click();
 	}
+}
 	public void UserLoginClick() {
 		userloginbutton.click();
 	}
@@ -263,10 +256,8 @@ public class Booking {
 	}
 	public void UserMyBookingClick() {
 		mybookingbutton.click();
-	}
-	
+	}	
 	public void UserLogoutClick() {
 		logoutbutton.click();
 	}
-	
 }

@@ -1,29 +1,25 @@
 package stepDefinition;
 import java.net.MalformedURLException;
-import java.time.Duration;
 import java.util.List;
-
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.JavascriptExecutor;
 import io.cucumber.java.en.*;
 import pageObject.Booking;
-import pageObject.Carlisting;
+import pageObject.BookCarlisting;
 import pageObject.RegUsers;
-
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import java.net.URL;
 import io.cucumber.java.After;
 
 public class KalyanStepDefination {
 	public WebDriver driver = null;
 	public Booking booking;
-	public Carlisting carlisting;
+	public BookCarlisting carlisting;
 	public RegUsers regusers;
 	
 	@After
@@ -32,24 +28,20 @@ public class KalyanStepDefination {
             driver.quit();
         }
     }
-	@Given("User Launch the chrome browser")
+	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() throws MalformedURLException {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-		driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
-		//driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 		driver.manage().window().maximize();
 		booking = new Booking(driver);
-		carlisting = new Carlisting(driver);
+		carlisting = new BookCarlisting(driver);
 		regusers = new RegUsers(driver);
 		System.out.println("User Succesfully launched Chrome Browser");
 	}
 	
 	
-	@When("User open url {string}")
+	@When("User Opens url {string}")
 	public void user_opens_url(String url) {
 		//Here driver opens the Car Rental Website
 		driver.get(url);
@@ -78,15 +70,11 @@ public class KalyanStepDefination {
 		//Here admin gives userid and password in LoginPage 
 		booking.setUserid(userid);
 		booking.setPasswordid(passwordid);
-		 
-	    
 	}
 	
 	@Then("User clicks on Login Option")
 	public void user_clicks_on_login_option() {
 	    booking.ClickLoginButton();
-	    
-	    
 	}
 	
 	@Then("User able to see admin page successfully")
@@ -101,23 +89,17 @@ public class KalyanStepDefination {
         } else {
         	System.out.println("Successfully Login Page Not Opened");
         }
-		
 	}
 	
 	@Then("User clicks on Bookings Option and verify its Categorieslist")
 	public void user_clicks_on_bookings_option_and_verify_its_categorieslist() {
-		
 		//Here we are clicking on Admin Booking Option
-		
         booking.ClickBookingButton();
 	    
 	    //Here we are Verifying the Categories list of Bookings
-	    
 	    booking.VerifyCategoriesList();
-
 	}
 
-	
 	@When("User Clicks on New Option and Verify Interface")
 	public void user_clicks_on_new_option_and_verify_interface() {
 		//Here we are clicking on New in Bookings option
@@ -140,12 +122,10 @@ public class KalyanStepDefination {
     
     @Then("User Clicks on Show drop down list and verify it")
     public void User_Clicks_on_Show_drop_down_list_and_verify_it() {
-    	//Here we  are verifying show Dropdown list
-    	
+    	//Here we  are verifying show Dropdown list  	
     	booking.ShowDisplay();
     	
        //Verify within Selected No Entries displayed or not
-    	
     	booking.SelectShowEntry();
     	booking.ShoworSearchOutput();
     	}
@@ -156,26 +136,21 @@ public class KalyanStepDefination {
     	 WebElement button1 = driver.findElement(By.id("zctb_paginate"));
          String button2 = button1.getText();
          if(button2.contains("2")){
-     		
      		 booking.ClickNextButton();
-            
-             booking.ClickPreviousButton();
-            
-             System.out.println("Next and Previous buttons are active");
-             
+             booking.ClickPreviousButton();            
+             System.out.println("Next and Previous buttons are active");            
            }
      	
          else {
        		System.out.println("Next and Previous are disabled due to less/equal no of details present of show selected entries ");
-       	}  
-      
+       	}      
     }
     
     @Then("User Enter Car Name in Search Bar {string} and Verify it")
     public void user_enter_car_name_in_search_bar_and_verify_it(String searchTerm){
-    	
-    	//Here we are checking Search Bar Actions
-    	
+    	JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollTo(0, 0)");
+    	//Here we are checking Search Bar Actions  	
     	booking.SearchClick(searchTerm);
     	
           WebElement CarName = driver.findElement(By.xpath("//a[text()='Lamborghini  , Aventador']"));
@@ -190,28 +165,21 @@ public class KalyanStepDefination {
            }
 
     	//Here we are Verifying  Entered Car Booking  Details are displayed or not
-    	
     	booking.SearchCompare(searchTerm);
      }
-    
      String BOOKINGNO;
      @Then("User Clicks on view option and Display Status of Noted Booking Id")
      public void user_clicks_on_view_option_and_display_status_of_noted_booking_id() {
-    	 
-    	// here user note downs the booking No,From Date and To date 
-    	 
+    	// here user note downs the booking No,From Date and To date 	 
     	 BOOKINGNO = booking.NoteBookingId();
        	
          // Users clicks on view option
-      	 
         booking.ClickViewButton();
       	 
       	//verify noted booking id details displayed or not
-      	 
       	booking.BookingDetailInterface();
       	
       	//User should Know Status of Noted Booking ID
-      	
       	booking.BookingIdStatus();
      }
      
@@ -245,8 +213,6 @@ public class KalyanStepDefination {
         	 alert1.accept();
      }
     
-    
-     
      @Then("User Clicks on Cancel Booking verify pop message and cancel it and Confirm it")
      public void user_clicks_on_cancel_booking_verify_pop_message_and_cancel_it_and_confirm_it() {
     	 
@@ -275,8 +241,7 @@ public class KalyanStepDefination {
         	 Alert alert1 = driver.switchTo().alert();
         	 String textmsg1 = alert1.getText();
         	 System.out.println(textmsg1);
-        	 alert1.accept();
-         
+        	 alert1.accept();     
      }
 
    //END TO END SCENARIO CODE
@@ -284,22 +249,21 @@ public class KalyanStepDefination {
      public void user_clicks_on_logout_button_and_back_to_home_button() {
     	 //Here we are Logging out from Admin Page and back to Home Page
     	 booking.AdminLogoutClick();
-    	 
      }
      
-     
     @Then ("User Clicks on LoginRegister button and Enters Valid Email Address as {string} and Password as {string}")
-     public void user_clicks_on_loginregisterbutton_and_enters_valid_email_address_as_and_password_as(String emailid,String passid) {
-     //Here we are clicking User Login button
+     public void user_clicks_on_loginregisterbutton_and_enters_valid_email_address_as_and_password_as(String emailid,String passid) throws InterruptedException{
+     Thread.sleep(2000);
+		//Here we are clicking User Login button
    	     booking.UserLoginRegisterClick();
    	 //Here we are entering Details to User Login
+	 Thread.sleep(2000);
     	 booking.setemailid(emailid);
-    	 booking.setpassid(passid);
-    	
+		 Thread.sleep(2000);
+    	 booking.setpassid(passid);	
      }
 	 @Then("User Clicks on Login button and Drop Down list and Select My Booking Option verify its interface")
 	 public void user_clicks_on_login_button_and_drop_down_list_and_select_my_booking_option_verify_its_interface() {
-		 // Write code here that turns the phrase above into concrete actions
 		 //Here we are clicking on login user button
     	 booking.UserLoginClick();
     	 
@@ -307,7 +271,6 @@ public class KalyanStepDefination {
     	 booking.UserDropdownClick();
     	 booking.UserMyBookingClick();
 	 }
-    
      
      @Then ("Verify the Status of Noted Booking Number and Clicks on Logout button")
      public void verify_the_status_of_noted_booking_number_and_clicks_on_logout_button() {
@@ -381,9 +344,6 @@ public class KalyanStepDefination {
  		}
      }
      
-     
-
-     
      @Then("User Enter Name in Search Bar {string} and verify it")
      public void User_Enter_Name_in_Search_Bar_and_verify_it(String searchTerm) {
     	 //Here we are scrolling Page  to top 
@@ -411,7 +371,7 @@ public class KalyanStepDefination {
 	  //Here user Clicking on Login Button of User Interface
 	  booking.UserLoginClick();
   }
-  @Then("User Clicks on Car Listing and licks on Car View Details and verify interfaces")
+  @Then("User Clicks on Car Listing and clicks on Car View Details and verify interfaces")
   public void  user_clicks_on_car_listing_and_clicks_on_car_view_details_and_verify_interfaces() {
 	  
 	  //Here we are clicking on Car listing button and verifying its Interface
@@ -422,11 +382,9 @@ public class KalyanStepDefination {
 	   JavascriptExecutor downpage = (JavascriptExecutor) driver;
 	   downpage.executeScript("window.scrollBy(0,100)");
 	   carlisting.CarViewDetailbuttonClick();
-	   carlisting.VerifyCarViewDetailInterface();
-	  
+	   carlisting.VerifyCarViewDetailInterface(); 
   }
  
-
   @Then ("User Selects from date and To date of Car Booking")
   public void user_selects_from_date_and_to_date_of_car_booking() {
 	  //Here we are randomly selecting date and month
@@ -434,8 +392,7 @@ public class KalyanStepDefination {
 	  //Here we are entering from date of Car Booking 
 	  carlisting.SetFromDate();
 	 //Here we are entering to date of Car Booking 
-	  carlisting.SetToDate();
-	  
+	  carlisting.SetToDate();	  
 }
   @And("enter the message and click on Book button")
   public void enter_the_message_and_click_on_book_button() {
@@ -485,7 +442,6 @@ public class KalyanStepDefination {
 	  BOOKINGNO=carlisting.verifyfromdate(FromdateSearch);
 	  System.out.println("CompareBookingNo="+BOOKINGNO);	   
   }
-
 }
 
 

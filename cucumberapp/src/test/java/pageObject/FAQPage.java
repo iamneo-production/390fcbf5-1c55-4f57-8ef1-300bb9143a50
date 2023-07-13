@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FAQPage {
-
 public WebDriver adriver;
-
 public FAQPage(WebDriver bdriver)
 {
     adriver=bdriver;

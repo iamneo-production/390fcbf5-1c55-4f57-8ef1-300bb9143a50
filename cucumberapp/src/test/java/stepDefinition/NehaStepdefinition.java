@@ -1,12 +1,10 @@
  package stepDefinition;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import io.cucumber.java.After;
+import org.openqa.selenium.chrome.ChromeOptions;
 import pageObject.*;
 import io.cucumber.java.en.*;
 import pageObject.ManageTestimonialPage;
@@ -28,11 +26,16 @@ public class NehaStepdefinition {
 	@SuppressWarnings("deprecation")
 	@Given("user opens the url {string}")
 	public void user_opens_url(String string)throws MalformedURLException{
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4456"),capabilities);
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		// DesiredCapabilities capabilities = new DesiredCapabilities();
+        // capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+        // driver = new RemoteWebDriver(new URL("http://34.85.242.216:4456"),capabilities);
+		// driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		// driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+        driver.get("https://carrental.neohire.io/");
+		driver.manage().window().maximize();
 	    manage =new ManageTestimonialPage(driver);
 		admin=new AdminPage(driver);
 		contactinfo=new UpdateContactInfoPage(driver);

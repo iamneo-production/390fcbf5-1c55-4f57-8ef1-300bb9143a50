@@ -14,7 +14,6 @@ public class Aboutuspage {
 	@FindBy(xpath="//*[@id=\"navigation\"]/ul/li[2]/a")WebElement aboutusbutton;
 	@FindBy(xpath="/html/body/section[2]/div/div/p[1]") WebElement aboutusmsg;
 	
-	
 	public void checkCarRentalPortal() {
 		carRentalPortal.isDisplayed();
 	}

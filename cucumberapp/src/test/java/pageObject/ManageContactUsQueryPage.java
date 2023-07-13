@@ -48,9 +48,6 @@ public class ManageContactUsQueryPage {
 	 //Thread.sleep(2000);
 	 driver.switchTo().alert().accept();
  }
-// public void managetestimonialinactive() {
-//	 testinactive.click();
-// }
  public void checkcarrentalportal() {
 	 carrentalportal.isDisplayed();
  }

@@ -1,12 +1,10 @@
 package pageObject;
 
 import java.util.List;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.Select;
-
 
 public class Carlistingpage {
 	public static WebDriver driver;
@@ -29,8 +27,7 @@ public class Carlistingpage {
 	@FindBy(xpath="//*[@id=\"listing_img_slider\"]/div[1]/div/div[3]/div/img")WebElement nextimage;
 	@FindBy(xpath="/html/body/section[2]/div/div[2]/div/div[2]/div/ul/li[1]/a")WebElement vehiclebtn;
 	@FindBy(xpath="/html/body/section[2]/div/div/aside/div[2]/div[2]/ul/li[1]/div[2]/a") WebElement RecentcarBtn;
-	@FindBy(xpath="/html/body/section[2]/div/div[1]/div[1]") WebElement cartitle;
-	
+	@FindBy(xpath="/html/body/section[2]/div/div[1]/div[1]") WebElement cartitle;	
 	@FindAll({@FindBy(xpath="//div[@class=\"product-listing-content\"]")}) List<WebElement> carlists;
 	@FindAll({@FindBy(xpath="//div[@class=\"recent_post_title\"]")}) List<WebElement> recentcarlists;
 	@FindBy(xpath="/html/body/section[2]/div/div[5]/div/div/div/div[2]/h5/a") WebElement similarcar;
@@ -90,7 +87,6 @@ public class Carlistingpage {
 		for(WebElement y : accessorieslist ) {
 			System.out.println(y.getText());
 		}
-		
 	}
 	public void PrevBtn() {
 		Actions act =  new Actions(driver);
@@ -124,13 +120,11 @@ public class Carlistingpage {
 		for(WebElement y : recentcarlists ) {
 			System.out.println(y.getText());
 		}
-		
 	}
 	public void similarcarbtn() {
 		similarcar.click();
 	}
 	public void checksimilarcardetails() {
 		cardetails.isDisplayed();
-	}
-	
+	}	
 }

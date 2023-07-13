@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class UpdateContactInfoPage {
 	public static WebDriver driver;
 	public UpdateContactInfoPage(WebDriver driver) {
@@ -153,6 +152,5 @@ public class UpdateContactInfoPage {
 	}
 	public void clearemail() {
 		contactemail.clear();
-	}
-	
+	}	
 }
