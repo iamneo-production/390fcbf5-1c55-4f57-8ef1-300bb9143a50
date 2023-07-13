@@ -28,7 +28,7 @@ public class ManageContactUsQueryPage {
  public void managecontactusquerysearch(String text) throws InterruptedException {
 	 testsearch.clear();
 	 testsearch.sendKeys(text);
-	 //Thread.sleep(1000);
+	
  }
  public void managecontactusqueryfindtext() {
 	 testtext.isDisplayed();
