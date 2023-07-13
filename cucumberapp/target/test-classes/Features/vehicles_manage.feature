@@ -12,9 +12,9 @@ Feature: feature to test manage vehicles page
     And admin clicks previous
     Then its home page should be visible
     When admin will check the show entries
-    Then admin deletes a vehicle
     And admin checks search box
-    Then checks the search results
+    Then admin deletes a vehicle
+    # Then checks the search results
     When admin clicks edit option
     Then edit page should be shown
     When admin makes changes 

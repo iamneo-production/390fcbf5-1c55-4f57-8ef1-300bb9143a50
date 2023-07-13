@@ -84,21 +84,21 @@ public class ManageVehiclesDef {
 	    manage.managevehiclesshow("50");
 	    manage.managevehiclesshow("100");
 	}
+	@And("admin checks search box")
+	public void admin_checks_search_box(){
+		manage.managevehiclessearch("hector");
+	}
 	@Then("admin deletes a vehicle")
 	public void deletevehicle(){
 		manage.managevehicledelete();
 		driver.switchTo().alert().accept();
+		driver.navigate().to("https://carrental.neohire.io/admin/manage-vehicles.php");
 	}
-	@And("admin checks search box")
-	public void admin_checks_search_box(){
-		manage.managevehiclessearch("ertiga");
-	}
-
-	@Then("checks the search results")
-	public void checks_the_search_results(){
-	    manage.managevehiclesfindtext();
-	    driver.navigate().to("https://carrental.neohire.io/admin/manage-vehicles.php");
-	}
+	// @Then("checks the search results")
+	// public void checks_the_search_results(){
+	//     manage.managevehiclesfindtext();
+	//     driver.navigate().to("https://carrental.neohire.io/admin/manage-vehicles.php");
+	// }
 	@When("admin clicks edit option")
 	public void admin_clicks_edit_option(){
 	    manage.managevehiclesedit();

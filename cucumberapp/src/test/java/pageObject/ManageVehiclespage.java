@@ -17,7 +17,7 @@ public class ManageVehiclespage {
 	 @FindBy(xpath="//*[@id=\"zctb_next\"]/a") WebElement testnext;
 	 @FindBy(xpath="//*[@id=\"zctb_previous\"]/a")WebElement testprev;
 	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[2]/td[7]/a[1]/i")WebElement testedit ;
-	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[3]/td[7]/a[2]/i")WebElement testdelete;
+	 @FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr[1]/td[7]/a[2]/i")WebElement testdelete;
 	@FindBy(xpath="/html/body/div[1]/a") WebElement carrentalportal;
 	@FindBy(xpath="//*[@id=\"zctb\"]/tbody/tr/td[2]") WebElement testtext;
 	@FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[5]/div[2]/input") WebElement editseating;
