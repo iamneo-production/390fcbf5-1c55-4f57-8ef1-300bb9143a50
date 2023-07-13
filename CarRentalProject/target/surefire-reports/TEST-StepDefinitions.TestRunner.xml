@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="0" name="StepDefinitions.TestRunner" time="517.551" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="StepDefinitions.TestRunner" time="580.844" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,32 +59,32 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="9.699"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="11.595"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="16.002"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of recently listed cars" time="14.004"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="20.216"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of similar cars" time="16.442"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="16.391"/>
-  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="17.998"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="8.487"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="16.435"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Verify the warning message for empty fields" time="33.902"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="8.729"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="7.723"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="13.733"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check functionality of Subscribe button" time="10.317"/>
-  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="7.763"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="26.679"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.764"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="25.814"/>
-  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="47.855"/>
-  <testcase classname="User Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="15.04"/>
-  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.731"/>
-  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.63"/>
-  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.785"/>
-  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="14.579"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify post a testimonial" time="43.826"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify empty testimonial field" time="20.916"/>
-  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify signout option" time="23.496"/>
+  <testcase classname="feature to test about us button functionality" name="Check about us page is displayed on clicking about us button" time="14.494"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check CarListing page is displayed on clicking CarListing button" time="14.238"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check cars are displayed on selecting brand type and fuel type" time="19.151"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of recently listed cars" time="16.348"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check the details of the car is displayed on clicking on view details button" time="22.414"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of similar cars" time="18.535"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of prev and next buttons" time="17.601"/>
+  <testcase classname="Feature to test Car Listing page functionality" name="Check functionality of Vehicle Overview button" time="19.698"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check FAQs page is displayed on clicking faqs button" time="9.499"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Contact us page functionality" time="19.202"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Verify the warning message for empty fields" time="37.06"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Admin sign in page is displayed on clicking Admin button" time="9.885"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check Login page is displayed on clicking Login/Register button" time="9.102"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check privacy policy page and Terms of use page is displayed on clicking privacy and terms of use button respectively" time="15.27"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality of Subscribe button" time="12.185"/>
+  <testcase classname="Feature to test FAQs button functionality" name="Check functionality Service HelpLine button" time="9.594"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="30.193"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="28.473"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="28.712"/>
+  <testcase classname="To validate the profile settings option in the user module" name="To validate the entered fields are updated in the admin module" time="51.505"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Successful login with valid credentials" time="16.616"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="16.048"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="16.051"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="16.254"/>
+  <testcase classname="User Login Functionality for Car Rental Website" name="Unsuccessful login with invalid and empty credentials" time="15.645"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify post a testimonial" time="46.25"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify empty testimonial field" time="24.051"/>
+  <testcase classname="Feature to verify post a testimonial functionality of car rental website" name="Verify signout option" time="26.77"/>
 </testsuite>

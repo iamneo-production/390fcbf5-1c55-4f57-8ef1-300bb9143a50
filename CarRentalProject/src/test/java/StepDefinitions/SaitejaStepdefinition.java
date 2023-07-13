@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -56,14 +57,15 @@ public class SaitejaStepdefinition {
 		//driver = new ChromeDriver();
 
 		//driver.manage().window().maximize();
-		DesiredCapabilities capabilities = new DesiredCapabilities();
+		//DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+       // capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
 
 
 
-
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 		
 		aboutuspage = new Aboutuspage(driver);
 		carlisting = new carlistingpage(driver);
