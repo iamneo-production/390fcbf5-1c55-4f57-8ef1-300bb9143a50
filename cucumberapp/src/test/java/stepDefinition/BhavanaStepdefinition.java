@@ -51,12 +51,8 @@ public class BhavanaStepdefinition {
 
 		ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--disable-dev-shm-usage");
-    //    chromeOptions.addArguments("--remote-allow-origins=*");
-   //     chromeOptions.addArguments("--headless");
-     //   chromeOptions.addArguments("--disable-dev-shm-usage");
         driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
         driver.get("https://carrental.neohire.io/");
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		loginPage = new AdminLoginPage(driver);
 		dashboard = new DashBoardPage(driver);
 		createBrand = new CreateBrandPage(driver);
@@ -154,11 +150,7 @@ public class BhavanaStepdefinition {
 
 	@When("admin click on Dashboard")
 	public void admin_click_on_dashboard(){
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		// driver.manage().timeouts().pageLoadTimeout(300000, TimeUnit.MILLISECONDS);
-		// driver.manage().timeouts().setScriptTimeout(30000, TimeUnit.MILLISECONDS);
 		dashboard.dashboardButton();
-		//Thread.sleep(1000);
 	}
 
 	@When("click on Reg Users Full Detail link")
@@ -384,12 +376,15 @@ public class BhavanaStepdefinition {
 
 	@When("admin selects show entries")
 	public void admin_selects_show_entries() {
-		manageBrand.clickShowDropdown();
+		manageBrand.clickShowDropdown("10");
+		manageBrand.clickShowDropdown("25");
+		manageBrand.clickShowDropdown("50");
+		manageBrand.clickShowDropdown("100");
 	}
 
 	@When("admin search for the brand name")
 	public void admin_search_for_the_brand_name() {
-		manageBrand.enterSearchField("BENZ");
+		manageBrand.enterSearchField("BMW");
 	}
 
 	@Then("filtered result will be displayed")
@@ -449,6 +444,7 @@ public class BhavanaStepdefinition {
 
 	@When("admin click on delete option in action")
 	public void admin_click_on_delete_option_in_action() {
+		manageBrand.enterSearchField("BMW");
 		manageBrand.clickDelete();
 	}
 
