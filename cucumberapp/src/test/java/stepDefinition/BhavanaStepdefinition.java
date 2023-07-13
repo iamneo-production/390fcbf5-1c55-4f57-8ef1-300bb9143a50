@@ -17,10 +17,13 @@ import io.cucumber.java.After;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 public class BhavanaStepdefinition {
 
-	public WebDriver driver=null;
+	public static WebDriver driver=null;
 	public AdminLoginPage loginPage;
 	public DashBoardPage dashboard;
 	public CreateBrandPage createBrand;
@@ -35,15 +38,25 @@ public class BhavanaStepdefinition {
 
 	@Given("admin launch the browser")
 	public void admin_launch_the_browser() throws MalformedURLException{
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        //driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
-
+//	DesiredCapabilities capabilities = new DesiredCapabilities();
+  //     capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+      // driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+		//driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
+     // driver = new RemoteWebDriver(new URL("http://34.85.242.216:4452"), capabilities);
+	//driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 		//System.setProperty("webdriver.com.driver",
 		//		"D:/Eclipse-workspace/CarRental_Cucumber_Project/src/test/resources/drivers/chromedriver.exe");
 		//driver = new ChromeDriver();
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
+
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+    //    chromeOptions.addArguments("--remote-allow-origins=*");
+   //     chromeOptions.addArguments("--headless");
+     //   chromeOptions.addArguments("--disable-dev-shm-usage");
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+        driver.get("https://carrental.neohire.io/");
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		loginPage = new AdminLoginPage(driver);
 		dashboard = new DashBoardPage(driver);
 		createBrand = new CreateBrandPage(driver);
@@ -140,8 +153,12 @@ public class BhavanaStepdefinition {
 	}
 
 	@When("admin click on Dashboard")
-	public void admin_click_on_dashboard() {
+	public void admin_click_on_dashboard(){
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		// driver.manage().timeouts().pageLoadTimeout(300000, TimeUnit.MILLISECONDS);
+		// driver.manage().timeouts().setScriptTimeout(30000, TimeUnit.MILLISECONDS);
 		dashboard.dashboardButton();
+		//Thread.sleep(1000);
 	}
 
 	@When("click on Reg Users Full Detail link")
@@ -280,6 +297,7 @@ public class BhavanaStepdefinition {
 
 	@When("admin click on Account option")
 	public void admin_click_on_account_option() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		dashboard.clickAccount();
 	}
 

@@ -25,6 +25,7 @@ public class CreateBrandPage {
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div/div/div/div/div[2]/form/div[1]")
 	WebElement successLocator;
 	@FindBy(name = "brand")
+	//@FindBy(xpath="//*[@id="brand"]")
 	WebElement validationMsg;
 	@FindBy(xpath = "/html/body/section[2]/div/div/aside/div[1]/div[2]/form/div[1]/select/option[64]")
 	WebElement validateBrand;
