@@ -3,6 +3,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,8 +28,11 @@ public class stepdefinitions {
 	@Given("user opens url {string}")
 	public void user_opens_url(String string)throws MalformedURLException{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-        driver = new RemoteWebDriver(new URL("http://34.85.242.216:4456"),capabilities);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+		//driver = new RemoteWebDriver(new URL("http://34.85.242.216:4456"),capabilities);
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	    manage =new ManageTestimonialPage(driver);
