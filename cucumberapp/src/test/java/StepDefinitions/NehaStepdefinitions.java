@@ -1,4 +1,4 @@
- package StepDefinitions;
+package StepDefinitions;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +11,7 @@ import io.cucumber.java.After;
 import PageObject.*;
 import io.cucumber.java.en.*;
 
-public class stepdefinitions {
+public class NehaStepdefinitions{
 	public WebDriver driver=null;
 	public ManageTestimonialPage manage;
 	public AdminPage admin;

@@ -1,7 +1,7 @@
 PageObject/ManageSubscribersPage.class
+StepDefinitions/NehaStepdefinitions.class
 PageObject/ManageTestimonialPage.class
-StepDefinitions/TestRunner.class
 PageObject/ManagePages.class
 PageObject/AdminPage.class
-StepDefinitions/stepdefinitions.class
+testRunner/TestRunner.class
 PageObject/UpdateContactInfoPage.class
