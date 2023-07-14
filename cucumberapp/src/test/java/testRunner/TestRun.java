@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "/home/coder/project/workspace/cucumberapp/src/test/resources/Features"}, glue = {
+@CucumberOptions(features = { "/home/coder/project/workspace/cucumberapp/src/test/resources/Features" }, glue = {
 		"stepDefinition" }, monochrome = false, plugin = { "pretty", "html:target/HTMLReports/report.html" }
 
 )

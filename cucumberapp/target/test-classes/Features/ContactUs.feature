@@ -1,4 +1,3 @@
-
 Feature: Contact Us 
   As an Customer,
   I should be able to enter below details in the ContactUsloginBox to send a message on clicking Send Message Button
@@ -15,7 +14,19 @@ Feature: Contact Us
     When User Enter Invalid FullName,Invalid EmailAddress,Invalid PhoneNumber,Invalid Message
     And Click on Send Message button
 
-   Scenario: Home | Contact Us
+    Scenario: Home | Contact Us
+  UnSuccessful Login with Invalid credentials
+When User opens url "https://carrental.neohire.io/contact-us.php"
+When User Enter valid FullName,Invalid EmailAddress,valid PhoneNumber,valid Message
+ And Click on Send Message button
+
+ Scenario: Home | Contact Us
+  UnSuccessful Login with Invalid credentials
+When User opens url "https://carrental.neohire.io/contact-us.php"
+When User Enter valid FullName,valid EmailAddress,Invalid PhoneNumber,valid Message
+And Click on Send Message button
+
+ Scenario: Home | Contact Us
     Successful Login with valid credentials
     When User opens url "https://carrental.neohire.io/contact-us.php"
     When User Enter valid FullName,valid EmailAddress,valid PhoneNumber,valid Message
@@ -32,5 +43,4 @@ Scenario:  Admin | Manage Contact Us Query
     When Click on Search button
     And Enter anyone details among valid FullName,valid EmailAddress,valid PhoneNumber,valid Message,valid PostingDate,valid Action
     And Click on action button
-   
      

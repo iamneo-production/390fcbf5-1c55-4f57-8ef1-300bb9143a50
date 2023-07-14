@@ -54,7 +54,7 @@ public class Carlistingpage {
 	}
 	public void selectbrand() {
 	    Select select = new Select(brandtype);
-	    select.selectByIndex(1);
+	    select.selectByVisibleText("Lamborghini");
 	}
 	public void selectfuel(){
 		Select select = new Select(fueltype);

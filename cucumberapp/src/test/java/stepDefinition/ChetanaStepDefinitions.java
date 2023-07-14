@@ -19,7 +19,6 @@ public class ChetanaStepDefinitions {
 	public WebDriver driver=null;
 	public ContactUsPage ContactUsPage;
 	 public FAQPage FAQPage;
-
     @After
 	public void tearDown(){
       if(driver!=null){
@@ -38,6 +37,7 @@ public class ChetanaStepDefinitions {
 	}
 	@When("User opens url {string}")
 	public void user_opens_url(String string) {
+	    // Write code here that turns the phrase above into concrete actions
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.get(string);
 	} 
@@ -54,6 +54,39 @@ public class ChetanaStepDefinitions {
 	@When("Click on ContactUs Login")
 	public void click_on_contact_us_login() {
 	   System.out.println("ContactUs page is displayed");
+	}
+	@When("User Enter valid FullName,Invalid EmailAddress,valid PhoneNumber,valid Message")
+	public void user_enter_valid_full_name_invalid_email_address_valid_phone_number_valid_message() throws InterruptedException {
+	    ContactUsPage.setFullName("Admin");
+	    ContactUsPage.setEmailId("admin22gmail.com");
+	    ContactUsPage.setPhoneNumber("1234567890");
+	    ContactUsPage.setMessage("I want latest car updates");
+	    if(driver.findElement(By.xpath("/html/body/section[2]/div/div/div[1]/div/form/div[5]/button")).isDisplayed()) {
+			Assert.assertTrue(true);
+			System.out.println("Unsuccessful Credentials");
+			System.out.println("Please include '@' in emailaddress");
+		}
+		else {
+			Assert.assertTrue(false);
+			System.out.println("SUCCESS:Query Sent. We will contact you shortly");
+		}
+	    }
+		@When("User Enter valid FullName,valid EmailAddress,Invalid PhoneNumber,valid Message")
+	public void user_enter_valid_full_name_valid_email_address_invalid_phone_number_valid_message() throws InterruptedException {
+		ContactUsPage.setFullName("Admin");
+	    ContactUsPage.setEmailId("admin@gmail.com");
+	    ContactUsPage.setPhoneNumber("Hi");
+	    ContactUsPage.setMessage("I want latest car updates");
+	    if(driver.findElement(By.xpath("/html/body/section[2]/div/div/div[1]/div/form/div[5]/button")).isDisplayed()) {
+			Assert.assertTrue(true);
+			System.out.println("Unsuccessful Credentials");
+			System.out.println("Please match the requested format");
+		}
+		else {
+			Assert.assertTrue(false);
+			System.out.println("SUCCESS:Query Sent. We will contact you shortly");
+			
+		}   
 	}
 
 	@When("User Enter Invalid FullName,Invalid EmailAddress,Invalid PhoneNumber,Invalid Message")
@@ -141,4 +174,5 @@ public class ChetanaStepDefinitions {
 	public void click_on_action_button() throws InterruptedException {	 
 	    ContactUsPage.setReadAction();	  
 	}
-}
+	
+	}
