@@ -1,7 +1,7 @@
 Feature: feature to test post a vehicle page
 
   Scenario: to validate the page of post a vehicle page
-    Given admin url is opened "https://carrental.neohire.io/admin/"
+ When user opens url "https://carrental.neohire.io/admin/"
     Then admin login page should be visible
     When the username as "admin" and password as "Test@12345"
     And clicks on login button

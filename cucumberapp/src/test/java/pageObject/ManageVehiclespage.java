@@ -24,7 +24,7 @@ public class ManageVehiclespage {
 	@FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[1]/input") WebElement editvehicletitle;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[4]/div[1]/input") WebElement editpriceperday;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/h2") WebElement checkeditvehicle;
-	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/div[5]/div[2]/div[5]/div/button") WebElement editsave;
+	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/div[5]/div[6]/div/button") WebElement editsave;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[2]/div/button") WebElement selectbrand1;
 	 @FindBy(xpath="/html/body/div[2]/div/div/div/div/div[1]/div/div/div[2]/form/div[1]/div[2]/div/div/ul/li[9]/a/span[1]") WebElement selectbrand2;
 	 @FindBy(xpath="//*[@id=\"inlineCheckbox1\"]") WebElement checkbox_pdl;

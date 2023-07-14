@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="StepDefinitions.TestRunner" time="42.949" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="StepDefinitions.TestRunner" time="60.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,7 +59,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="feature to test the manage contactus query Page" name="validate the search in manage contact us query" time="15.945"/>
-  <testcase classname="feature to test post a vehicle page" name="to validate the page of post a vehicle page" time="12.36"/>
-  <testcase classname="feature to test manage vehicles page" name="validate the page of manage vehicles" time="14.644"/>
+  <testcase classname="feature to test the manage contactus query Page" name="validate the search in manage contact us query" time="17.684"/>
+  <testcase classname="feature to test post a vehicle page" name="to validate the page of post a vehicle page" time="18.99"/>
+  <testcase classname="feature to test manage vehicles page" name="validate the page of manage vehicles" time="23.331"/>
 </testsuite>

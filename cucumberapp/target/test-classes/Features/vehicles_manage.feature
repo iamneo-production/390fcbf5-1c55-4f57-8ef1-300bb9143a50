@@ -1,7 +1,7 @@
 Feature: feature to test manage vehicles page
 
   Scenario: validate the page of manage vehicles
-    Given user opens this url "https://carrental.neohire.io/admin/"
+ When user opens url "https://carrental.neohire.io/admin/"
     Then user able see the admin login page
     When User enters username as "admin" and passwrod as "Test@12345"
     And user clicks on login button
@@ -14,7 +14,6 @@ Feature: feature to test manage vehicles page
     When admin will check the show entries
     And admin checks search box
     Then admin deletes a vehicle
-    # Then checks the search results
     When admin clicks edit option
     Then edit page should be shown
     When admin makes changes 
