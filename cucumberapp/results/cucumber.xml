@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="66.18">
+    <testcase classname="Contact Us" name="Home | Contact Us" time="15.147">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter Invalid FullName,Invalid EmailAddress,Invalid PhoneNumber,Invalid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Home | Contact Us 2" time="10.32">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter valid FullName,Invalid EmailAddress,valid PhoneNumber,valid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Home | Contact Us 3" time="9.99">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter valid FullName,valid EmailAddress,Invalid PhoneNumber,valid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Home | Contact Us 4" time="10.136">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/contact-us.php"...........passed
+When User Enter valid FullName,valid EmailAddress,valid PhoneNumber,valid Message.passed
+And Click on Send Message button............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Contact Us" name="Admin | Manage Contact Us Query" time="13.319">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/admin/"...................passed
+Then User should be able to view the Admin Page.............................passed
+When User Enter UserName,Password...........................................passed
+And Click on Login..........................................................passed
+And User Click on ManageContactUsQuery......................................passed
+Then Verify the ManageContactUsPage.........................................passed
+When Click on Search button.................................................passed
+And Enter anyone details among valid FullName,valid EmailAddress,valid PhoneNumber,valid Message,valid PostingDate,valid Action.passed
+And Click on action button..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="FAQs" name="Home | FAQs" time="6.943">
+        <system-out>
+            <![CDATA[Given User Launch chrome browser............................................passed
+When User opens url "https://carrental.neohire.io/page.php?type=faqs".......passed
+Then User should be able to view the message................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
