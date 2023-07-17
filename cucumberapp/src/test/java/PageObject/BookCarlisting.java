@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Carlisting {
+public class BookCarlisting {
 	public WebDriver driver;
 	
-    public Carlisting(WebDriver driver)
+    public BookCarlisting(WebDriver driver)
     {
         this.driver=driver;
         PageFactory.initElements(driver, this);

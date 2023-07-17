@@ -1,8 +1,8 @@
 Feature: Verify The Admin Booking Functionality of Car Rental Website
    
 Background: 
-   Given User Launch chrome browser
-   When User opens url "https://carrental.neohire.io/" 
+   Given User Launch Chrome browser
+   When User Opens url "https://carrental.neohire.io/" 
    Then User Navigates to Admin Login Page
    Then User enters username as "admin" and password as "Test@12345"
    Then User clicks on Login Option

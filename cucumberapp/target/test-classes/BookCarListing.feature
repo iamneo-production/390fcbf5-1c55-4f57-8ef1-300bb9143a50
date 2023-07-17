@@ -1,15 +1,13 @@
-Feature: User Module CarListing and My Booking 
-
-
+Feature: Verify User Module CarListing and My Booking Functionality
 
 
 Scenario: Here We are Booking a Car then Noting down the fromdate and Verifying it in Admin New Bookings then noting down the Booking no of that Car and Verifying in User My Booking
           
-   Given User Launch chrome browser
-   When User opens url "https://carrental.neohire.io/" 
+   Given User Launch Chrome browser
+   When User Opens url "https://carrental.neohire.io/" 
    Then User Clicks on LoginRegister button and Enters Valid Email Address as "kalyanguguloth111@gmail.com" and Password as "@Kalki111"
    Then User Clicks on User Login button
-   Then User Clicks on Car Listing and licks on Car View Details and verify interfaces
+   Then User Clicks on Car Listing and clicks on Car View Details and verify interfaces
    Then User Selects from date and To date of Car Booking
    And enter the message and click on Book button
    Then Verify Booking Successful or not and Click on Logout button

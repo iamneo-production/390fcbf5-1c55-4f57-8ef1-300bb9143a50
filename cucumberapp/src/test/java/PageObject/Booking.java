@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
@@ -82,9 +83,9 @@ public class Booking {
     WebElement Logoutbutton;
     @FindBy(xpath="/html/body/div/div/div/div/div/div/div/p/a")
     WebElement Backtohomebutton;
-    @FindBy(xpath="//input[@placeholder='Email address*']")
+    @FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[1]/input")
     WebElement useremailid;
-    @FindBy(xpath="//input[@placeholder='Password*']")
+    @FindBy(xpath="//*[@id='loginform']/div/div/div[2]/div/div/div/form/div[2]/input")
     WebElement userpassword;
     @FindBy(xpath="//a[text()='Login / Register']")
     WebElement loginregisterbutton;
@@ -94,7 +95,7 @@ public class Booking {
     WebElement userdropdownbutton;
     @FindBy(xpath="//a[text()='My Booking']")
     WebElement mybookingbutton;
-    @FindBy(xpath="//*[@id=\"navigation_bar\"]/div/div[2]/div[1]/ul/li/ul/li[6]/a")
+    @FindBy(xpath="//*[@id='navigation_bar']/div/div[2]/div[1]/ul/li/ul/li[6]/a")
     WebElement logoutbutton;
     
     
@@ -160,6 +161,7 @@ public class Booking {
     	System.out.println(output.getText());
     }
     public void SearchClick(String searchTerm) {
+        
     	searchbutton.click();
     	searchbutton.sendKeys(searchTerm);
     }
@@ -246,14 +248,24 @@ public class Booking {
     }
     
     public void setemailid(String emailid) {
-    	useremailid.sendKeys(emailid);
+        if(useremailid.isDisplayed())
+    	{  System.out.println("user enters the emailid");
+            useremailid.sendKeys(emailid);
+        }
     }
     public void setpassid(String passid) {
+        if(userpassword.isDisplayed())
+    	{   System.out.println("user enters the password");
     	userpassword.sendKeys(passid);
+    }
     }
 	
 	public void UserLoginRegisterClick() {
-		loginregisterbutton.click();
+        if(loginregisterbutton.isDisplayed()){
+            System.out.println("Here user click on login");
+            loginregisterbutton.click();
+        }
+		
 	}
 	public void UserLoginClick() {
 		userloginbutton.click();
