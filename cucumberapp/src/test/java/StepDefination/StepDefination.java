@@ -34,9 +34,6 @@ public class StepDefination {
 	public void user_launch_chrome_browser() throws MalformedURLException {
 		ChromeOptions chromeoptions = new ChromeOptions();
 		chromeoptions.addArguments("--disable-dev-shm-usage");
-		// DesiredCapabilities capabilities = new DesiredCapabilities();
-		// capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-		// driver = new RemoteWebDriver(new URL("http://34.85.242.216:4454"), capabilities);
 		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeoptions);
 		driver.manage().window().maximize();
 		booking = new Booking(driver);
