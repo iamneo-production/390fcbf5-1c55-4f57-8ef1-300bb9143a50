@@ -178,6 +178,7 @@ public class KarthikStepdefinition {
 	
 	@When("admin clicks edit option")
 	public void admin_clicks_edit_option(){
+		managevehicle.managevehiclessearch("hector");
 		managevehicle.managevehiclesedit();
 	}
 
